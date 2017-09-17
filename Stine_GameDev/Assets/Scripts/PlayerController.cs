@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VR.WSA.Input;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
 	public Rigidbody2D PlayerRigidbody2D;
@@ -18,5 +19,10 @@ public class PlayerMovement : MonoBehaviour
 		{
 			PlayerRigidbody2D.AddForce(Vector2.right * MoveSpeed);
 		}
+
+//		if (Input.GetKeyDown(KeyCode.Return))
+//		{
+//			Interact();
+//		}
 	}
 }
