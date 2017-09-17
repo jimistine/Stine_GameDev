@@ -14,16 +14,7 @@ public class DoorBehavior : MonoBehaviour
 		if (gameObject.name == "door_closed" && Input.GetKeyUp(KeyCode.Return))
 		{
 			GM.Me.openDoor1();
-//			if (doorClosed == true)
-//			{
-//				GM.Me.openDoor1();
-//			}
-//
-//			if (doorClosed == false)
-//			{
-//				GM.Me.closeDoor1();
-//			}
-	}
+		}
 		if (gameObject.name == "door_open" && Input.GetKeyUp(KeyCode.Return))
 		{
 			GM.Me.closeDoor1();
