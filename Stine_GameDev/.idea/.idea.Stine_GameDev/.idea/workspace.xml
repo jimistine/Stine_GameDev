@@ -63,13 +63,15 @@
       <file leaf-file-name="GM.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="450">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <marker date="1505679399000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1505679399000" expanded="true" signature="111:210" ph="{...}" />
-                <marker date="1505679399000" expanded="true" signature="151:170" ph="{...}" />
-                <marker date="1505679399000" expanded="true" signature="196:205" ph="{...}" />
+                <marker date="1505683102000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1505683102000" expanded="true" signature="111:504" ph="{...}" />
+                <marker date="1505683102000" expanded="true" signature="211:230" ph="{...}" />
+                <marker date="1505683102000" expanded="true" signature="256:265" ph="{...}" />
+                <marker date="1505683102000" expanded="true" signature="291:382" ph="{...}" />
+                <marker date="1505683102000" expanded="true" signature="408:500" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -78,15 +80,15 @@
       <file leaf-file-name="DoorBehavior.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DoorBehavior.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="450">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <marker date="1505681532000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1505681532000" expanded="true" signature="121:617" ph="{...}" />
-                <marker date="1505681532000" expanded="true" signature="261:615" ph="{...}" />
-                <marker date="1505681532000" expanded="true" signature="371:612" ph="{...}" />
-                <marker date="1505681532000" expanded="true" signature="402:503" ph="{...}" />
-                <marker date="1505681532000" expanded="true" signature="507:609" ph="{...}" />
+                <marker date="1505683447000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1505683447000" expanded="true" signature="121:619" ph="{...}" />
+                <marker date="1505683447000" expanded="true" signature="233:617" ph="{...}" />
+                <marker date="1505683447000" expanded="true" signature="341:511" ph="{...}" />
+                <marker date="1505683447000" expanded="true" signature="368:508" ph="/* if (doorClosed == true) ... */" />
+                <marker date="1505683447000" expanded="true" signature="583:614" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -95,7 +97,7 @@
       <file leaf-file-name="MGMT.cs" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/PuckIt/Assets/Scripts/MGMT.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
+            <state relative-caret-position="-337">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -164,8 +166,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraBehavior.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GM.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GM.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoorBehavior.cs" />
       </list>
     </option>
@@ -177,8 +179,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="42" />
+    <option name="x" value="31" />
+    <option name="y" value="49" />
     <option name="width" value="1112" />
     <option name="height" value="734" />
   </component>
@@ -316,12 +318,12 @@
       <workItem from="1505312456889" duration="4010000" />
       <workItem from="1505673561384" duration="561000" />
       <workItem from="1505674128672" duration="685000" />
-      <workItem from="1505677925555" duration="3369000" />
+      <workItem from="1505677925555" duration="5381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8625000" />
+    <option name="totallyTimeSpent" value="10637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +335,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="42" width="1112" height="734" extended-state="0" />
+    <frame x="31" y="49" width="1112" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -399,12 +401,12 @@
         <state relative-caret-position="336">
           <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding>
-            <marker date="1505681532000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1505681532000" expanded="true" signature="121:617" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="261:615" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="371:612" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="402:503" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="507:609" ph="{...}" />
+            <marker date="1505683447000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1505683447000" expanded="true" signature="121:619" ph="{...}" />
+            <marker date="1505683447000" expanded="true" signature="233:617" ph="{...}" />
+            <marker date="1505683447000" expanded="true" signature="341:511" ph="{...}" />
+            <marker date="1505683447000" expanded="true" signature="368:508" ph="/* if (doorClosed == true) ... */" />
+            <marker date="1505683447000" expanded="true" signature="583:614" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -484,14 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/E.C.No.257/Assets/Scripts/PointerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/E.C.No.257/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MyCharController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -533,22 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/PuckIt/Assets/Scripts/StickOnTrigger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/PuckIt/Assets/Scripts/PuckController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -564,38 +542,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1505683102000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1505683102000" expanded="true" signature="111:504" ph="{...}" />
+            <marker date="1505683102000" expanded="true" signature="211:230" ph="{...}" />
+            <marker date="1505683102000" expanded="true" signature="256:265" ph="{...}" />
+            <marker date="1505683102000" expanded="true" signature="291:382" ph="{...}" />
+            <marker date="1505683102000" expanded="true" signature="408:500" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/PuckIt/Assets/Scripts/MGMT.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
+        <state relative-caret-position="-337">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
+    <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/E.C.No.257/Assets/Scripts/PointerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <marker date="1505679399000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1505679399000" expanded="true" signature="111:210" ph="{...}" />
-            <marker date="1505679399000" expanded="true" signature="151:170" ph="{...}" />
-            <marker date="1505679399000" expanded="true" signature="196:205" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/PuckIt/Assets/Scripts/PuckController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/School/Year 3/Spring/Programming for Games/PuckIt/Assets/Scripts/StickOnTrigger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DoorBehavior.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="450">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <marker date="1505681532000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1505681532000" expanded="true" signature="121:617" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="261:615" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="371:612" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="402:503" ph="{...}" />
-            <marker date="1505681532000" expanded="true" signature="507:609" ph="{...}" />
+            <marker date="1505683447000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1505683447000" expanded="true" signature="121:619" ph="{...}" />
+            <marker date="1505683447000" expanded="true" signature="233:617" ph="{...}" />
+            <marker date="1505683447000" expanded="true" signature="341:511" ph="{...}" />
+            <marker date="1505683447000" expanded="true" signature="368:508" ph="/* if (doorClosed == true) ... */" />
+            <marker date="1505683447000" expanded="true" signature="583:614" ph="{...}" />
           </folding>
         </state>
       </provider>
