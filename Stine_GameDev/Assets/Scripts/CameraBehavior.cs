@@ -17,6 +17,7 @@ public class CameraBehavior : MonoBehaviour {
  
 	void Update() {
  
+		//manually switch between cameras for testing
 		if (Input.GetKeyDown(KeyCode.I)) {
 			Cam1.SetActive(true);
 			Cam2.SetActive(false);
@@ -32,5 +33,8 @@ public class CameraBehavior : MonoBehaviour {
 			Cam2.SetActive(false);
 			Cam3.SetActive(true);
 		}
+		
+		//switch cameras on player position
+		//if ()
 	}
 }
