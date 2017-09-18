@@ -12,8 +12,8 @@ public class CameraBehavior : MonoBehaviour {
 	public GameObject Cam3;
  
 	void Start() {
-		Cam1.SetActive(false);
-		Cam2.SetActive(true);
+		Cam1.SetActive(true);
+		Cam2.SetActive(false);
 		Cam3.SetActive(false);
 	}
 
