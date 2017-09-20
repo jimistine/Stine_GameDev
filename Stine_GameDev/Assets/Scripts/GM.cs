@@ -10,6 +10,10 @@ public class GM : MonoBehaviour
 	public GameObject doorOpen;
 	public GameObject doorClosed2;
 	public GameObject doorOpen2;
+	public GameObject doorClosed3;
+	public GameObject doorOpen3;
+	public GameObject doorClosed4;
+	public GameObject doorOpen4;
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
@@ -31,25 +35,48 @@ public class GM : MonoBehaviour
 		doorOpen.SetActive(true);
 		doorClosed.SetActive(false);
 		Debug.Log("open door");
-	}
-	public void closeDoor1()
+	}public void closeDoor1()
 	{
 		doorOpen.SetActive(false);
 		doorClosed.SetActive(true);
 		Debug.Log("close door");
 	}
+	
 	public void openDoor2()
 	{
 		doorOpen2.SetActive(true);
 		doorClosed2.SetActive(false);
 		Debug.Log("open door");
-	}
-	public void closeDoor2()
+	}public void closeDoor2()
 	{
 		doorOpen2.SetActive(false);
 		doorClosed2.SetActive(true);
 		Debug.Log("close door");
 	}
+	
+	public void openDoor3()
+	{
+		doorOpen3.SetActive(true);
+		doorClosed3.SetActive(false);
+		Debug.Log("open door");
+	}	public void closeDoor3()
+	{
+		doorOpen3.SetActive(false);
+		doorClosed3.SetActive(true);
+		Debug.Log("close door");
+	}
+	
+	public void openDoor4()
+	{
+		doorOpen4.SetActive(true);
+		doorClosed4.SetActive(false);
+		Debug.Log("open door");
+	}public void closeDoor4(){
+		doorOpen4.SetActive(false);
+		doorClosed4.SetActive(true);
+		Debug.Log("close door");
+	}
+
 	//Cameras
 	public void activateCam1()
 	{
@@ -77,12 +104,12 @@ public class GM : MonoBehaviour
 	}
 	public void player2To1()
 	{
-		playerTrans.Translate(new Vector2(-7, 0));
+		playerTrans.Translate(new Vector2(-6.5f, 0));
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 	public void player2To3()
 	{
-		playerTrans.Translate(new Vector2(7, 0));
+		playerTrans.Translate(new Vector2(6.5f, 0));
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 	public void player3To2()

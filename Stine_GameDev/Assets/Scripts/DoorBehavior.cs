@@ -27,5 +27,21 @@ public class DoorBehavior : MonoBehaviour
 		{
 			GM.Me.closeDoor2();
 		}
+		if (gameObject.name == "door_closed3" && Input.GetKeyDown(KeyCode.Return))
+		{
+			GM.Me.openDoor3();
+		}
+		if (gameObject.name == "door_open3" && Input.GetKeyDown(KeyCode.Return))
+		{
+			GM.Me.closeDoor3();
+		}
+		if (gameObject.name == "door_closed4" && Input.GetKeyDown(KeyCode.Return))
+		{
+			GM.Me.openDoor4();
+		}
+		if (gameObject.name == "door_open4" && Input.GetKeyDown(KeyCode.Return))
+		{
+			GM.Me.closeDoor4();
+		}
 	}
 }
