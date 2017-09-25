@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
-
+[RequireComponent(typeof(AudioSource))]
 public class GM : MonoBehaviour
 {
 	public static GM Me;
@@ -14,6 +14,9 @@ public class GM : MonoBehaviour
 	public GameObject doorOpen3;
 	public GameObject doorClosed4;
 	public GameObject doorOpen4;
+	public AudioClip openDoor;
+	public AudioClip closeDoor;
+	AudioSource audioSource;
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
@@ -25,6 +28,11 @@ public class GM : MonoBehaviour
 		Me = this;
 	}
 	
+	void Start()
+	{
+//		audioSource = GetComponent<AudioSource>();
+	}
+	
 	public void Interact()
 	{
 		
@@ -34,47 +42,47 @@ public class GM : MonoBehaviour
 	{
 		doorOpen.SetActive(true);
 		doorClosed.SetActive(false);
-		Debug.Log("open door");
-	}public void closeDoor1()
-	{
+		audioSource.PlayOneShot(openDoor, 1);
+//		Debug.Log("open door");
+	}public void closeDoor1(){
 		doorOpen.SetActive(false);
 		doorClosed.SetActive(true);
-		Debug.Log("close door");
+//		Debug.Log("close door");
 	}
 	
 	public void openDoor2()
 	{
 		doorOpen2.SetActive(true);
 		doorClosed2.SetActive(false);
-		Debug.Log("open door");
+//		Debug.Log("open door");
 	}public void closeDoor2()
 	{
 		doorOpen2.SetActive(false);
 		doorClosed2.SetActive(true);
-		Debug.Log("close door");
+//		Debug.Log("close door");
 	}
 	
 	public void openDoor3()
 	{
 		doorOpen3.SetActive(true);
 		doorClosed3.SetActive(false);
-		Debug.Log("open door");
+//		Debug.Log("open door");
 	}	public void closeDoor3()
 	{
 		doorOpen3.SetActive(false);
 		doorClosed3.SetActive(true);
-		Debug.Log("close door");
+//		Debug.Log("close door");
 	}
 	
 	public void openDoor4()
 	{
 		doorOpen4.SetActive(true);
 		doorClosed4.SetActive(false);
-		Debug.Log("open door");
+//		Debug.Log("open door");
 	}public void closeDoor4(){
 		doorOpen4.SetActive(false);
 		doorClosed4.SetActive(true);
-		Debug.Log("close door");
+//		Debug.Log("close door");
 	}
 
 	//Cameras

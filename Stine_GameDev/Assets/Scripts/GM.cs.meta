@@ -1,10 +1,25 @@
 fileFormatVersion: 2
 guid: b1f90419d4af345c4bdfbd59944ac85f
-timeCreated: 1505679035
+timeCreated: 1506304163
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - doorClosed: {instanceID: 0}
+  - doorOpen: {instanceID: 0}
+  - doorClosed2: {instanceID: 0}
+  - doorOpen2: {instanceID: 0}
+  - doorClosed3: {instanceID: 0}
+  - doorOpen3: {instanceID: 0}
+  - doorClosed4: {instanceID: 0}
+  - doorOpen4: {instanceID: 0}
+  - openDoor: {fileID: 8300000, guid: 3a9506a95808742f48fb2638cca70d7e, type: 3}
+  - closeDoor: {fileID: 8300000, guid: 3119cced98b974cf385ee81ce095dd79, type: 3}
+  - Cam1: {instanceID: 0}
+  - Cam2: {instanceID: 0}
+  - Cam3: {instanceID: 0}
+  - playerTrans: {instanceID: 0}
+  - playerRigidbody2D: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

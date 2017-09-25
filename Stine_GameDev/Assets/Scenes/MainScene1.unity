@@ -390,6 +390,8 @@ MonoBehaviour:
   doorOpen3: {fileID: 1570394060}
   doorClosed4: {fileID: 783081647}
   doorOpen4: {fileID: 462443924}
+  openDoor: {fileID: 8300000, guid: 3a9506a95808742f48fb2638cca70d7e, type: 3}
+  closeDoor: {fileID: 8300000, guid: 3119cced98b974cf385ee81ce095dd79, type: 3}
   Cam1: {fileID: 624307501}
   Cam2: {fileID: 1736378785}
   Cam3: {fileID: 105461265}
