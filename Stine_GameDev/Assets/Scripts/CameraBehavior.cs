@@ -29,6 +29,11 @@ public class CameraBehavior : MonoBehaviour {
 		{
 			GM.Me.activateCam1();
 			GM.Me.player2To1();
+			if (GM.Me.Count == 1)
+			{
+				
+				GM.Me.play2();
+			}
 		}
 		if (gameObject.name == "cameraThresh3" && other.gameObject.tag == "player")
 		{

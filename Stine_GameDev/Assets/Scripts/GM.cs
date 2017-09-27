@@ -6,6 +6,7 @@ using UnityEngine;
 public class GM : MonoBehaviour
 {
 	public static GM Me;
+	public int Count;
 	public GameObject doorClosed;
 	public GameObject doorOpen;
 	public GameObject doorClosed2;
@@ -14,15 +15,22 @@ public class GM : MonoBehaviour
 	public GameObject doorOpen3;
 	public GameObject doorClosed4;
 	public GameObject doorOpen4;
-	public AudioClip openDoor;
-	public AudioClip closeDoor;
-	AudioSource audioSource;
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
+	
+	public AudioClip openDoor;
+	public AudioClip closeDoor;
+	public AudioClip line1;
+	public AudioClip line2;
+	public AudioClip line3;
+	public AudioSource SFX;
+	public AudioSource Dialogue;
+	
 	public Transform playerTrans;
 	public Rigidbody2D playerRigidbody2D;
-
+	
+	
 	void Awake ()
 	{
 		Me = this;
@@ -30,7 +38,7 @@ public class GM : MonoBehaviour
 	
 	void Start()
 	{
-//		audioSource = GetComponent<AudioSource>();
+		
 	}
 	
 	public void Interact()
@@ -42,7 +50,8 @@ public class GM : MonoBehaviour
 	{
 		doorOpen.SetActive(true);
 		doorClosed.SetActive(false);
-		audioSource.PlayOneShot(openDoor, 1);
+		SFX.clip = openDoor;
+		SFX.Play();
 //		Debug.Log("open door");
 	}public void closeDoor1(){
 		doorOpen.SetActive(false);
@@ -125,5 +134,19 @@ public class GM : MonoBehaviour
 		playerTrans.Translate(new Vector2(-7, 0));
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
+	//Dialogue
+	public void play1()
+	{
 
+			Dialogue.clip = line1;
+			Dialogue.Play();
+		//	Debug.Log("!!!");
+		
+	}
+
+	public void play2()
+	{
+		Dialogue.clip = line2;
+		Dialogue.Play();
+	}
 }
