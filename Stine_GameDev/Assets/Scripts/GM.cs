@@ -137,9 +137,9 @@ public class GM : MonoBehaviour
 	//Dialogue
 	public void play1()
 	{
-
+			Debug.Log("playing in 2");
 			Dialogue.clip = line1;
-			Dialogue.Play();
+			Dialogue.PlayDelayed(2);
 		//	Debug.Log("!!!");
 		
 	}

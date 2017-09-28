@@ -87,7 +87,7 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
-'Assets/Scripts/audioTrigger.cs'
+'Assets/Scripts/AudioTrigger.cs'
 'Assets/Scripts/Bunk Scripts/CloseDoor.cs'
 'Assets/Scripts/Bunk Scripts/OpenDoor.cs'
 'Assets/Scripts/CameraBehavior.cs'
