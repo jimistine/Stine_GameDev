@@ -15,9 +15,12 @@ public class GM : MonoBehaviour
 	public GameObject doorOpen3;
 	public GameObject doorClosed4;
 	public GameObject doorOpen4;
+	public GameObject exitDoor;
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
+	public GameObject key;
+	public GameObject portal;
 	
 	public AudioClip openDoor;
 	public AudioClip closeDoor;
@@ -31,25 +34,22 @@ public class GM : MonoBehaviour
 	public Rigidbody2D playerRigidbody2D;
 
 	public bool exitLocked = true;
-	
-	
-	void Awake ()
+
+	public float uTime;
+
+
+	void Awake()
 	{
 		Me = this;
 	}
-	
-	void Start()
-	{
-		
-	}
-	
+
 	public void Update()
 	{
 		Debug.Log(Count);
+//		uTime = Time.time;
 	}
 	//Doors
-	public void openDoor1()
-	{
+	public void openDoor1(){
 		doorOpen.SetActive(true);
 		doorClosed.SetActive(false);
 		SFX.clip = openDoor;
@@ -58,34 +58,31 @@ public class GM : MonoBehaviour
 		doorOpen.SetActive(false);
 		doorClosed.SetActive(true);
 	}
-	
-	public void openDoor2()
-	{
+	public void openDoor2(){
 		doorOpen2.SetActive(true);
 		doorClosed2.SetActive(false);
-	}public void closeDoor2()
-	{
+	}public void closeDoor2(){
 		doorOpen2.SetActive(false);
 		doorClosed2.SetActive(true);
 	}
-	
-	public void openDoor3()
-	{
+	public void openDoor3(){
 		doorOpen3.SetActive(true);
 		doorClosed3.SetActive(false);
-	}	public void closeDoor3()
-	{
+	}public void closeDoor3(){
 		doorOpen3.SetActive(false);
 		doorClosed3.SetActive(true);
 	}
-	
-	public void openDoor4()
-	{
+	public void openDoor4(){
 		doorOpen4.SetActive(true);
 		doorClosed4.SetActive(false);
 	}public void closeDoor4(){
 		doorOpen4.SetActive(false);
 		doorClosed4.SetActive(true);
+	}
+	public void openExit(){
+		exitDoor.SetActive(false);
+	}public void closeExit(){
+		exitDoor.SetActive(true);
 	}
 
 	//Cameras
@@ -131,20 +128,27 @@ public class GM : MonoBehaviour
 	//Dialogue
 	public void play1()
 	{
+		Count = 1;
 		Dialogue.clip = line1;
 		Dialogue.Play();	
 	}
 
 	public void play2()
 	{
+		Count = 2;
 		Dialogue.clip = line2;
 		Dialogue.PlayDelayed(5);
-		Count = 2;
 	}
 	public void play3()
 	{
+		Count = 3;
 		Dialogue.clip = line3;
 		Dialogue.PlayDelayed(1);
-		Count = 3;
+	}
+	
+	//Objects
+	public void SetKeyActive()
+	{
+		key.SetActive(true);
 	}
 }

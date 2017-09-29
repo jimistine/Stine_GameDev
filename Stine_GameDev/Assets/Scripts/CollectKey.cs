@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class CollectKey : MonoBehaviour {
 
-	void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
-		gameObject.SetActive(false);
-		GM.Me.exitLocked = false;
+		if (Input.GetKeyDown(KeyCode.Return) && GM.Me.Count == 3)
+		{
+			gameObject.SetActive(false);
+			GM.Me.exitLocked = false;
+		}
+		
 	}
 }
