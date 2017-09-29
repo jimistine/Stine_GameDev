@@ -29,6 +29,8 @@ public class GM : MonoBehaviour
 	
 	public Transform playerTrans;
 	public Rigidbody2D playerRigidbody2D;
+
+	public bool exitLocked = true;
 	
 	
 	void Awake ()
@@ -41,9 +43,9 @@ public class GM : MonoBehaviour
 		
 	}
 	
-	public void Interact()
+	public void Update()
 	{
-		
+		Debug.Log(Count);
 	}
 	//Doors
 	public void openDoor1()
@@ -52,46 +54,38 @@ public class GM : MonoBehaviour
 		doorClosed.SetActive(false);
 		SFX.clip = openDoor;
 		SFX.Play();
-//		Debug.Log("open door");
 	}public void closeDoor1(){
 		doorOpen.SetActive(false);
 		doorClosed.SetActive(true);
-//		Debug.Log("close door");
 	}
 	
 	public void openDoor2()
 	{
 		doorOpen2.SetActive(true);
 		doorClosed2.SetActive(false);
-//		Debug.Log("open door");
 	}public void closeDoor2()
 	{
 		doorOpen2.SetActive(false);
 		doorClosed2.SetActive(true);
-//		Debug.Log("close door");
 	}
 	
 	public void openDoor3()
 	{
 		doorOpen3.SetActive(true);
 		doorClosed3.SetActive(false);
-//		Debug.Log("open door");
 	}	public void closeDoor3()
 	{
 		doorOpen3.SetActive(false);
 		doorClosed3.SetActive(true);
-//		Debug.Log("close door");
 	}
 	
 	public void openDoor4()
 	{
 		doorOpen4.SetActive(true);
 		doorClosed4.SetActive(false);
-//		Debug.Log("open door");
 	}public void closeDoor4(){
 		doorOpen4.SetActive(false);
 		doorClosed4.SetActive(true);
-//		Debug.Log("close door");
 	}
 
 	//Cameras
@@ -137,16 +131,20 @@ public class GM : MonoBehaviour
 	//Dialogue
 	public void play1()
 	{
-			Debug.Log("playing in 2");
-			Dialogue.clip = line1;
-			Dialogue.PlayDelayed(2);
-		//	Debug.Log("!!!");
-		
+		Dialogue.clip = line1;
+		Dialogue.Play();	
 	}
 
 	public void play2()
 	{
 		Dialogue.clip = line2;
-		Dialogue.Play();
+		Dialogue.PlayDelayed(5);
+		Count = 2;
+	}
+	public void play3()
+	{
+		Dialogue.clip = line3;
+		Dialogue.PlayDelayed(1);
+		Count = 3;
 	}
 }

@@ -31,7 +31,6 @@ public class CameraBehavior : MonoBehaviour {
 			GM.Me.player2To1();
 			if (GM.Me.Count == 1)
 			{
-				
 				GM.Me.play2();
 			}
 		}
