@@ -24,6 +24,7 @@ public class GM : MonoBehaviour
 	
 	public AudioClip openDoor;
 	public AudioClip closeDoor;
+	public AudioClip line0;
 	public AudioClip line1;
 	public AudioClip line2;
 	public AudioClip line3;
@@ -41,6 +42,8 @@ public class GM : MonoBehaviour
 	void Awake()
 	{
 		Me = this;
+		Dialogue.clip = line0;
+		Dialogue.PlayDelayed(2);
 	}
 
 	public void Update()

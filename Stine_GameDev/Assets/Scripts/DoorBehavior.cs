@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class DoorBehavior : MonoBehaviour
@@ -7,11 +8,17 @@ public class DoorBehavior : MonoBehaviour
 
 	public GameObject doorClosed;
 	public GameObject doorOpen;
+	public bool CanOpen;
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		CanOpen = true;
+	}
 
 	private void OnTriggerStay2D(Collider2D other)
 	{
-		Debug.Log("we in the zone");
-		if (gameObject.name == "door_closed" && Input.GetKeyDown(KeyCode.Return))
+
+		if (gameObject.name == "door_closed" && CanOpen && Input.GetKeyDown(KeyCode.Return))
 		{
 			GM.Me.openDoor1();
 		}
@@ -43,5 +50,10 @@ public class DoorBehavior : MonoBehaviour
 		{
 			GM.Me.closeDoor4();
 		}
+	}
+
+	private void OnTriggerExit2D(Collider2D other)
+	{
+		CanOpen = false;
 	}
 }

@@ -11,7 +11,6 @@ public class LeaveRooms : MonoBehaviour
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		Debug.Log("Here!");
 		if (GM.Me.ExitOpen && Input.GetKeyUp(KeyCode.Return))
 		{
 			PortalVisible = true;

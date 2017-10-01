@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 44429929}
   doorOpen: {fileID: 241078226}
+  CanOpen: 0
 --- !u!50 &44429934
 Rigidbody2D:
   serializedVersion: 4
@@ -401,6 +402,7 @@ MonoBehaviour:
   portal: {fileID: 1099416072}
   openDoor: {fileID: 8300000, guid: 3a9506a95808742f48fb2638cca70d7e, type: 3}
   closeDoor: {fileID: 8300000, guid: 3119cced98b974cf385ee81ce095dd79, type: 3}
+  line0: {fileID: 8300000, guid: 1809a06829e0046639820c3a0fdf6d0d, type: 3}
   line1: {fileID: 8300000, guid: 5468646955bfe41efa9b1f0cf6857f13, type: 3}
   line2: {fileID: 8300000, guid: fb305bceb01b24831aebef6441dc76a5, type: 3}
   line3: {fileID: 8300000, guid: 48ac69667619b40f283d3fff611937dc, type: 3}
@@ -630,6 +632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 129719979}
   doorOpen: {fileID: 1320037859}
+  CanOpen: 0
 --- !u!61 &129719982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -879,11 +882,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 241078226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3792c14780b3417b98971ea9bf101c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 88ee53781af084de8a479a9bb0116ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 44429929}
   doorOpen: {fileID: 241078226}
+  CanOpen: 0
 --- !u!50 &241078231
 Rigidbody2D:
   serializedVersion: 4
@@ -1488,6 +1492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 783081647}
   doorOpen: {fileID: 462443924}
+  CanOpen: 0
 --- !u!50 &462443926
 Rigidbody2D:
   serializedVersion: 4
@@ -2247,6 +2252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 783081647}
   doorOpen: {fileID: 462443924}
+  CanOpen: 0
 --- !u!61 &783081650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2697,6 +2703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 1076959748}
   doorOpen: {fileID: 1570394060}
+  CanOpen: 0
 --- !u!61 &1076959751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3515,6 +3522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 129719979}
   doorOpen: {fileID: 1320037859}
+  CanOpen: 0
 --- !u!50 &1320037861
 Rigidbody2D:
   serializedVersion: 4
@@ -3868,6 +3876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorClosed: {fileID: 1076959748}
   doorOpen: {fileID: 1570394060}
+  CanOpen: 0
 --- !u!50 &1570394062
 Rigidbody2D:
   serializedVersion: 4
@@ -4751,7 +4760,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926704466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.51, y: -4.62, z: 0}
+  m_LocalPosition: {x: -18.76, y: -4.62, z: 0}
   m_LocalScale: {x: 0.3504467, y: 0.7113092, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
