@@ -34,7 +34,7 @@ public class GM : MonoBehaviour
 	public Rigidbody2D playerRigidbody2D;
 
 	public bool exitLocked = true;
-
+	public bool ExitOpen;
 	public float uTime;
 
 
@@ -81,8 +81,10 @@ public class GM : MonoBehaviour
 	}
 	public void openExit(){
 		exitDoor.SetActive(false);
+		ExitOpen = true;
 	}public void closeExit(){
 		exitDoor.SetActive(true);
+		ExitOpen = false;
 	}
 
 	//Cameras

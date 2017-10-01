@@ -7,18 +7,35 @@ using UnityEngine.SceneManagement;
 public class LeaveRooms : MonoBehaviour
 {
 	public GameObject question;
+	public bool CollidingWithPortal;
 
-	private void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
-		question.SetActive(true);
-	}
-
-	private void OnTriggerStay2D(Collider2D other)
-	{
-		if (Input.GetKeyDown(KeyCode.Return) && GM.Me.exitDoor == false)
+		Debug.Log("Here!");
+		if (GM.Me.ExitOpen && Input.GetKeyDown(KeyCode.Return))
 		{
 			Debug.Log("Leaving Rooms");
 			SceneManager.LoadScene("TempEndScene");
 		}
 	}
+	
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (GM.Me.ExitOpen)
+		{
+			question.SetActive(true);
+			CollidingWithPortal = true;
+		}
+	}
+	private void OnTriggerExit2D(Collider2D other)
+	{
+		if (GM.Me.ExitOpen)
+		{
+			question.SetActive(false);
+			CollidingWithPortal = false;
+		}
+	}
+
+	
 }
+

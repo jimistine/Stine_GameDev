@@ -90,7 +90,7 @@
 'Assets/Scripts/AudioTrigger.cs'
 'Assets/Scripts/Bunk Scripts/CloseDoor.cs'
 'Assets/Scripts/Bunk Scripts/OpenDoor.cs'
-'Assets/Scripts/Button Controller.cs'
+'Assets/Scripts/ButtonController.cs'
 'Assets/Scripts/ButtonHover.cs'
 'Assets/Scripts/CameraBehavior.cs'
 'Assets/Scripts/CollectKey.cs'

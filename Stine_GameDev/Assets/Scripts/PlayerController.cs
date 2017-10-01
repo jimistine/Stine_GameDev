@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 		{
 			PlayerRigidbody2D.velocity = new Vector2(0,0);
 		}
+		
+		
 		//Old Movement
 //		if (Input.GetAxis("Horizontal") < 0)
 //		{
