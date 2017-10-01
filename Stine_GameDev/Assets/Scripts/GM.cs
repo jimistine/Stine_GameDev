@@ -6,7 +6,7 @@ using UnityEngine;
 public class GM : MonoBehaviour
 {
 	public static GM Me;
-	public int Count;
+	public int Count = 0;
 	public GameObject doorClosed;
 	public GameObject doorOpen;
 	public GameObject doorClosed2;
