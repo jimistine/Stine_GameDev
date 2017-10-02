@@ -142,7 +142,7 @@ public class GM : MonoBehaviour
 	{
 		Count = 2;
 		Dialogue.clip = line2;
-		Dialogue.PlayDelayed(5);
+		Dialogue.PlayDelayed(3);
 	}
 	public void play3()
 	{
