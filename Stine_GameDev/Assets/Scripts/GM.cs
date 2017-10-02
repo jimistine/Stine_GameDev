@@ -60,34 +60,52 @@ public class GM : MonoBehaviour
 	}public void closeDoor1(){
 		doorOpen.SetActive(false);
 		doorClosed.SetActive(true);
+		SFX.clip = closeDoor;
+		SFX.Play();
 	}
 	public void openDoor2(){
 		doorOpen2.SetActive(true);
 		doorClosed2.SetActive(false);
+		SFX.clip = openDoor;
+		SFX.Play();
 	}public void closeDoor2(){
 		doorOpen2.SetActive(false);
 		doorClosed2.SetActive(true);
+		SFX.clip = closeDoor;
+		SFX.Play();
 	}
 	public void openDoor3(){
 		doorOpen3.SetActive(true);
 		doorClosed3.SetActive(false);
+		SFX.clip = openDoor;
+		SFX.Play();
 	}public void closeDoor3(){
 		doorOpen3.SetActive(false);
 		doorClosed3.SetActive(true);
+		SFX.clip = closeDoor;
+		SFX.Play();
 	}
 	public void openDoor4(){
 		doorOpen4.SetActive(true);
 		doorClosed4.SetActive(false);
+		SFX.clip = openDoor;
+		SFX.Play();
 	}public void closeDoor4(){
 		doorOpen4.SetActive(false);
 		doorClosed4.SetActive(true);
+		SFX.clip = closeDoor;
+		SFX.Play();
 	}
 	public void openExit(){
 		exitDoor.SetActive(false);
 		ExitOpen = true;
+		SFX.clip = openDoor;
+		SFX.Play();
 	}public void closeExit(){
 		exitDoor.SetActive(true);
 		ExitOpen = false;
+		SFX.clip = closeDoor;
+		SFX.Play();
 	}
 
 	//Cameras

@@ -12,6 +12,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+3a993d586c45d913e216cbaaf874d05e Assembly-CSharp.dll:.AudioTrigger
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -109,8 +110,12 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
-2f15c8b2575474a9c1caa26a0b0870f8 Assembly-CSharp.dll:.DoorBehavior
-0a5380315476d7ffc19e711e3e4eee1f Assembly-CSharp.dll:.GM
+f6c393f37d0c8d166f1c0ec5268d1680 Assembly-CSharp.dll:.ButtonController
+30f76715accbb4a78c432f92a9152353 Assembly-CSharp.dll:.LeaveRooms
+4272921d22d158e94e7be3cda8f3f5f1 Assembly-CSharp.dll:.ButtonHover
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CollectKey
+2f8b3ae96678734e0c8c2e3164dda104 Assembly-CSharp.dll:.DoorBehavior
+525c52143e91b7ffa68c80346a9e77e2 Assembly-CSharp.dll:.GM
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -134,4 +139,5 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 2f15c8b2575474a9c1caa26a0b0870f8 Assembly-CSharp.dll:.OpenDoor
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExitDoorBehavior
 8c6f550d46685d27f0a5365fc8a1d744 Assembly-CSharp.dll:.PlayerController
