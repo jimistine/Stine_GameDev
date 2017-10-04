@@ -48,7 +48,7 @@ public class GM : MonoBehaviour
 
 	public void Update()
 	{
-		Debug.Log(Count);
+//		Debug.Log(Count);
 //		uTime = Time.time;
 	}
 	//Doors
