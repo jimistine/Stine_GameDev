@@ -30,6 +30,10 @@ public class GM : MonoBehaviour
 	public GameObject book1_Active;
 	public GameObject Book1Page;
 	public GameObject Book1Text;
+	public GameObject book2_Active;
+	public GameObject Book2Page;
+	public GameObject Book2Text;
+
 
 	public AudioClip openDoor;
 	public AudioClip closeDoor;
@@ -237,6 +241,21 @@ public class GM : MonoBehaviour
 		BookOpen = true;
 	}
 
+	public void SetBook2Active() 
+	{ 
+		book2_Active.SetActive(true);
+	}
+	public void SetBook2Inactive() 
+	{ 
+		book2_Active.SetActive(false);
+	}
+	public void OpenBook2() 
+	{ 
+		Book2Page.SetActive(true);
+		Book2Text.SetActive(true);
+		BookOpen = true;
+	}
+	
 	public void CloseBook()
 	{
 		Book1Page.SetActive(false);
