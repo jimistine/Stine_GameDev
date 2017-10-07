@@ -260,6 +260,8 @@ public class GM : MonoBehaviour
 	{
 		Book1Page.SetActive(false);
 		Book1Text.SetActive(false);
+		Book2Page.SetActive(false);
+		Book2Text.SetActive(false);
 		BookOpen = false;
 	}
 }
