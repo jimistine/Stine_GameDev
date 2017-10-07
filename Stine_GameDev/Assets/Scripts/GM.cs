@@ -25,6 +25,7 @@ public class GM : MonoBehaviour
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
+	public GameObject Paint1Cam;
 	public GameObject key;
 	public GameObject portal;
 	public GameObject book1_Active;
@@ -33,6 +34,7 @@ public class GM : MonoBehaviour
 	public GameObject book2_Active;
 	public GameObject Book2Page;
 	public GameObject Book2Text;
+	public GameObject painting1_Ring;
 
 
 	public AudioClip openDoor;
@@ -158,6 +160,7 @@ public class GM : MonoBehaviour
 		Cam1.SetActive(true);
 		Cam2.SetActive(false);
 		Cam3.SetActive(false);
+		Paint1Cam.SetActive(false);
 	}
 
 	public void activateCam2()
@@ -165,6 +168,7 @@ public class GM : MonoBehaviour
 		Cam1.SetActive(false);
 		Cam2.SetActive(true);
 		Cam3.SetActive(false);
+		Paint1Cam.SetActive(false);
 	}
 
 	public void activateCam3()
@@ -172,6 +176,7 @@ public class GM : MonoBehaviour
 		Cam1.SetActive(false);
 		Cam2.SetActive(false);
 		Cam3.SetActive(true);
+		Paint1Cam.SetActive(false);
 	}
 
 	//Moving player
@@ -264,4 +269,22 @@ public class GM : MonoBehaviour
 		Book2Text.SetActive(false);
 		BookOpen = false;
 	}
+
+	public void SetPainting1Active()
+	{
+		painting1_Ring.SetActive(true);
+	}
+	public void SetPainting1Inactive()
+	{
+		painting1_Ring.SetActive(false);
+	}
+
+	public void EnlargePainting1()
+	{
+		Cam1.SetActive(false);
+		Cam2.SetActive(false);
+		Cam3.SetActive(false);
+		Paint1Cam.SetActive(true);
+	}
+	//CALL THIS FUNCTION ON INSPECT SCRIPT
 }

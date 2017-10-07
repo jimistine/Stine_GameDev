@@ -25,6 +25,10 @@ public class Inspect : MonoBehaviour {
 		{
 			GM.Me.SetBook2Active();
 		}
+		if (gameObject.name == "painting1")
+		{
+			GM.Me.SetPainting1Active();
+		}
 	}
 	private void OnTriggerExit2D(Collider2D other)
 	{
@@ -36,6 +40,10 @@ public class Inspect : MonoBehaviour {
 		{
 			GM.Me.SetBook2Inactive();
 		}
+		if (gameObject.name == "painting1")
+		{
+			GM.Me.SetPainting1Inactive();
+		}
 	}
 	private void OnTriggerStay2D(Collider2D other)
 	{
@@ -46,6 +54,10 @@ public class Inspect : MonoBehaviour {
 		if (gameObject.name == "book2" && Input.GetKeyDown(KeyCode.Return))
 		{
 			GM.Me.OpenBook2();
+		}
+		if (gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.Return))
+		{
+			GM.Me.EnlargePainting1();
 		}
 	}
 

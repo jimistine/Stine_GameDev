@@ -8,14 +8,13 @@ public class LeaveRooms : MonoBehaviour
 {
 	public GameObject question;
 	public bool PortalVisible;
+	public float Delay;
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if (GM.Me.ExitOpen && Input.GetKeyUp(KeyCode.Return))
+		if (GM.Me.ExitOpen && Input.GetKeyDown(KeyCode.Return))
 		{
-			PortalVisible = true;
-			Debug.Log("Leaving Rooms");
-			SceneManager.LoadScene("TempEndScene");
+			StartCoroutine(ExecuteAfterTime(2));
 		}
 		
 	}
@@ -35,6 +34,14 @@ public class LeaveRooms : MonoBehaviour
 		}
 	}
 
+	IEnumerator ExecuteAfterTime(float Delay)
+	{
+		yield return new WaitForSeconds(Delay);
+		// Code to execute after the delay
+		PortalVisible = true;
+		Debug.Log("Leaving Rooms");
+		SceneManager.LoadScene("TempEndScene");
+	}
 	
 }
 
