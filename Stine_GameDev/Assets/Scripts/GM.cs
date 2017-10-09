@@ -12,6 +12,25 @@ public class GM : MonoBehaviour
 	
 	public int Count = 0;
 	public float uTime;
+	public Vector2 Transfer_1_2;
+	public Vector2 Transfer_2_3;
+	public Vector2 Transfer_3_2;
+	public Vector2 Transfer_2_1;
+	public Transform playerTrans;
+	public Rigidbody2D playerRigidbody2D;
+
+	public bool exitLocked = true;
+	public bool ExitOpen;
+	public bool Inspecting;
+	
+	public AudioClip openDoor;
+	public AudioClip closeDoor;
+	public AudioClip line0;
+	public AudioClip line1;
+	public AudioClip line2;
+	public AudioClip line3;
+	public AudioSource SFX;
+	public AudioSource Dialogue;
 	
 	public GameObject doorClosed;
 	public GameObject doorOpen;
@@ -35,23 +54,6 @@ public class GM : MonoBehaviour
 	public GameObject Book2Page;
 	public GameObject Book2Text;
 	public GameObject painting1_Ring;
-
-
-	public AudioClip openDoor;
-	public AudioClip closeDoor;
-	public AudioClip line0;
-	public AudioClip line1;
-	public AudioClip line2;
-	public AudioClip line3;
-	public AudioSource SFX;
-	public AudioSource Dialogue;
-
-	public Transform playerTrans;
-	public Rigidbody2D playerRigidbody2D;
-
-	public bool exitLocked = true;
-	public bool ExitOpen;
-	public bool BookOpen;
 
 
 	void Awake()
@@ -182,25 +184,25 @@ public class GM : MonoBehaviour
 	//Moving player
 	public void player1To2()
 	{
-		playerTrans.Translate(new Vector2(6, 0));
+		playerTrans.Translate(Transfer_1_2);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
 	public void player2To1()
 	{
-		playerTrans.Translate(new Vector2(-6.5f, 0));
+		playerTrans.Translate(Transfer_2_1);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
 	public void player2To3()
 	{
-		playerTrans.Translate(new Vector2(6.5f, 0));
+		playerTrans.Translate(Transfer_2_3);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
 	public void player3To2()
 	{
-		playerTrans.Translate(new Vector2(-7, 0));
+		playerTrans.Translate(Transfer_3_2);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
@@ -243,7 +245,7 @@ public class GM : MonoBehaviour
 	{ 
 		Book1Page.SetActive(true);
 		Book1Text.SetActive(true);
-		BookOpen = true;
+		Inspecting = true;
 	}
 
 	public void SetBook2Active() 
@@ -258,7 +260,7 @@ public class GM : MonoBehaviour
 	{ 
 		Book2Page.SetActive(true);
 		Book2Text.SetActive(true);
-		BookOpen = true;
+		Inspecting = true;
 	}
 	
 	public void CloseBook()
@@ -267,7 +269,7 @@ public class GM : MonoBehaviour
 		Book1Text.SetActive(false);
 		Book2Page.SetActive(false);
 		Book2Text.SetActive(false);
-		BookOpen = false;
+		Inspecting = false;
 	}
 
 	public void SetPainting1Active()
@@ -281,10 +283,16 @@ public class GM : MonoBehaviour
 
 	public void EnlargePainting1()
 	{
-		Cam1.SetActive(false);
 		Cam2.SetActive(false);
-		Cam3.SetActive(false);
 		Paint1Cam.SetActive(true);
+		Inspecting = true;
+	}
+
+	public void ExitPainting1()
+	{
+		Cam2.SetActive(true);
+		Paint1Cam.SetActive(false);
+		Inspecting = false;
 	}
 	//CALL THIS FUNCTION ON INSPECT SCRIPT
 }

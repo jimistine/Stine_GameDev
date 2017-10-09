@@ -9,10 +9,11 @@ public class Inspect : MonoBehaviour {
 	{
 //		
 		//Close Inspect
-		if (GM.Me.BookOpen && Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
-			GM.Me.BookOpen && Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+		if (GM.Me.Inspecting && Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
+			GM.Me.Inspecting && Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
 		{
 			GM.Me.CloseBook();
+			GM.Me.ExitPainting1();
 		}	
 	}
 	private void OnTriggerEnter2D(Collider2D other)
