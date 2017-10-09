@@ -10,12 +10,6 @@ public class CameraBehavior : MonoBehaviour {
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
- 
-	void Start() {
-//		Cam1.SetActive(true);
-//		Cam2.SetActive(false);
-//		Cam3.SetActive(false);
-	}
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{

@@ -22,9 +22,12 @@ public class GM : MonoBehaviour
 	public bool exitLocked = true;
 	public bool ExitOpen;
 	public bool Inspecting;
+	public bool Enlarged;
+	public bool Reading;
 	
 	public AudioClip openDoor;
 	public AudioClip closeDoor;
+	public AudioClip lockedDoor;
 	public AudioClip line0;
 	public AudioClip line1;
 	public AudioClip line2;
@@ -140,6 +143,12 @@ public class GM : MonoBehaviour
 		SFX.Play();
 	}
 
+	public void TryLockedExit()
+	{
+		SFX.clip = lockedDoor;
+		SFX.Play();
+	}
+
 	public void openExit()
 	{
 		exitDoor.SetActive(false);
@@ -246,6 +255,7 @@ public class GM : MonoBehaviour
 		Book1Page.SetActive(true);
 		Book1Text.SetActive(true);
 		Inspecting = true;
+		Reading = true;
 	}
 
 	public void SetBook2Active() 
@@ -261,15 +271,7 @@ public class GM : MonoBehaviour
 		Book2Page.SetActive(true);
 		Book2Text.SetActive(true);
 		Inspecting = true;
-	}
-	
-	public void CloseBook()
-	{
-		Book1Page.SetActive(false);
-		Book1Text.SetActive(false);
-		Book2Page.SetActive(false);
-		Book2Text.SetActive(false);
-		Inspecting = false;
+		Reading = true;
 	}
 
 	public void SetPainting1Active()
@@ -286,13 +288,27 @@ public class GM : MonoBehaviour
 		Cam2.SetActive(false);
 		Paint1Cam.SetActive(true);
 		Inspecting = true;
+		Enlarged = true;
 	}
 
-	public void ExitPainting1()
+	public void ExitInspect()
 	{
-		Cam2.SetActive(true);
-		Paint1Cam.SetActive(false);
-		Inspecting = false;
+		if (Enlarged)
+		{
+			Cam2.SetActive(true);
+			Paint1Cam.SetActive(false);
+			Inspecting = false;
+			Enlarged = false;
+		}
+		if (Reading)
+		{
+			Book1Page.SetActive(false);
+			Book1Text.SetActive(false);
+			Book2Page.SetActive(false);
+			Book2Text.SetActive(false);
+			Inspecting = false;
+			Reading = false;
+		}
 	}
 	//CALL THIS FUNCTION ON INSPECT SCRIPT
 }

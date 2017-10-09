@@ -9,13 +9,16 @@ public class Inspect : MonoBehaviour {
 	{
 //		
 		//Close Inspect
-		if (GM.Me.Inspecting && Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
-			GM.Me.Inspecting && Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+		if (GM.Me.Inspecting)
 		{
-			GM.Me.CloseBook();
-			GM.Me.ExitPainting1();
-		}	
+			if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
+			    Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+			{
+				GM.Me.ExitInspect();
+			}
+		}
 	}
+
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (gameObject.name == "book1")

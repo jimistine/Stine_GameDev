@@ -6,6 +6,10 @@ public class ExitDoorBehavior : MonoBehaviour {
 
 	private void OnTriggerStay2D(Collider2D other)
 	{
+		if (gameObject.name == "door_closed5" && Input.GetKeyDown(KeyCode.Return) && GM.Me.exitLocked == true)
+		{
+			GM.Me.TryLockedExit();
+		}
 		if (gameObject.name == "door_closed5" && Input.GetKeyDown(KeyCode.Return) && GM.Me.exitLocked == false)
 		{
 			GM.Me.openExit();
