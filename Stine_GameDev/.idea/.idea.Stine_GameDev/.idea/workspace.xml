@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GM.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GM.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="148" column="19" lean-forward="false" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+            <state relative-caret-position="-514">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <marker date="1507578007000" expanded="false" signature="6:186" ph="..." />
                 <marker date="1507578007000" expanded="true" signature="259:5699" ph="{...}" />
@@ -118,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExitDoorBehavior.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExitDoorBehavior.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ExitDoorBehavior.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -468,12 +468,12 @@
       <workItem from="1506951104407" duration="2000000" />
       <workItem from="1507124130083" duration="7189000" />
       <workItem from="1507335813719" duration="3577000" />
-      <workItem from="1507569324690" duration="3952000" />
+      <workItem from="1507569324690" duration="4815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67640000" />
+    <option name="totallyTimeSpent" value="68503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -996,10 +996,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ExitDoorBehavior.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <marker date="1507578007000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1507578007000" expanded="true" signature="126:592" ph="{...}" />
+            <marker date="1507578007000" expanded="true" signature="176:590" ph="{...}" />
+            <marker date="1507578007000" expanded="true" signature="284:318" ph="{...}" />
+            <marker date="1507578007000" expanded="true" signature="424:453" ph="{...}" />
+            <marker date="1507578007000" expanded="true" signature="557:587" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="148" column="19" lean-forward="false" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+        <state relative-caret-position="-514">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <marker date="1507578007000" expanded="false" signature="6:186" ph="..." />
             <marker date="1507578007000" expanded="true" signature="259:5699" ph="{...}" />
@@ -1041,21 +1056,6 @@
             <marker date="1507578007000" expanded="true" signature="5337:5657" ph="{...}" />
             <marker date="1507578007000" expanded="true" signature="5356:5464" ph="{...}" />
             <marker date="1507578007000" expanded="true" signature="5479:5654" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ExitDoorBehavior.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <marker date="1507578007000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1507578007000" expanded="true" signature="126:592" ph="{...}" />
-            <marker date="1507578007000" expanded="true" signature="176:590" ph="{...}" />
-            <marker date="1507578007000" expanded="true" signature="284:318" ph="{...}" />
-            <marker date="1507578007000" expanded="true" signature="424:453" ph="{...}" />
-            <marker date="1507578007000" expanded="true" signature="557:587" ph="{...}" />
           </folding>
         </state>
       </provider>
