@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 609, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 23864
+  controlID: 30546
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 332, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 23865
+  controlID: 30547
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 969
     height: 398
-  m_MinSize: {x: 304, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 306, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 23831
+  controlID: 30488
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,10 +200,10 @@ MonoBehaviour:
     width: 173
     height: 377
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1aa30000
-    m_LastClickedID: 41754
-    m_ExpandedIDs: 34d9f7ffd62df9ff368bfaff408bfaffa497fafff29afaff1afcffff00000000ba260000c026000040270000442700005c270000a0270000f2a10000d4a3000018a400001ca400007aa40000
+    scrollPos: {x: 0, y: 249.51953}
+    m_SelectedIDs: 90a30000
+    m_LastClickedID: 41872
+    m_ExpandedIDs: 7a4bf5ff34d9f7ffd62df9ff368bfaffa497fafff29afaff1afcffff00000000ba260000c026000040270000442700005c270000a0270000f2a10000bca30000d4a3000014a400001ca400007aa4000082a4000000a500003ca5000040a50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -278,14 +278,14 @@ MonoBehaviour:
     width: 790
     height: 377
   m_SceneLighting: 1
-  lastFramingTime: 7738.155954003334
+  lastFramingTime: 9823.564507007599
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.7173748, y: -2.870214, z: -5.773906}
+    m_Target: {x: 1.0622338, y: -1.1675483, z: -2.321649}
     speed: 2
-    m_Value: {x: 1.7173748, y: -2.870214, z: -5.773906}
+    m_Value: {x: 1.0622338, y: -1.1675483, z: -2.321649}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -312,9 +312,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.135083
+    m_Target: 11.744144
     speed: 2
-    m_Value: 9.135083
+    m_Value: 11.744144
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_MinSize: {x: 332, y: 271}
   m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
-  controlID: 23866
+  controlID: 30548
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,18 +413,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/SFX
+    - Assets/Mats
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/SFX
+  - Assets/Mats
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Volumes/Guaro/School/GameDev/Stine_GameDev/Stine_GameDev
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 10}
-    m_SelectedIDs: 1e260000
-    m_LastClickedID: 9758
+    m_SelectedIDs: 16260000
+    m_LastClickedID: 9750
     m_ExpandedIDs: 0000000012260000d09e0000fa9e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -478,10 +478,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1aa30000
-    m_LastClickedInstanceID: 41754
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 10240000ba230000c0230000282600006c24000000000000ac2600004627000080240000
+    m_SelectedInstanceIDs: 90a30000
+    m_LastClickedInstanceID: 41872
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 10240000ba230000c0230000282600006c240000ac260000462700008024000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -639,7 +639,7 @@ MonoBehaviour:
     y: 96
     width: 275
     height: 680
-  m_ScrollPosition: {x: 0, y: 48.789062}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -285
