@@ -17,12 +17,15 @@ public class CameraBehavior : MonoBehaviour {
 		{
 			GM.Me.activateCam2();
 			GM.Me.player1To2();
+			GM.Me.openDoor2();
 		}
 		
 		if (gameObject.name == "cameraThresh2" && other.gameObject.tag == "player")
 		{
 			GM.Me.activateCam1();
 			GM.Me.player2To1();
+			GM.Me.openDoor1();
+
 			if (GM.Me.Count == 1)
 			{
 				GM.Me.play2();
@@ -32,11 +35,13 @@ public class CameraBehavior : MonoBehaviour {
 		{
 			GM.Me.activateCam3();
 			GM.Me.player2To3();
+			GM.Me.openDoor4();
 		}
 		if (gameObject.name == "cameraThresh4" && other.gameObject.tag == "player")
 		{
 			GM.Me.activateCam2();
 			GM.Me.player3To2();
+			GM.Me.openDoor3();
 		}
 	}
 	

@@ -8,18 +8,22 @@ public class DoorBehavior : MonoBehaviour
 
 	public GameObject doorClosed;
 	public GameObject doorOpen;
-	public bool CanOpen;
+//	public bool CanOpen;
 //	public Collider2D RoomSide;
 //	public Collider2D HallSide;
 
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-		CanOpen = true;
-	}
+//	private void OnTriggerEnter2D(Collider2D other)
+//	{
+//		CanOpen = true;
+//	}
+//	private void OnTriggerExit2D(Collider2D other)
+//	{
+//		CanOpen = false;
+//	}
 
 	public void OnTriggerStay2D(Collider2D other)
 	{
-		if (gameObject.name == "door_closed" && CanOpen && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_closed" && Input.GetKeyDown(KeyCode.Return))
 		{
 			GM.Me.openDoor1();
 		}
@@ -53,8 +57,5 @@ public class DoorBehavior : MonoBehaviour
 		}
 	}
 
-	private void OnTriggerExit2D(Collider2D other)
-	{
-		CanOpen = false;
-	}
+	
 }

@@ -83,8 +83,8 @@ public class GM : MonoBehaviour
 	{
 		doorOpen.SetActive(true);
 		doorClosed.SetActive(false);
-		SFX.clip = openDoor;
-		SFX.Play();
+//		SFX.clip = openDoor;
+		SFX.PlayOneShot(openDoor);
 	}
 
 	public void closeDoor1()
