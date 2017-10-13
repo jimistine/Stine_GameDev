@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742730}
   - component: {fileID: 742731}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 34483718}
   - component: {fileID: 34483719}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 69373442}
   - component: {fileID: 69373441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Room1Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 176094995}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Books
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 241078229}
   - component: {fileID: 241078231}
   - component: {fileID: 241078230}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: door_open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2093,7 +2093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391226860}
   - component: {fileID: 391226861}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2167,7 +2167,7 @@ GameObject:
   - component: {fileID: 462443927}
   - component: {fileID: 462443926}
   - component: {fileID: 462443925}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: door_open4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2367,7 +2367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468816312}
   - component: {fileID: 468816313}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2931,7 +2931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533445037}
   - component: {fileID: 533445036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: book1_Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3603,7 +3603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822615169}
   - component: {fileID: 822615170}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4197,7 +4197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1087075675}
   - component: {fileID: 1087075676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4271,7 +4271,7 @@ GameObject:
   - component: {fileID: 1099416076}
   - component: {fileID: 1099416075}
   - component: {fileID: 1099416074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4401,7 +4401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107655876}
   - component: {fileID: 1107655877}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4614,7 +4614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1213255458}
   - component: {fileID: 1213255459}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5093,7 +5093,7 @@ GameObject:
   - component: {fileID: 1277777801}
   - component: {fileID: 1277777800}
   - component: {fileID: 1277777799}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door_closed5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5292,7 +5292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284896412}
   - component: {fileID: 1284896413}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5507,7 +5507,7 @@ GameObject:
   - component: {fileID: 1320037862}
   - component: {fileID: 1320037861}
   - component: {fileID: 1320037860}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: door_open2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5670,7 +5670,7 @@ GameObject:
   - component: {fileID: 1375113105}
   - component: {fileID: 1375113107}
   - component: {fileID: 1375113108}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: book1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6211,7 +6211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537602266}
   - component: {fileID: 1537602267}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: painting1_Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6313,7 +6313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562959340}
   - component: {fileID: 1562959339}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: book2_Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6387,7 +6387,7 @@ GameObject:
   - component: {fileID: 1570394063}
   - component: {fileID: 1570394062}
   - component: {fileID: 1570394061}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: door_open3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6931,7 +6931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1702337370}
   - component: {fileID: 1702337371}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7073,7 +7073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734352838}
   - component: {fileID: 1734352839}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7546,7 +7546,7 @@ GameObject:
   - component: {fileID: 1847887421}
   - component: {fileID: 1847887420}
   - component: {fileID: 1847887419}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door_open5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7861,7 +7861,7 @@ GameObject:
   - component: {fileID: 1886906465}
   - component: {fileID: 1886906466}
   - component: {fileID: 1886906467}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: painting1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8205,7 +8205,7 @@ GameObject:
   - component: {fileID: 1931042317}
   - component: {fileID: 1931042316}
   - component: {fileID: 1931042315}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: wall_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8600,7 +8600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089361399}
   - component: {fileID: 2089361398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Room2Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8744,7 +8744,7 @@ GameObject:
   - component: {fileID: 2121325746}
   - component: {fileID: 2121325745}
   - component: {fileID: 2121325744}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: book2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

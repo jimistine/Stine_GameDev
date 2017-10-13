@@ -51,15 +51,18 @@ public class Inspect : MonoBehaviour {
 	}
 	private void OnTriggerStay2D(Collider2D other)
 	{
-		if (gameObject.name == "book1" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "book1" && Input.GetKeyDown(KeyCode.Return) || 
+		    gameObject.name == "book1" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.OpenBook1();
 		}
-		if (gameObject.name == "book2" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "book2" && Input.GetKeyDown(KeyCode.Return) ||
+		    gameObject.name == "book2" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.OpenBook2();
 		}
-		if (gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.Return) || 
+		    gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.EnlargePainting1();
 		}

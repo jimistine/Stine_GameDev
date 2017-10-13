@@ -23,35 +23,43 @@ public class DoorBehavior : MonoBehaviour
 
 	public void OnTriggerStay2D(Collider2D other)
 	{
-		if (gameObject.name == "door_closed" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_closed" && Input.GetKeyDown(KeyCode.Return)||
+		    gameObject.name == "door_closed" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.openDoor1();
 		}
-		if (gameObject.name == "door_open" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_open" && Input.GetKeyDown(KeyCode.Return) ||
+			gameObject.name == "door_open" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.closeDoor1();
 		}
-		if (gameObject.name == "door_closed2" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_closed2" && Input.GetKeyDown(KeyCode.Return) ||
+		    gameObject.name == "door_closed2" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.openDoor2();
 		}
-		if (gameObject.name == "door_open2" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_open2" && Input.GetKeyDown(KeyCode.Return) ||
+		    gameObject.name == "door_open2" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.closeDoor2();
 		}
-		if (gameObject.name == "door_closed3" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_closed3" && Input.GetKeyDown(KeyCode.Return)||
+		    gameObject.name == "door_closed3" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.openDoor3();
 		}
-		if (gameObject.name == "door_open3" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_open3" && Input.GetKeyDown(KeyCode.Return) ||
+		    gameObject.name == "door_open3" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.closeDoor3();
 		}
-		if (gameObject.name == "door_closed4" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_closed4" && Input.GetKeyDown(KeyCode.Return) ||
+		    gameObject.name == "door_closed4" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.openDoor4();
 		}
-		if (gameObject.name == "door_open4" && Input.GetKeyDown(KeyCode.Return))
+		if (gameObject.name == "door_open4" && Input.GetKeyDown(KeyCode.Return) ||
+		    gameObject.name == "door_open4" && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.closeDoor4();
 		}
