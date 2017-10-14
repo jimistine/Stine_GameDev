@@ -17,6 +17,8 @@ public class GM : MonoBehaviour
 	public Vector2 Transfer_2_1;
 	public Transform playerTrans;
 	public Rigidbody2D playerRigidbody2D;
+	public Transform MorganTrans;
+	public Rigidbody2D MorganRigidbody2D;
 
 	public bool exitLocked = true;
 	public bool ExitOpen;

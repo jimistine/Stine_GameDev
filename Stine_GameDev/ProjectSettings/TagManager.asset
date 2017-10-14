@@ -43,3 +43,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3470859531
+    locked: 0
+  - name: Objs_1
+    uniqueID: 1737307379
+    locked: 0
+  - name: Objs_2
+    uniqueID: 2768659845
+    locked: 0
+  - name: Objs_3
+    uniqueID: 2704101843
+    locked: 0
+  - name: Player
+    uniqueID: 3835271313
+    locked: 0
+  - name: InFront_1
+    uniqueID: 1428322897
+    locked: 0
+  - name: InFront_2
+    uniqueID: 1677985389
+    locked: 0
+  - name: InFront_3
+    uniqueID: 674245113
+    locked: 0
