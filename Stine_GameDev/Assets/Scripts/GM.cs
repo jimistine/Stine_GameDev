@@ -195,24 +195,30 @@ public class GM : MonoBehaviour
 	public void player1To2()
 	{
 		playerTrans.Translate(Transfer_1_2);
+		MorganTrans.Translate(Transfer_1_2);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
 	public void player2To1()
 	{
 		playerTrans.Translate(Transfer_2_1);
+		MorganTrans.Translate(Transfer_2_1);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
 	public void player2To3()
 	{
 		playerTrans.Translate(Transfer_2_3);
+		MorganTrans.Translate(Transfer_2_3);
+
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 
 	public void player3To2()
 	{
+		Debug.Log("3 TO 2");
 		playerTrans.Translate(Transfer_3_2);
+		MorganTrans.Translate(Transfer_3_2);
 		//playerRigidbody2D.velocity = new Vector2(0,0);
 	}
 

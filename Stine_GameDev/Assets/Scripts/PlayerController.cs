@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 
 	public Rigidbody2D PlayerRigidbody2D;
 	public float MoveSpeed;
-	public float MoveV;
 	Vector2 move = new Vector2(1, 0);
 	
 	Animator ani_this;
@@ -23,25 +22,35 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
 		{
-			ani_this.SetBool ("ifWalk", true);
-			PlayerRigidbody2D.velocity = -MoveV * move;
+			ani_this.SetBool ("ifWalking", true);
+			PlayerRigidbody2D.velocity = -MoveSpeed * move;
+			GM.Me.MorganTrans.eulerAngles = new Vector2(0,180);
 		}
 		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) 
 		{
-			ani_this.SetBool ("ifWalk", false);
+			ani_this.SetBool ("ifWalking", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 		}		
-		if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
 		{
-			ani_this.SetBool ("ifWalk", true);
-			PlayerRigidbody2D.velocity = MoveV * move;
+			ani_this.SetBool ("ifWalking", true);
+			PlayerRigidbody2D.velocity = MoveSpeed * move;
+			GM.Me.MorganTrans.eulerAngles = new Vector2(0,0);
 		}
 		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) 
 		{
-			ani_this.SetBool ("ifWalk", false);
+			ani_this.SetBool ("ifWalking", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
+		}
+		if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			ani_this.SetBool ("ifInteract", true);
+		}
+		if (Input.GetKeyUp (KeyCode.Return) || Input.GetKeyUp(KeyCode.LeftShift)) 
+		{
+			ani_this.SetBool ("ifInteract", false);
 		}
 		
 //		if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.D) ||
