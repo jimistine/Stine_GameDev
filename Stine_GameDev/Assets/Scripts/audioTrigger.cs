@@ -14,11 +14,13 @@ public class AudioTrigger : MonoBehaviour
 	{
 		DialoguePing.SetActive(true);
 		
-		if (GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
+		if (GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.Return) || 
+		    GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.play1();
 		}
-		if (GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
+		if (GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.Return) ||
+		    GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			GM.Me.play3();
 			GM.Me.SetKeyActive();

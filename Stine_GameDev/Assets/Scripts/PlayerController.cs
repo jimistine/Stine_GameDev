@@ -9,35 +9,44 @@ public class PlayerController : MonoBehaviour
 
 	public Rigidbody2D PlayerRigidbody2D;
 	public float MoveSpeed;
+	public bool FacingLeft;
 	Vector2 move = new Vector2(1, 0);
 	
 	Animator ani_this;
-	Rigidbody2D rig_this;
 
 	void Start () 
 	{
 		ani_this = gameObject.GetComponent<Animator> ();
-		rig_this = gameObject.GetComponent<Rigidbody2D> (); 
 	}
 
 	void Update()
 	{
-		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.A) || 
+		    ani_this.GetBool("ifInteract") == false && Input.GetKey(KeyCode.LeftArrow))
 		{
 			ani_this.SetBool ("ifWalking", true);
 			PlayerRigidbody2D.velocity = -MoveSpeed * move;
-			GM.Me.MorganTrans.eulerAngles = new Vector2(0,180);
+			if (FacingLeft == false)
+			{
+				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+				FacingLeft = true;
+			}
 		}
 		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) 
 		{
 			ani_this.SetBool ("ifWalking", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 		}		
-		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || 
+		    ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			ani_this.SetBool ("ifWalking", true);
 			PlayerRigidbody2D.velocity = MoveSpeed * move;
-			GM.Me.MorganTrans.eulerAngles = new Vector2(0,0);
+			if (FacingLeft)
+			{
+				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+				FacingLeft = false;
+			}
 		}
 		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) 
 		{
@@ -52,15 +61,6 @@ public class PlayerController : MonoBehaviour
 		{
 			ani_this.SetBool ("ifInteract", false);
 		}
-		
-//		if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.D) ||
-//		    Input.GetKeyUp(KeyCode.RightArrow))
-//		{
-//			PlayerRigidbody2D.velocity = new Vector2(0, 0);
-//		}
-		
-		
-		
 	}
 }
 
