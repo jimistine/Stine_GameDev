@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 1
     Attributes = 177
   Total Field Removals = 796
-  Total Method Removals = 10622
+  Total Method Removals = 10623
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -9434,7 +9434,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 48
   Total Field Removals = 54
-  Total Method Removals = 4349
+  Total Method Removals = 4350
   References Removed = 0
 ---------------------------------------------------
     AOT.MonoPInvokeCallbackAttribute
@@ -14634,6 +14634,7 @@ Summary:
         RotateAround(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         RotateAroundInternal(UnityEngine.Vector3,System.Single)
         RotateAroundLocal(UnityEngine.Vector3,System.Single)
+        set_eulerAngles(UnityEngine.Vector3)
         set_hierarchyCapacity(System.Int32)
         set_localEulerAngles(UnityEngine.Vector3)
         set_right(UnityEngine.Vector3)
