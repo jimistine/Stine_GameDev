@@ -146,16 +146,14 @@ public class GM : MonoBehaviour
 
 	public void TryLockedExit()
 	{
-		SFX.clip = lockedDoor;
-		SFX.Play();
+		SFX.PlayOneShot(lockedDoor);
 	}
 
 	public void openExit()
 	{
 		exitDoor.SetActive(false);
 		ExitOpen = true;
-		SFX.clip = openDoor;
-		SFX.Play();
+		SFX.PlayOneShot(openDoor);
 	}
 
 	public void closeExit()

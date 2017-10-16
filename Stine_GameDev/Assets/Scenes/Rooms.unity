@@ -601,8 +601,8 @@ MonoBehaviour:
   uTime: 0
   Transfer_1_2: {x: 6, y: 0}
   Transfer_2_3: {x: 6.5, y: 0}
-  Transfer_3_2: {x: 7, y: 0}
-  Transfer_2_1: {x: 6.5, y: 0}
+  Transfer_3_2: {x: -7, y: 0}
+  Transfer_2_1: {x: -6.5, y: 0}
   playerTrans: {fileID: 1926704470}
   playerRigidbody2D: {fileID: 1926704467}
   MorganTrans: {fileID: 1160552992}
@@ -664,7 +664,8 @@ AudioSource:
   m_GameObject: {fileID: 124161739}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2e99073dd1db648f6ab9adbf4f19e50b,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -744,7 +745,8 @@ AudioSource:
   m_GameObject: {fileID: 124161739}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1ab3707a24d5b4d5db4510c6b03257a8,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4604,6 +4606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerRigidbody2D: {fileID: 1160552995}
   MoveSpeed: 2.5
+  FacingLeft: 0
 --- !u!50 &1160552995
 Rigidbody2D:
   serializedVersion: 4
@@ -4849,9 +4852,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1737307379
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6e84ae950c72142d1b83996086f7d803, type: 3}
   m_Color: {r: 0.653, g: 0.6100692, b: 0.28808823, a: 1}
   m_FlipX: 0
@@ -5527,8 +5530,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1590865453
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d2a317a9a785d4bf499b8df8f302dec1, type: 3}
   m_Color: {r: 0.31617647, g: 0.31617647, b: 0.31617647, a: 1}
@@ -6364,7 +6367,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d2a317a9a785d4bf499b8df8f302dec1, type: 3}
   m_Color: {r: 1, g: 0.16600001, b: 0.16600001, a: 1}
   m_FlipX: 0
@@ -6446,8 +6449,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1737307379
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6e84ae950c72142d1b83996086f7d803, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8099,8 +8102,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1526307451
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6e84ae950c72142d1b83996086f7d803, type: 3}
   m_Color: {r: 0.47794116, g: 0.3237817, b: 0.17843136, a: 1}
@@ -8282,6 +8285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerRigidbody2D: {fileID: 1926704467}
   MoveSpeed: 40
+  FacingLeft: 0
 --- !u!114 &1926704472
 MonoBehaviour:
   m_ObjectHideFlags: 0
