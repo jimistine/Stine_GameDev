@@ -24,29 +24,31 @@ public class PlayerController : MonoBehaviour
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.A) || 
 		    ani_this.GetBool("ifInteract") == false && Input.GetKey(KeyCode.LeftArrow))
 		{
-			ani_this.SetBool ("ifWalking", true);
+			ani_this.SetBool ("ifWalkingLeft", true);
+			ani_this.SetBool ("ifLeft", true);
 			PlayerRigidbody2D.velocity = -MoveSpeed * move;
-			if (FacingLeft == false)
-			{
-				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-				FacingLeft = true;
-			}
+//			if (FacingLeft == false)
+//			{
+//				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+//				FacingLeft = true;
+//			}
 		}
 		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) 
 		{
-			ani_this.SetBool ("ifWalking", false);
+			ani_this.SetBool ("ifWalkingLeft", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 		}		
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || 
 		    ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			ani_this.SetBool ("ifWalking", true);
+			ani_this.SetBool ("ifLeft", false);
 			PlayerRigidbody2D.velocity = MoveSpeed * move;
-			if (FacingLeft)
-			{
-				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-				FacingLeft = false;
-			}
+//			if (FacingLeft)
+//			{
+//				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+//				FacingLeft = false;
+//			}
 		}
 		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) 
 		{
