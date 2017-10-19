@@ -6,7 +6,8 @@ AudioMixerController:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Dialogue
-  m_OutputGroup: {fileID: 0}
+  m_OutputGroup: {fileID: 243268828712459964, guid: f3022c1a453d74bb68f4d123f8523670,
+    type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
@@ -64,7 +65,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 5b3e690904183498d9075e068a37d186
   m_FloatValues:
-    0d0d2c4fe4c624042a014bb699363a8c: -3.1841109
+    0d0d2c4fe4c624042a014bb699363a8c: -0.0024418721
   m_TransitionOverrides: {}
 --- !u!243 &243173244274976382
 AudioMixerGroupController:

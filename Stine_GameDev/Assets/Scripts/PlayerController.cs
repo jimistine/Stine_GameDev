@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
 
 	public Rigidbody2D PlayerRigidbody2D;
 	public float MoveSpeed;
+	public float StepDelay;
 	public bool FacingLeft;
+	
 	Vector2 move = new Vector2(1, 0);
 	
 	Animator ani_this;
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
 		{
 			ani_this.SetBool ("ifWalkingLeft", true);
 			ani_this.SetBool ("ifLeft", true);
+			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = -MoveSpeed * move;
 //			if (FacingLeft == false)
 //			{
@@ -37,12 +40,15 @@ public class PlayerController : MonoBehaviour
 		{
 			ani_this.SetBool ("ifWalkingLeft", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
+			GM.Me.Footsteps.Stop();
+
 		}		
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || 
 		    ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			ani_this.SetBool ("ifWalking", true);
 			ani_this.SetBool ("ifLeft", false);
+			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = MoveSpeed * move;
 //			if (FacingLeft)
 //			{
@@ -54,6 +60,7 @@ public class PlayerController : MonoBehaviour
 		{
 			ani_this.SetBool ("ifWalking", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
+			GM.Me.Footsteps.Stop();
 		}
 		if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
 		{

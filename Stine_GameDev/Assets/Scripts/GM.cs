@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(AudioSource))]
@@ -25,7 +26,12 @@ public class GM : MonoBehaviour
 	public bool Inspecting;
 	public bool Enlarged;
 	public bool Reading;
-	
+
+	public float Audio_1_2;
+	public float Audio_2_3;
+	public float Audio_3_2;
+	public float Audio_2_1;
+
 	public AudioClip openDoor;
 	public AudioClip closeDoor;
 	public AudioClip lockedDoor;
@@ -35,6 +41,13 @@ public class GM : MonoBehaviour
 	public AudioClip line3;
 	public AudioSource SFX;
 	public AudioSource Dialogue;
+	public AudioSource LockedDoor;
+	public AudioSource Footsteps;
+	public AudioSource OpenBook;
+	public AudioSource CloseBook;
+	public AudioMixerSnapshot Room1;
+	public AudioMixerSnapshot Room2;
+	public AudioMixerSnapshot Room3;
 	
 	public GameObject doorClosed;
 	public GameObject doorOpen;
@@ -69,9 +82,7 @@ public class GM : MonoBehaviour
 
 	public void Update()
 	{
-//		Debug.Log(Count);
-//		uTime = Time.time;
-		
+//		Debug.Log(Count);		
 		// Restart
 		if (Input.GetKeyDown(KeyCode.R))
 		{
@@ -79,12 +90,11 @@ public class GM : MonoBehaviour
 		}
 	}
 
-	//Doors
+//Doors
 	public void openDoor1()
 	{
 		doorOpen.SetActive(true);
 		doorClosed.SetActive(false);
-//		SFX.clip = openDoor;
 		SFX.PlayOneShot(openDoor);
 	}
 
@@ -146,7 +156,7 @@ public class GM : MonoBehaviour
 
 	public void TryLockedExit()
 	{
-		SFX.PlayOneShot(lockedDoor);
+		LockedDoor.PlayOneShot(lockedDoor);
 	}
 
 	public void openExit()
@@ -164,7 +174,7 @@ public class GM : MonoBehaviour
 		SFX.Play();
 	}
 
-	//Cameras
+//Cameras
 	public void activateCam1()
 	{
 		Cam1.SetActive(true);
@@ -189,27 +199,27 @@ public class GM : MonoBehaviour
 		Paint1Cam.SetActive(false);
 	}
 
-	//Moving player
+//Room Transitions
 	public void player1To2()
 	{
 		playerTrans.Translate(Transfer_1_2);
 		MorganTrans.Translate(Transfer_1_2);
-		//playerRigidbody2D.velocity = new Vector2(0,0);
+		Room2.TransitionTo(Audio_1_2);
 	}
 
 	public void player2To1()
 	{
 		playerTrans.Translate(Transfer_2_1);
 		MorganTrans.Translate(Transfer_2_1);
-		//playerRigidbody2D.velocity = new Vector2(0,0);
+		Room1.TransitionTo(Audio_2_1);
+
 	}
 
 	public void player2To3()
 	{
 		playerTrans.Translate(Transfer_2_3);
 		MorganTrans.Translate(Transfer_2_3);
-
-		//playerRigidbody2D.velocity = new Vector2(0,0);
+		Room3.TransitionTo(Audio_3_2);
 	}
 
 	public void player3To2()
@@ -217,10 +227,10 @@ public class GM : MonoBehaviour
 		Debug.Log("3 TO 2");
 		playerTrans.Translate(Transfer_3_2);
 		MorganTrans.Translate(Transfer_3_2);
-		//playerRigidbody2D.velocity = new Vector2(0,0);
+		Room2.TransitionTo(Audio_3_2);
 	}
 
-	//Dialogue
+//Dialogue
 	public void play1()
 	{
 		Count = 1;
@@ -257,10 +267,12 @@ public class GM : MonoBehaviour
 	}
 	public void OpenBook1() 
 	{ 
+		
 		Book1Page.SetActive(true);
 		Book1Text.SetActive(true);
 		Inspecting = true;
 		Reading = true;
+		OpenBook.Play();
 	}
 
 	public void SetBook2Active() 
@@ -277,6 +289,7 @@ public class GM : MonoBehaviour
 		Book2Text.SetActive(true);
 		Inspecting = true;
 		Reading = true;
+		OpenBook.Play();
 	}
 
 	public void SetPainting1Active()
@@ -313,6 +326,7 @@ public class GM : MonoBehaviour
 			Book2Text.SetActive(false);
 			Inspecting = false;
 			Reading = false;
+			CloseBook.Play();
 		}
 	}
 	//CALL THIS FUNCTION ON INSPECT SCRIPT
