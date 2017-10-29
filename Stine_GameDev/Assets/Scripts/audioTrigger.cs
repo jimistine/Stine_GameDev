@@ -17,12 +17,12 @@ public class AudioTrigger : MonoBehaviour
 		if (GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.Return) || 
 		    GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			GM.Me.play1();
+			GM.Me.play2();
 		}
 		if (GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.Return) ||
 		    GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			GM.Me.play3();
+			GM.Me.play4();
 			GM.Me.SetKeyActive();
 		}
 	}

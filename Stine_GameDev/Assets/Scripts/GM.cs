@@ -35,12 +35,13 @@ public class GM : MonoBehaviour
 	public AudioClip openDoor;
 	public AudioClip closeDoor;
 	public AudioClip lockedDoor;
-	public AudioClip line0;
 	public AudioClip line1;
 	public AudioClip line2;
 	public AudioClip line3;
 	public AudioSource SFX;
 	public AudioSource Dialogue;
+	public AudioSource Line_1;
+	public AudioSource Line_2;
 	public AudioSource LockedDoor;
 	public AudioSource Footsteps;
 	public AudioSource OpenBook;
@@ -76,8 +77,7 @@ public class GM : MonoBehaviour
 	void Awake()
 	{
 		Me = this;
-		Dialogue.clip = line0;
-		Dialogue.PlayDelayed(2);
+		Line_1.PlayDelayed(2);
 	}
 
 	public void Update()
@@ -231,21 +231,25 @@ public class GM : MonoBehaviour
 	}
 
 //Dialogue
-	public void play1()
+//	void AudioFinished()
+//	{
+//		Debug.Log("Audio Done!");
+//	}
+	
+	public void play2()
 	{
 		Count = 1;
-		Dialogue.clip = line1;
-		Dialogue.Play();
+		Line_2.Play();
 	}
 
-	public void play2()
+	public void play3()
 	{
 		Count = 2;
 		Dialogue.clip = line2;
 		Dialogue.PlayDelayed(3);
 	}
 
-	public void play3()
+	public void play4()
 	{
 		Count = 3;
 		Dialogue.clip = line3;

@@ -28,7 +28,7 @@ public class CameraBehavior : MonoBehaviour {
 
 			if (GM.Me.Count == 1)
 			{
-				GM.Me.play2();
+				GM.Me.play3();
 			}
 		}
 		if (gameObject.name == "cameraThresh3" && other.gameObject.tag == "player")
