@@ -21,6 +21,8 @@ public class Inspect : MonoBehaviour
 	private void OnTriggerExit2D(Collider2D other)
 	{
 		Iring.SetActive(false);
+		InspectResult.SetActive(false);
+		GM.Me.ExitInspect();
 	}
 	private void OnTriggerStay2D(Collider2D other)
 	{
@@ -37,18 +39,7 @@ public class Inspect : MonoBehaviour
 				GM.Me.Count = 2;
 			}
 		}
-		
-		if (gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.Return) || 
-		    gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.LeftShift))
-		{
-			GM.Me.EnlargePainting1();
-		}
-		if (gameObject.name == "painting2" && Input.GetKeyDown(KeyCode.Return) || 
-		    gameObject.name == "painting2" && Input.GetKeyDown(KeyCode.LeftShift))
-		{
-			GM.Me.EnlargePainting2();
-		}
-		
+
 		if (GM.Me.Inspecting)
 		{
 			if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
