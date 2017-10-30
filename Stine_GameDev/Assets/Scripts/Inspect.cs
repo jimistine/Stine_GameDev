@@ -32,6 +32,10 @@ public class Inspect : MonoBehaviour
 			{
 				GM.Me.OpenBook.Play();
 			}
+			if (gameObject.name == "code")
+			{
+				GM.Me.Count = 2;
+			}
 		}
 		
 		if (gameObject.name == "painting1" && Input.GetKeyDown(KeyCode.Return) || 

@@ -22,7 +22,7 @@ public class WoodCutterController : MonoBehaviour {
 		if (GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.Return) ||
 		    GM.Me.Count == 2 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			GM.Me.play4();
+			GM.Me.play3();
 			GM.Me.SetKeyActive();
 		}
 	}

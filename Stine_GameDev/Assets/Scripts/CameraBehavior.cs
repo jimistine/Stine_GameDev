@@ -25,11 +25,6 @@ public class CameraBehavior : MonoBehaviour {
 			GM.Me.activateCam1();
 			GM.Me.player2To1();
 			GM.Me.openDoor1();
-
-			if (GM.Me.Count == 1)
-			{
-				GM.Me.play3();
-			}
 		}
 		if (gameObject.name == "cameraThresh3" && other.gameObject.tag == "player")
 		{

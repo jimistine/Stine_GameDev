@@ -42,6 +42,7 @@ public class GM : MonoBehaviour
 	public AudioSource Dialogue;
 	public AudioSource Line_1;
 	public AudioSource Line_2;
+	public AudioSource Line_3;
 	public AudioSource LockedDoor;
 	public AudioSource Footsteps;
 	public AudioSource OpenBook;
@@ -49,6 +50,8 @@ public class GM : MonoBehaviour
 	public AudioMixerSnapshot Room1;
 	public AudioMixerSnapshot Room2;
 	public AudioMixerSnapshot Room3;
+	public AudioMixerSnapshot SpeakerFilter;
+	public AudioMixerSnapshot NoFilter;
 	
 	public GameObject doorClosed;
 	public GameObject doorOpen;
@@ -216,14 +219,15 @@ public class GM : MonoBehaviour
 		playerTrans.Translate(Transfer_2_3);
 		MorganTrans.Translate(Transfer_2_3);
 		Room3.TransitionTo(Audio_3_2);
+		NoFilter.TransitionTo(0);
 	}
 
 	public void player3To2()
 	{
-		Debug.Log("3 TO 2");
 		playerTrans.Translate(Transfer_3_2);
 		MorganTrans.Translate(Transfer_3_2);
 		Room2.TransitionTo(Audio_3_2);
+		SpeakerFilter.TransitionTo(0);
 	}
 
 //Dialogue
@@ -241,16 +245,14 @@ public class GM : MonoBehaviour
 
 	public void play3()
 	{
-		Count = 2;
-		Dialogue.clip = line2;
-		Dialogue.PlayDelayed(3);
+		Line_3.Play();
+		Count = 3;
 	}
 
 	public void play4()
 	{
-		Count = 3;
-		Dialogue.clip = line3;
-		Dialogue.PlayDelayed(1);
+		Count = 4;
+//		Line_4.Play;
 	}
 
 	//Objects
