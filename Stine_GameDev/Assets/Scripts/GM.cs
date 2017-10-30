@@ -260,23 +260,6 @@ public class GM : MonoBehaviour
 	{
 		key.SetActive(true);
 	}
-
-	public void EnlargePainting1()
-	{
-		Cam2.SetActive(false);
-		Paint1Cam.SetActive(true);
-		Inspecting = true;
-		Enlarged = true;
-	}
-
-	public void EnlargePainting2()
-	{
-		Cam2.SetActive(false);
-		Paint2Cam.SetActive(true);
-		Inspecting = true;
-		Enlarged = true;
-	}
-	
 	public void ExitInspect()
 	{
 		Inspecting = false;
