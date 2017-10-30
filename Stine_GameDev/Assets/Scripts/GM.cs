@@ -66,19 +66,14 @@ public class GM : MonoBehaviour
 	public GameObject Paint2Cam;
 	public GameObject key;
 	public GameObject portal;
-	public GameObject book1_Active;
-	public GameObject Book1Page;
-	public GameObject Book1Text;
-	public GameObject book2_Active;
-	public GameObject Book2Page;
-	public GameObject Book2Text;
-	public GameObject painting1_Ring;
+	public GameObject Appear_1;
 
 
 	void Awake()
 	{
 		Me = this;
 		Line_1.PlayDelayed(2);
+//		Line_2.Play();
 	}
 
 	public void Update()
@@ -240,6 +235,7 @@ public class GM : MonoBehaviour
 	public void play2()
 	{
 		Count = 1;
+		Line_1.Stop();
 		Line_2.Play();
 	}
 
@@ -261,23 +257,6 @@ public class GM : MonoBehaviour
 	public void SetKeyActive()
 	{
 		key.SetActive(true);
-	}
-	public void OpenBook1() 
-	{ 
-		
-		Book1Page.SetActive(true);
-		Book1Text.SetActive(true);
-		Inspecting = true;
-		Reading = true;
-		OpenBook.Play();
-	}
-	public void OpenBook2() 
-	{ 
-		Book2Page.SetActive(true);
-		Book2Text.SetActive(true);
-		Inspecting = true;
-		Reading = true;
-		OpenBook.Play();
 	}
 
 	public void EnlargePainting1()
@@ -306,15 +285,6 @@ public class GM : MonoBehaviour
 			Paint1Cam.SetActive(false);
 			Paint2Cam.SetActive(false);
 			Enlarged = false;
-		}
-		if (Reading)
-		{
-			Book1Page.SetActive(false);
-			Book1Text.SetActive(false);
-			Book2Page.SetActive(false);
-			Book2Text.SetActive(false);
-			Reading = false;
-			CloseBook.Play();
 		}
 	}
 	//CALL THIS FUNCTION ON INSPECT SCRIPT
