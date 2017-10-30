@@ -63,6 +63,7 @@ public class GM : MonoBehaviour
 	public GameObject Cam2;
 	public GameObject Cam3;
 	public GameObject Paint1Cam;
+	public GameObject Paint2Cam;
 	public GameObject key;
 	public GameObject portal;
 	public GameObject book1_Active;
@@ -261,14 +262,6 @@ public class GM : MonoBehaviour
 	{
 		key.SetActive(true);
 	}
-	public void SetBook1Active() 
-	{ 
-		book1_Active.SetActive(true);
-	}
-	public void SetBook1Inactive() 
-	{ 
-		book1_Active.SetActive(false);
-	}
 	public void OpenBook1() 
 	{ 
 		
@@ -277,15 +270,6 @@ public class GM : MonoBehaviour
 		Inspecting = true;
 		Reading = true;
 		OpenBook.Play();
-	}
-
-	public void SetBook2Active() 
-	{ 
-		book2_Active.SetActive(true);
-	}
-	public void SetBook2Inactive() 
-	{ 
-		book2_Active.SetActive(false);
 	}
 	public void OpenBook2() 
 	{ 
@@ -296,15 +280,6 @@ public class GM : MonoBehaviour
 		OpenBook.Play();
 	}
 
-	public void SetPainting1Active()
-	{
-		painting1_Ring.SetActive(true);
-	}
-	public void SetPainting1Inactive()
-	{
-		painting1_Ring.SetActive(false);
-	}
-
 	public void EnlargePainting1()
 	{
 		Cam2.SetActive(false);
@@ -313,13 +288,23 @@ public class GM : MonoBehaviour
 		Enlarged = true;
 	}
 
+	public void EnlargePainting2()
+	{
+		Cam2.SetActive(false);
+		Paint2Cam.SetActive(true);
+		Inspecting = true;
+		Enlarged = true;
+	}
+	
 	public void ExitInspect()
 	{
+		Inspecting = false;
+
 		if (Enlarged)
 		{
 			Cam2.SetActive(true);
 			Paint1Cam.SetActive(false);
-			Inspecting = false;
+			Paint2Cam.SetActive(false);
 			Enlarged = false;
 		}
 		if (Reading)
@@ -328,7 +313,6 @@ public class GM : MonoBehaviour
 			Book1Text.SetActive(false);
 			Book2Page.SetActive(false);
 			Book2Text.SetActive(false);
-			Inspecting = false;
 			Reading = false;
 			CloseBook.Play();
 		}

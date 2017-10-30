@@ -13,7 +13,6 @@ public class WoodCutterController : MonoBehaviour {
 
 	private void OnTriggerStay2D(Collider2D other)
 	{
-		Debug.Log("triggered");
 		if (GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.Return) || 
 		    GM.Me.Count == 0 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
