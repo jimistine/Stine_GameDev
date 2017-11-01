@@ -23,32 +23,28 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
+		// LEFT
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.LeftArrow) || 
 			ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.A))
 		{
-			ani_this.SetBool ("ifWalkingLeft", true);
-			ani_this.SetBool ("ifLeft", true);
 			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = -MoveSpeed * move;
 		}
 		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) 
 		{
-			ani_this.SetBool ("ifWalkingLeft", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 			GM.Me.Footsteps.Stop();
 
-		}		
+		}	
+		// RIGHT
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || 
 		    ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.RightArrow))
 		{
-			ani_this.SetBool ("ifWalking", true);
-			ani_this.SetBool ("ifLeft", false);
 			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = MoveSpeed * move;
 		}
 		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) 
 		{
-			ani_this.SetBool ("ifWalking", false);
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 			GM.Me.Footsteps.Stop();
 			
