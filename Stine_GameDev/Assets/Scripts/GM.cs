@@ -62,6 +62,7 @@ public class GM : MonoBehaviour
 	public GameObject doorClosed4;
 	public GameObject doorOpen4;
 	public GameObject exitDoor;
+	public GameObject exitDoorOpen;
 	public GameObject Cam1;
 	public GameObject Cam2;
 	public GameObject Cam3;
@@ -161,6 +162,7 @@ public class GM : MonoBehaviour
 	public void openExit()
 	{
 		exitDoor.SetActive(false);
+		exitDoorOpen.SetActive(true);
 		ExitOpen = true;
 		SFX.PlayOneShot(openDoor);
 	}
@@ -168,6 +170,7 @@ public class GM : MonoBehaviour
 	public void closeExit()
 	{
 		exitDoor.SetActive(true);
+		exitDoorOpen.SetActive(false);
 		ExitOpen = false;
 		SFX.clip = closeDoor;
 		SFX.Play();
