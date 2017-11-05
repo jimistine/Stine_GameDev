@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-	public Text nameText;
+//	public Text nameText;
 	public Text dialogueText; 
 	
 	private Queue<string> sentences;
@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
 	{
 //		Debug.Log("Starting Convo with " + dialogue.Name);
 
-		nameText.text = dialogue.Name;
+//		nameText.text = dialogue.Name;
 		
 		sentences.Clear();
 		
