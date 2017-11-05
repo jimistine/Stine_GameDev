@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class DialogueChooser : MonoBehaviour
 	public GameObject Choice1_2;
 	public Color StartColor = Color.white;
 	public Color Selected = Color.red;
+	public bool TopSelected;
 
 	void Start()
 	{
@@ -26,12 +28,34 @@ public class DialogueChooser : MonoBehaviour
 		{
 			Text1_1.color = Selected;
 			Text1_2.color = StartColor;
+			TopSelected = true;
 
 		}
 		if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
 		{
 			Text1_1.color = StartColor;
 			Text1_2.color = Selected;
+			TopSelected = false;
+		}
+
+		if (GM.Me.Count == 1)
+		{
+			if (TopSelected)
+			{
+				if (Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.LeftShift))
+				{
+					GM.Me.play2();
+				}
+			}
+			if (!TopSelected)
+			{
+				if (Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.LeftShift))
+				{
+					GM.Me.play3();
+				}
+			}
 		}
 	}
+	
+	
 }
