@@ -25,6 +25,16 @@ public class WoodCutterController : MonoBehaviour {
 			GM.Me.play3();
 			GM.Me.SetKeyActive();
 		}
+		if (GM.Me.Count == 3 && Input.GetKeyDown(KeyCode.Return) ||
+		    GM.Me.Count == 3 && Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			GM.Me.play4();
+		}
+		if (GM.Me.Count == 4 && Input.GetKeyDown(KeyCode.Return) ||
+		    GM.Me.Count == 4 && Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			
+		}
 	}
 
 

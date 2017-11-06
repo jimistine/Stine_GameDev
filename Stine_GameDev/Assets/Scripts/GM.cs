@@ -74,6 +74,8 @@ public class GM : MonoBehaviour
 	public GameObject Line1_Sub;
 	public GameObject Line2_Sub;
 	public GameObject Line3_Sub;
+	public GameObject Line4_Sub;
+	public GameObject Choice1;
 
 	void Awake()
 	{
@@ -251,15 +253,19 @@ public class GM : MonoBehaviour
 
 	public void play3()
 	{
+		Count = 3;
 		Line2_Sub.SetActive(false);
 		Line3_Sub.SetActive(true);
 		Line_3.Play();
-		Count = 3;
 	}
 
 	public void play4()
 	{
 		Count = 4;
+		Line2_Sub.SetActive(false);
+		Line3_Sub.SetActive(false);
+		Choice1.SetActive(true);
+		Line4_Sub.SetActive(true);
 //		Line_4.Play;
 	}
 

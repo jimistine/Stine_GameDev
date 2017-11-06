@@ -12,6 +12,8 @@ public class DialogueChooser : MonoBehaviour
 	private TextMeshPro Text1_2;
 	public GameObject Choice1_1;
 	public GameObject Choice1_2;
+	public GameObject Line5_1Sub;
+	public GameObject Line5_2Sub;
 	public Color StartColor = Color.white;
 	public Color Selected = Color.red;
 	public bool TopSelected;
@@ -38,22 +40,30 @@ public class DialogueChooser : MonoBehaviour
 			TopSelected = false;
 		}
 
-		if (GM.Me.Count == 1)
+		if (GM.Me.Count == 4)
 		{
 			if (TopSelected)
 			{
 				if (Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.LeftShift))
 				{
-					GM.Me.play2();
+					GM.Me.Line4_Sub.SetActive(false);
+					Line5_1Sub.SetActive(true);
 				}
 			}
 			if (!TopSelected)
 			{
 				if (Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.LeftShift))
 				{
-					GM.Me.play3();
+					GM.Me.Line4_Sub.SetActive(false);
+					Line5_2Sub.SetActive(true);
 				}
 			}
+		}
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
+		    Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+		{
+			Line5_1Sub.SetActive(false);
+			Line5_2Sub.SetActive(false);
 		}
 	}
 	
