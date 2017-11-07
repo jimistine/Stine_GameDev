@@ -253,16 +253,15 @@ public class GM : MonoBehaviour
 
 	public void play3()
 	{
-		Count = 3;
 		Line2_Sub.SetActive(false);
 		Line3_Sub.SetActive(true);
+		Line_2.Stop();
 		Line_3.Play();
 	}
 
 	public void play4()
 	{
 		Count = 4;
-		Line2_Sub.SetActive(false);
 		Line3_Sub.SetActive(false);
 		Choice1.SetActive(true);
 		Line4_Sub.SetActive(true);
@@ -288,3 +287,12 @@ public class GM : MonoBehaviour
 	}
 	//CALL THIS FUNCTION ON INSPECT SCRIPT
 }
+/*   COUNT
+
+	0	Awake
+	1	Line_2		"Hi again..."
+	2 	Get Code
+	3	Collect Key
+	4	
+	
+*/
