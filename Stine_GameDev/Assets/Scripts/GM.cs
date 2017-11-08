@@ -77,6 +77,7 @@ public class GM : MonoBehaviour
 	public GameObject Line2_Sub;
 	public GameObject Line3_Sub;
 	public GameObject Line4_Sub;
+	public GameObject MorganDialogue;
 	public GameObject Choice1;
 
 	void Awake()
@@ -267,7 +268,9 @@ public class GM : MonoBehaviour
 	public void play4()
 	{
 		Count = 4;
+		Line_3.Stop();
 		Line3_Sub.SetActive(false);
+		MorganDialogue.SetActive(true);
 		Choice1.SetActive(true);
 		Line4_Sub.SetActive(true);
 //		Line_4.Play;

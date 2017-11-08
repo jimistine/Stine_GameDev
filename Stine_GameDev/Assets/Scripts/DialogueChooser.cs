@@ -27,7 +27,8 @@ public class DialogueChooser : MonoBehaviour
 		Text1_1.color = StartColor;
 	}
 	
-	void Update () {
+	private void OnTriggerStay2D(Collider2D other)
+	{
 		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			IsSelected = 1;
@@ -60,18 +61,20 @@ public class DialogueChooser : MonoBehaviour
 		        IsSelected == 1 && Input.GetKeyDown(KeyCode.LeftShift))
 				{
 					IsSelected = 0;
-					GM.Me.Line4_Sub.SetActive(false);
 					Choice1.SetActive(false);
 					Line5_1Sub.SetActive(true);
+					GM.Me.Line4_Sub.SetActive(false);
+					GM.Me.MorganDialogue.SetActive(false);
 					GM.Me.Count = 5;
 				}
 			if (IsSelected == 2 && Input.GetKeyDown(KeyCode.Return)||
 			    IsSelected == 2 && Input.GetKeyDown(KeyCode.LeftShift))
 				{
 					IsSelected = 0;
-					GM.Me.Line4_Sub.SetActive(false);
 					Choice1.SetActive(false);
 					Line5_2Sub.SetActive(true);
+					GM.Me.Line4_Sub.SetActive(false);
+					GM.Me.MorganDialogue.SetActive(false);
 					GM.Me.Count = 5;
 				}
 			}

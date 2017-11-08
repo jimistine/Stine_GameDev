@@ -310,11 +310,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 22151798}
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   MorganTrans: {fileID: 1160552992}
   playerRigidbody2D: {fileID: 1926704467}
   MorganRigidbody2D: {fileID: 1160552995}
-  exitLocked: 0
+  exitLocked: 1
   ExitOpen: 0
   Inspecting: 0
   Enlarged: 0
@@ -1729,6 +1729,7 @@ MonoBehaviour:
   Line2_Sub: {fileID: 2082807502}
   Line3_Sub: {fileID: 1332688143}
   Line4_Sub: {fileID: 1316352227}
+  MorganDialogue: {fileID: 795166655}
   Choice1: {fileID: 292985200}
 --- !u!4 &124161741
 Transform:
@@ -6736,7 +6737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &795166656
 Transform:
   m_ObjectHideFlags: 0
@@ -6777,13 +6778,13 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795166655}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.049046457, y: 0.1410079}
+  m_Offset: {x: 0.049046457, y: 0.47692972}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6794,7 +6795,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0980929, y: 0.08038304}
+  m_Size: {x: 1.0980929, y: 1.7759882}
   m_EdgeRadius: 0
 --- !u!1 &807940029
 GameObject:
@@ -9136,7 +9137,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13383505, y: 0}
+  m_Offset: {x: -0.00002783537, y: -0.023013249}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9147,7 +9148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3612015, y: 1}
+  m_Size: {x: 0.92310464, y: 0.95397353}
   m_EdgeRadius: 0
 --- !u!212 &1099416077
 SpriteRenderer:
@@ -10062,6 +10063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1183138907}
   - component: {fileID: 1183138908}
+  - component: {fileID: 1183138909}
   m_Layer: 0
   m_Name: LeaveScreen
   m_TagString: Untagged
@@ -10076,7 +10078,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1183138906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.33, y: -9.49, z: -8.218751}
+  m_LocalPosition: {x: -12.2, y: -10.1, z: -8.218751}
   m_LocalScale: {x: 10.91955, y: 0.46637, z: 1}
   m_Children:
   - {fileID: 373342929}
@@ -10096,13 +10098,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf92398b559bf443eace3174b662da01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Delay: 0
   IsSelected: 0
   Choice1_1: {fileID: 1311454670}
   Choice1_2: {fileID: 1208424201}
   StartColor: {r: 1, g: 1, b: 1, a: 1}
   SelectedColor: {r: 0.878, g: 0.21686599, b: 0.21686599, a: 1}
   LeaveScreen: {fileID: 1183138906}
+--- !u!61 &1183138909
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183138906}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.82682776, y: 19.249517}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.09500641, y: 4.1230965}
+  m_EdgeRadius: 0
 --- !u!1 &1183788568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,11 +10443,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1208424206}
@@ -11504,11 +11530,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1311454675}
