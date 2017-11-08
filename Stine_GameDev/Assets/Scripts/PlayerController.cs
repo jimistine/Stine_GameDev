@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
 			GM.Me.Footsteps.Stop();
 			
 		}
+		// INTERACT
 		if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			ani_this.SetBool ("ifInteract", true);

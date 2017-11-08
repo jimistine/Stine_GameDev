@@ -1,47 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
 
 public class LeaveRooms : MonoBehaviour
 {
-	public GameObject question;
-	public bool PortalVisible;
 	public float Delay;
+	public GameObject LeaveScreen;
 
-	void OnTriggerStay2D(Collider2D other)
-	{
-		if (GM.Me.ExitOpen && Input.GetKeyDown(KeyCode.Return))
+	private void OnTriggerStay2D(Collider2D other)
+	{		
+		if (GM.Me.ExitOpen && GM.Me.FreezePlayer == false && Input.GetKeyDown(KeyCode.Return)||
+		    GM.Me.ExitOpen && GM.Me.FreezePlayer == false && Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			StartCoroutine(ExecuteAfterTime(2));
+			StartCoroutine(ExecuteAfterTime(Delay));
 		}
-		
 	}
 	
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-		if (GM.Me.ExitOpen)
-		{
-			question.SetActive(true);
-		}
-	}
-	private void OnTriggerExit2D(Collider2D other)
-	{
-		if (GM.Me.ExitOpen)
-		{
-			question.SetActive(false);
-		}
-	}
-
 	IEnumerator ExecuteAfterTime(float Delay)
 	{
 		yield return new WaitForSeconds(Delay);
 		// Code to execute after the delay
-		PortalVisible = true;
-		Debug.Log("Leaving Rooms");
-		SceneManager.LoadScene("TempEndScene");
-	}
-	
+//		Debug.Log("Leaving Rooms");
+		LeaveScreen.SetActive(true);
+		GM.Me.FreezePlayer = true;
+	}	
 }
 

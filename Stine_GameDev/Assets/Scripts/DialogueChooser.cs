@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Threading;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class DialogueChooser : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class DialogueChooser : MonoBehaviour
 	public Color StartColor = Color.white;
 	public Color SelectedColor = Color.red;
 	public int IsSelected = 0;
+	public GameObject LeaveScreen;
 
 	void Start()
 	{
@@ -27,23 +30,36 @@ public class DialogueChooser : MonoBehaviour
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 		{
-			Text1_1.color = SelectedColor;
-			Text1_2.color = StartColor;
 			IsSelected = 1;
-
 		}
 		if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
 		{
-			Text1_1.color = StartColor;
-			Text1_2.color = SelectedColor;
 			IsSelected = 2;
 		}
-
+		
+		if (IsSelected == 0)
+		{
+			Text1_1.color = StartColor;
+			Text1_2.color = StartColor;
+		}
+		if (IsSelected == 1)
+		{
+			Text1_1.color = SelectedColor;
+			Text1_2.color = StartColor;
+		}
+		if (IsSelected == 2)
+		{
+			Text1_1.color = StartColor;
+			Text1_2.color = SelectedColor;
+		}
+		
+		
 		if (GM.Me.Count == 4)
 		{
 			if (IsSelected == 1 && Input.GetKeyDown(KeyCode.Return) ||
 		        IsSelected == 1 && Input.GetKeyDown(KeyCode.LeftShift))
 				{
+					IsSelected = 0;
 					GM.Me.Line4_Sub.SetActive(false);
 					Choice1.SetActive(false);
 					Line5_1Sub.SetActive(true);
@@ -52,17 +68,29 @@ public class DialogueChooser : MonoBehaviour
 			if (IsSelected == 2 && Input.GetKeyDown(KeyCode.Return)||
 			    IsSelected == 2 && Input.GetKeyDown(KeyCode.LeftShift))
 				{
+					IsSelected = 0;
 					GM.Me.Line4_Sub.SetActive(false);
 					Choice1.SetActive(false);
 					Line5_2Sub.SetActive(true);
 					GM.Me.Count = 5;
 				}
-		}
-//		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
-//		    Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+			}
+//		if (gameObject.name == "LeaveChoice")
 //		{
-//			Line5_1Sub.SetActive(false);
-//			Line5_2Sub.SetActive(false);
+//			if (IsSelected == 1 && Input.GetKeyDown(KeyCode.Return) ||
+//			    IsSelected == 1 && Input.GetKeyDown(KeyCode.LeftShift))
+//			{
+//				Debug.Log("leaving!");
+//				SceneManager.LoadScene("TempEndScene");
+//			}
+//			if (IsSelected == 2 && Input.GetKeyDown(KeyCode.Return)||
+//			    IsSelected == 2 && Input.GetKeyDown(KeyCode.LeftShift))
+//			{
+//				Debug.Log("not leaving!");
+//				IsSelected = 0;
+//				GM.Me.FreezePlayer = false;
+//				LeaveScreen.SetActive(false);
+//			}
 //		}
 	}
 	

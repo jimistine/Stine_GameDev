@@ -17,8 +17,8 @@ public class GM : MonoBehaviour
 	public Vector2 Transfer_3_2;
 	public Vector2 Transfer_2_1;
 	public Transform playerTrans;
-	public Rigidbody2D playerRigidbody2D;
 	public Transform MorganTrans;
+	public Rigidbody2D playerRigidbody2D;
 	public Rigidbody2D MorganRigidbody2D;
 
 	public bool exitLocked = true;
@@ -26,6 +26,7 @@ public class GM : MonoBehaviour
 	public bool Inspecting;
 	public bool Enlarged;
 	public bool Reading;
+	public bool FreezePlayer;
 
 	public float Audio_1_2;
 	public float Audio_2_3;
@@ -53,6 +54,7 @@ public class GM : MonoBehaviour
 	public AudioMixerSnapshot SpeakerFilter;
 	public AudioMixerSnapshot NoFilter;
 	
+	public GameObject Morgan;
 	public GameObject doorClosed;
 	public GameObject doorOpen;
 	public GameObject doorClosed2;
@@ -91,6 +93,15 @@ public class GM : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.R))
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
+		
+		if (FreezePlayer)
+		{
+			Morgan.SetActive(false);
+		}
+		if (!FreezePlayer)
+		{
+			Morgan.SetActive(true);
 		}
 	}
 
@@ -236,12 +247,6 @@ public class GM : MonoBehaviour
 		Room2.TransitionTo(Audio_3_2);
 		SpeakerFilter.TransitionTo(0);
 	}
-
-//Dialogue
-//	void AudioFinished()
-//	{
-//		Debug.Log("Audio Done!");
-//	}
 	
 	public void play2()
 	{
@@ -273,6 +278,7 @@ public class GM : MonoBehaviour
 	{
 		key.SetActive(true);
 	}
+
 	public void ExitInspect()
 	{
 		Inspecting = false;
@@ -285,7 +291,6 @@ public class GM : MonoBehaviour
 			Enlarged = false;
 		}
 	}
-	//CALL THIS FUNCTION ON INSPECT SCRIPT
 }
 /*   COUNT
 
