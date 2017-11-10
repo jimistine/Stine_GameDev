@@ -78,23 +78,25 @@ public class DialogueChooser : MonoBehaviour
 					GM.Me.Count = 5;
 				}
 			}
-//		if (gameObject.name == "LeaveChoice")
-//		{
-//			if (IsSelected == 1 && Input.GetKeyDown(KeyCode.Return) ||
-//			    IsSelected == 1 && Input.GetKeyDown(KeyCode.LeftShift))
-//			{
-//				Debug.Log("leaving!");
-//				SceneManager.LoadScene("TempEndScene");
-//			}
-//			if (IsSelected == 2 && Input.GetKeyDown(KeyCode.Return)||
-//			    IsSelected == 2 && Input.GetKeyDown(KeyCode.LeftShift))
-//			{
-//				Debug.Log("not leaving!");
-//				IsSelected = 0;
-//				GM.Me.FreezePlayer = false;
-//				LeaveScreen.SetActive(false);
-//			}
-//		}
+		if (GM.Me.Count == 5)
+		{
+			if (IsSelected == 1 && Input.GetKeyDown(KeyCode.Return) ||
+			    IsSelected == 1 && Input.GetKeyDown(KeyCode.LeftShift))
+			{
+				
+				GM.Me.MorganDialogue.SetActive(false);
+				IsSelected = 0;
+				GM.Me.Count = 5;
+			}
+			if (IsSelected == 2 && Input.GetKeyDown(KeyCode.Return)||
+			    IsSelected == 2 && Input.GetKeyDown(KeyCode.LeftShift))
+			{
+				
+				GM.Me.MorganDialogue.SetActive(false);
+				IsSelected = 0;
+				GM.Me.Count = 5;
+			}
+		}
 	}
 	
 	

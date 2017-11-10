@@ -48,6 +48,7 @@ public class GM : MonoBehaviour
 	public AudioSource Footsteps;
 	public AudioSource OpenBook;
 	public AudioSource CloseBook;
+	public AudioSource ExitOpenSFX;
 	public AudioMixerSnapshot Room1;
 	public AudioMixerSnapshot Room2;
 	public AudioMixerSnapshot Room3;
@@ -103,6 +104,15 @@ public class GM : MonoBehaviour
 		if (!FreezePlayer)
 		{
 			Morgan.SetActive(true);
+		}
+
+		if (ExitOpen)
+		{
+			ExitOpenSFX.Play();
+		}
+		if (!ExitOpen)
+		{
+			ExitOpenSFX.Stop();
 		}
 	}
 
