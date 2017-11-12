@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Fungus;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -87,6 +88,7 @@ public class GM : MonoBehaviour
 		Line_1.PlayDelayed(2);
 //		Line_2.Play();
 	}
+
 
 	public void Update()
 	{
@@ -256,28 +258,27 @@ public class GM : MonoBehaviour
 	public void play2()
 	{
 		Count = 1;
-		Line2_Sub.SetActive(true);
+		Flowchart.BroadcastFungusMessage ("Line_2");
 		Line_1.Stop();
 		Line_2.Play();
 	}
 
 	public void play3()
 	{
-		Line2_Sub.SetActive(false);
-		Line3_Sub.SetActive(true);
+		Flowchart.BroadcastFungusMessage ("Line_3");
 		Line_2.Stop();
 		Line_3.Play();
 	}
 
 	public void play4()
 	{
-		Count = 4;
 		Line_3.Stop();
-		Line3_Sub.SetActive(false);
-		MorganDialogue.SetActive(true);
-		Choice1.SetActive(true);
-		Line4_Sub.SetActive(true);
+		Flowchart.BroadcastFungusMessage ("Line_4");	
 //		Line_4.Play;
+	}
+	public void SetCountTo_4()
+	{
+		Count = 4;
 	}
 
 	//Objects
