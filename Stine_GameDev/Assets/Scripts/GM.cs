@@ -105,15 +105,6 @@ public class GM : MonoBehaviour
 		{
 			Morgan.SetActive(true);
 		}
-
-		if (ExitOpen)
-		{
-			ExitOpenSFX.Play();
-		}
-		if (!ExitOpen)
-		{
-			ExitOpenSFX.Stop();
-		}
 	}
 
 //Doors
@@ -191,6 +182,7 @@ public class GM : MonoBehaviour
 		exitDoorOpen.SetActive(true);
 		ExitOpen = true;
 		SFX.PlayOneShot(openDoor);
+		ExitOpenSFX.Play();
 	}
 
 	public void closeExit()
@@ -200,7 +192,9 @@ public class GM : MonoBehaviour
 		ExitOpen = false;
 		SFX.clip = closeDoor;
 		SFX.Play();
+		ExitOpenSFX.Stop();
 	}
+
 
 //Cameras
 	public void activateCam1()

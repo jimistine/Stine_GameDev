@@ -28,9 +28,9 @@
 -r:'/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll'
 -r:'/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll'
 -r:'/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll'
+-r:'Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll'
 -r:'Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.1.0b12.dll'
 -r:'Assets/TextMesh Pro/Plugins/Editor/TextMeshPro-1.0.55.2017.1.0b12-Editor.dll'
--r:'Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll'
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_4_OR_NEWER
 -define:UNITY_5_5_OR_NEWER

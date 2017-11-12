@@ -14243,6 +14243,7 @@ GameObject:
   - component: {fileID: 1183138907}
   - component: {fileID: 1183138908}
   - component: {fileID: 1183138909}
+  - component: {fileID: 1183138910}
   m_Layer: 0
   m_Name: LeaveScreen
   m_TagString: Untagged
@@ -14308,6 +14309,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09500641, y: 4.1230965}
   m_EdgeRadius: 0
+--- !u!81 &1183138910
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183138906}
+  m_Enabled: 1
 --- !u!1 &1183788568
 GameObject:
   m_ObjectHideFlags: 0
