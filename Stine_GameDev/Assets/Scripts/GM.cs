@@ -81,6 +81,7 @@ public class GM : MonoBehaviour
 	public GameObject Line4_Sub;
 	public GameObject MorganDialogue;
 	public GameObject Choice1;
+	public GameObject Fungo;
 
 	void Awake()
 	{
@@ -245,6 +246,7 @@ public class GM : MonoBehaviour
 		MorganTrans.Translate(Transfer_2_3);
 		Room3.TransitionTo(Audio_3_2);
 		NoFilter.TransitionTo(0);
+//		Fungo.SetActive(true);
 	}
 
 	public void player3To2()
@@ -253,6 +255,7 @@ public class GM : MonoBehaviour
 		MorganTrans.Translate(Transfer_3_2);
 		Room2.TransitionTo(Audio_3_2);
 		SpeakerFilter.TransitionTo(0);
+//		Fungo.SetActive(false);
 	}
 	
 	public void play2()
@@ -280,6 +283,12 @@ public class GM : MonoBehaviour
 	{
 		Count = 4;
 	}
+	public void play5()
+    {
+    	Flowchart.BroadcastFungusMessage ("Story 2 Start 2");	
+   	}
+	
+	
 
 	//Objects
 	public void SetKeyActive()

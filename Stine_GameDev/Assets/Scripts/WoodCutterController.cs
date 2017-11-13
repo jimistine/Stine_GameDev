@@ -33,7 +33,7 @@ public class WoodCutterController : MonoBehaviour {
 		if (GM.Me.Count == 4 && Input.GetKeyDown(KeyCode.Return) ||
 		    GM.Me.Count == 4 && Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			
+			GM.Me.play5();
 		}
 	}
 

@@ -2188,7 +2188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &105461266
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2552,6 +2552,7 @@ MonoBehaviour:
   Line4_Sub: {fileID: 1316352227}
   MorganDialogue: {fileID: 795166655}
   Choice1: {fileID: 292985200}
+  Fungo: {fileID: 941461094}
 --- !u!4 &124161741
 Transform:
   m_ObjectHideFlags: 0
@@ -5437,6 +5438,12 @@ GameObject:
   - component: {fileID: 380281805}
   - component: {fileID: 380281804}
   - component: {fileID: 380281802}
+  - component: {fileID: 380281826}
+  - component: {fileID: 380281825}
+  - component: {fileID: 380281824}
+  - component: {fileID: 380281823}
+  - component: {fileID: 380281822}
+  - component: {fileID: 380281821}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5457,11 +5464,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 369.26395, y: 120.65025}
+  scrollPos: {x: 988.3281, y: 116.27611}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.64273447
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5469,7 +5476,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281759}
+  - {fileID: 380281825}
   selectedCommands: []
   variables: []
   description: 
@@ -5598,10 +5605,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: If you've been, then you'll understand why a human such as myself would
-    miss it so much. This place is nothing by comparison.  It's just real enough to
-    bring the memories back, but, well the seams aren't very well hidden.  I'm sure
-    you've noticed the comings and goings of the furniture and so on.
+  storyText: If you've been, then you'll understand why a human like me would miss
+    it so much. This place is nothing by comparison.  It's just real enough to bring
+    the memories back, but, well the seams aren't very well hidden.  I'm sure you've
+    noticed the comings and goings of the furniture and so on.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5658,6 +5665,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 380281826}
   - {fileID: 380281755}
   - {fileID: 380281785}
   - {fileID: 380281784}
@@ -5729,7 +5737,7 @@ MonoBehaviour:
   storyText: Well if you do leave I recommend it highly, in any time period really.  It's
     not perfect, but there's a lot of beauty to be found there, just, make sure to
     blend in with the local life if you can. Humans like myself are curious but can
-    get violent if you aren'r careful.
+    get violent if you aren't careful.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5824,7 +5832,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 616.3969
-    y: 161.8241
+    y: 160.0018
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6097,7 +6105,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 169.80063
+    width: 202
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6703,7 +6711,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 321.12646
     y: 433.619
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6730,7 +6738,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 120
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6849,9 +6857,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 603.1439
-    y: 657.60846
-    width: 120
+    x: 601.3216
+    y: 644.8526
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6899,8 +6907,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 766.0915
-    y: 586.67834
+    x: 767.91376
+    y: 639.5239
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7308,6 +7316,129 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &380281821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 380281825}
+  message: Story 2 Start 2
+--- !u!114 &380281822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 83
+  indentLevel: 0
+  text: I think I'm alright.
+  description: 
+  targetBlock: {fileID: 380281805}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &380281823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 82
+  indentLevel: 0
+  text: Sure.
+  description: 
+  targetBlock: {fileID: 380281803}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &380281824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 81
+  indentLevel: 0
+  storyText: Hey there, ready for another story?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &380281825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 769.76495
+    y: 582.78217
+    width: 142
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 80
+  blockName: Story 2 Start 2
+  description: 
+  eventHandler: {fileID: 380281821}
+  commandList:
+  - {fileID: 380281824}
+  - {fileID: 380281823}
+  - {fileID: 380281822}
+--- !u!114 &380281826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  targetObject: {fileID: 124161739}
+  methodName: SetCountTo_4
+  delay: 0
 --- !u!1 &468101378
 GameObject:
   m_ObjectHideFlags: 0
@@ -9136,7 +9267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &624307502
 AudioListener:
   m_ObjectHideFlags: 0
@@ -15588,7 +15719,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160552989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.79, y: -4.351, z: 0}
+  m_LocalPosition: {x: -18.9, y: -4.351, z: 0}
   m_LocalScale: {x: 3.0011456, y: 3.0011456, z: 3.0011456}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21271,7 +21402,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4935193468464654, guid: 83b933de5a50c4455bc463851324a00a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.3136612
+      value: -0.336
       objectReference: {fileID: 0}
     - target: {fileID: 4935193468464654, guid: 83b933de5a50c4455bc463851324a00a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21325,7 +21456,7 @@ Prefab:
     - target: {fileID: 198030995129796988, guid: 83b933de5a50c4455bc463851324a00a,
         type: 2}
       propertyPath: randomSeed
-      value: 422942360
+      value: 1139498342
       objectReference: {fileID: 0}
     - target: {fileID: 198030995129796988, guid: 83b933de5a50c4455bc463851324a00a,
         type: 2}
@@ -21365,7 +21496,7 @@ Prefab:
     - target: {fileID: 198030995129796988, guid: 83b933de5a50c4455bc463851324a00a,
         type: 2}
       propertyPath: ShapeModule.m_Scale.x
-      value: 0.77834016
+      value: 1.6669772
       objectReference: {fileID: 0}
     - target: {fileID: 198030995129796988, guid: 83b933de5a50c4455bc463851324a00a,
         type: 2}
