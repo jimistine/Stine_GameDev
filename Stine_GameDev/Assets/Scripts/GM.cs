@@ -246,7 +246,7 @@ public class GM : MonoBehaviour
 		MorganTrans.Translate(Transfer_2_3);
 		Room3.TransitionTo(Audio_3_2);
 		NoFilter.TransitionTo(0);
-//		Fungo.SetActive(true);
+		Fungo.SetActive(true);
 	}
 
 	public void player3To2()
@@ -255,7 +255,7 @@ public class GM : MonoBehaviour
 		MorganTrans.Translate(Transfer_3_2);
 		Room2.TransitionTo(Audio_3_2);
 		SpeakerFilter.TransitionTo(0);
-//		Fungo.SetActive(false);
+		Fungo.SetActive(false);
 	}
 	
 	public void play2()
