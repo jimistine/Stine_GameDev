@@ -27,7 +27,7 @@
       <file leaf-file-name="GM.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="2649">
               <caret line="249" column="5" lean-forward="false" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
               <folding>
                 <marker date="1510585811000" expanded="false" signature="6:190" ph="..." />
@@ -520,12 +520,13 @@
       <workItem from="1510272603641" duration="1060000" />
       <workItem from="1510511532611" duration="5244000" />
       <workItem from="1510542300448" duration="1559000" />
-      <workItem from="1510585751337" duration="1358000" />
+      <workItem from="1510585751337" duration="1937000" />
+      <workItem from="1510759231012" duration="529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138924000" />
+    <option name="totallyTimeSpent" value="140032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,7 +539,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1261" height="774" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -548,7 +548,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2482157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2482157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -934,102 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="489" column="54" lean-forward="false" selection-start-line="489" selection-start-column="48" selection-end-line="489" selection-end-column="54" />
-          <folding>
-            <marker date="1503353343000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
-            <marker date="1503353343000" expanded="false" signature="250:358" ph="..." />
-            <marker date="1503353343000" expanded="true" signature="376:18273" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="383:478" ph="/// Display story text in a visual novel style dialog box. ... " />
-            <marker date="1503353343000" expanded="true" signature="521:18271" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2359:2450" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2404:2446" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2488:2530" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2573:2878" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2615:2674" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2752:2840" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2934:3303" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="2981:3045" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="3150:3248" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="3359:3728" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="3406:3470" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="3575:3673" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="3768:4740" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="4098:4191" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="4205:4404" ph="/* It's possible that SetCharacterImage() has already been called from the ... */" />
-            <marker date="1503353343000" expanded="true" signature="4462:4541" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="4588:4730" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="4785:4987" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="4863:4977" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="5033:6294" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="5082:5186" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="5267:5329" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="5346:5669" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="5377:5568" ph="/* Add a short delay before we start fading in case there's another Say command in the next frame or two. ... */" />
-            <marker date="1503353343000" expanded="true" signature="5762:5839" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="5856:6284" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="6103:6270" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="6343:6463" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="6388:6453" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="6473:18265" ph="Public members" />
-            <marker date="1503353343000" expanded="true" signature="6505:6606" ph="/// Currently active Say Dialog used to display Say text ... " />
-            <marker date="1503353343000" expanded="true" signature="6678:6812" ph="/// Returns a SayDialog by searching for one in the scene or creating one if none exists. ... " />
-            <marker date="1503353343000" expanded="true" signature="6859:7822" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="6910:7775" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="7043:7086" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="7119:7197" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="7243:7761" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="7460:7743" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="7832:7914" ph="/// Stops all active portrait tweens. ... " />
-            <marker date="1503353343000" expanded="true" signature="7962:8978" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="8139:8968" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="8249:8954" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="8347:8936" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="8619:8762" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="8791:8914" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="8988:9088" ph="/// Sets the active state of the Say Dialog gameobject. ... " />
-            <marker date="1503353343000" expanded="true" signature="9138:9199" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="9209:9368" ph="/// Sets the active speaking character. ... " />
-            <marker date="1503353343000" expanded="true" signature="9430:11435" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="9475:9803" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="9533:9633" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="9671:9747" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="9820:11425" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="10121:11064" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="10232:11046" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="10401:11024" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="10561:10998" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="10670:10800" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="10837:10968" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="11166:11320" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="11445:11548" ph="/// Sets the character image to display on the Say Dialog. ... " />
-            <marker date="1503353343000" expanded="true" signature="11608:13561" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="11658:11710" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="11742:11923" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="11940:12303" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="12061:12289" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="12495:13551" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="12575:12769" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="12975:13245" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="13266:13537" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="13571:13737" ph="/// Sets the character name to display on the Say Dialog. ... " />
-            <marker date="1503353343000" expanded="true" signature="13808:14050" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="13852:14040" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="14060:14855" ph="/// Write a line of story text to the Say Dialog. Starts coroutine automatically. ... " />
-            <marker date="1503353343000" expanded="true" signature="15022:15168" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="15178:15973" ph="/// Write a line of story text to the Say Dialog. Must be started as a coroutine. ... " />
-            <marker date="1503353343000" expanded="true" signature="16149:17514" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="16260:16463" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="16374:16449" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="16499:16820" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="16578:16806" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="16699:16788" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="17084:17228" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="17276:17369" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="17524:17649" ph="/// Tell the Say Dialog to fade out once writing and player input have finished. ... " />
-            <marker date="1503353343000" expanded="true" signature="17762:17854" ph="/// Stop the Say Dialog while its writing text. ... " />
-            <marker date="1503353343000" expanded="true" signature="17889:17974" ph="{...}" />
-            <marker date="1503353343000" expanded="true" signature="17984:18078" ph="/// Stops writing text and clears the Say Dialog. ... " />
-            <marker date="1503353343000" expanded="true" signature="18114:18245" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,161 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="53" />
-          <folding>
-            <marker date="1503353597000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
-            <marker date="1503353597000" expanded="false" signature="251:403" ph="..." />
-            <marker date="1503353597000" expanded="true" signature="421:33530" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="428:506" ph="/// Current state of the writing process. ... " />
-            <marker date="1503353597000" expanded="true" signature="534:908" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="914:1013" ph="/// Writes text using a typewriter effect to a UI text object. ... " />
-            <marker date="1503353597000" expanded="true" signature="1075:33528" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="3872:5311" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="3956:4017" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="4309:4781" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="4453:4767" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="4631:4749" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="4967:5261" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="5154:5247" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="5369:5620" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="5660:6042" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="5701:6032" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="5751:5838" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="5936:6018" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6101:6902" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6195:6892" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6241:6421" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6454:6635" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6667:6750" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6784:6867" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="6962:7584" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7057:7574" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7105:7190" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7233:7318" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7351:7440" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7472:7560" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7668:8052" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7713:7824" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="7866:8017" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="8175:8416" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="8261:8380" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="8531:17577" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="9045:17305" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="9147:9222" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="9424:9562" ph="/* Update the read ahead string buffer. This contains the text for any ... */" />
-            <marker date="1503353597000" expanded="true" signature="9665:10161" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="9863:9984" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="10068:10143" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="10198:17148" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="11023:11167" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="11450:11537" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="13205:13327" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="15139:15264" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="15313:15436" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="15692:15817" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="15866:16019" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="16276:16401" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="16450:16551" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="16807:16932" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="16981:17081" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="17228:17291" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="17509:17567" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="17677:20145" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="17735:17792" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="18036:18128" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="18341:18439" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="18630:20135" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="18740:18803" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="18890:18965" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="19283:19349" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="19564:19682" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="19773:20121" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="19837:19950" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="19976:20103" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="20237:21186" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="20442:20494" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="20569:21027" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="20719:21013" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="20823:20995" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="21044:21176" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="21254:22365" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="21574:21707" ph="/* Track how many visible characters are currently displayed so ... */" />
-            <marker date="1503353597000" expanded="true" signature="21916:22355" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="22044:22127" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="22435:22797" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="22511:22577" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="22666:22725" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="22859:23258" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="22993:23219" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="23057:23120" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="23324:23753" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="23476:23539" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="23652:23714" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="23823:24120" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="24192:24465" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="24271:24344" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="24373:24455" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="24527:24974" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25055:25286" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25155:25212" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25332:25587" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25450:25577" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25652:25935" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25789:25925" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="25981:26255" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="26118:26245" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="26302:26578" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="26440:26568" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="26636:26915" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="26771:26905" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="26961:27217" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27080:27207" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27227:33265" ph="Public members" />
-            <marker date="1503353597000" expanded="true" signature="27259:27367" ph="/// Gets or sets the text property of the attached text object. ... " />
-            <marker date="1503353597000" expanded="true" signature="27402:28578" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27429:28007" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27479:27555" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27600:27680" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27723:27801" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="27848:27965" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="28025:28568" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="28075:28152" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="28197:28278" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="28321:28400" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="28447:28554" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="28588:28733" ph="/// This property is true when the writer is writing text or waiting (i.e. still processing tokens). ... " />
-            <marker date="1503353597000" expanded="true" signature="28811:28936" ph="/// This property is true when the writer is waiting for user input to continue. ... " />
-            <marker date="1503353597000" expanded="true" signature="29030:29097" ph="/// Pauses the writer. ... " />
-            <marker date="1503353597000" expanded="true" signature="29156:29223" ph="/// Stop writing text. ... " />
-            <marker date="1503353597000" expanded="true" signature="29258:29387" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="29316:29377" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="29397:30021" ph="/// Writes text using a typewriter effect to a UI text object. ... " />
-            <marker date="1503353597000" expanded="true" signature="30165:30878" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="30198:30301" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="30336:30393" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="30598:30663" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="30888:30983" ph="/// Sets the color property of the text UI object. ... " />
-            <marker date="1503353597000" expanded="true" signature="31041:31497" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31083:31153" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31194:31376" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31262:31362" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31415:31487" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31507:31625" ph="/// Sets the alpha component of the color property of the text UI object. ... " />
-            <marker date="1503353597000" expanded="true" signature="31683:32434" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31725:31884" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31925:32222" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="31993:32208" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="32261:32424" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="32444:32566" ph="/// Returns true if there is a supported text object attached to this writer. ... " />
-            <marker date="1503353597000" expanded="true" signature="32610:32734" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="32744:32847" ph="/// Returns true if the text object has rich text support. ... " />
-            <marker date="1503353597000" expanded="true" signature="32894:33245" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="32936:33011" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="33047:33105" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="33139:33209" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="33275:33522" ph="IDialogInputListener implementation" />
-            <marker date="1503353597000" expanded="true" signature="33365:33502" ph="{...}" />
-            <marker date="1503353597000" expanded="true" signature="33433:33492" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,26 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503353748000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
-            <marker date="1503353748000" expanded="false" signature="250:288" ph="..." />
-            <marker date="1503353748000" expanded="true" signature="306:3419" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="313:443" ph="/// Fungus manager singleton. Manages access to all Fungus singletons in a consistent manner. ... " />
-            <marker date="1503353748000" expanded="true" signature="718:3417" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="880:1188" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="1198:1696" ph="/// When Unity quits, it destroys objects in a random order. ... " />
-            <marker date="1503353748000" expanded="true" signature="1723:1785" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="1795:3411" ph="Public methods" />
-            <marker date="1503353748000" expanded="true" signature="1827:1919" ph="/// Gets the camera manager singleton instance. ... " />
-            <marker date="1503353748000" expanded="true" signature="1994:2085" ph="/// Gets the music manager singleton instance. ... " />
-            <marker date="1503353748000" expanded="true" signature="2158:2252" ph="/// Gets the event dispatcher singleton instance. ... " />
-            <marker date="1503353748000" expanded="true" signature="2362:2452" ph="/// Gets the save manager singleton instance. ... " />
-            <marker date="1503353748000" expanded="true" signature="2538:2629" ph="/// Gets the FungusManager singleton instance. ... " />
-            <marker date="1503353748000" expanded="true" signature="2674:3391" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="2700:3381" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="2758:2959" ph="{...}" />
-            <marker date="1503353748000" expanded="true" signature="3049:3311" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,253 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <marker date="1503353495000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
-            <marker date="1503353495000" expanded="false" signature="250:418" ph="..." />
-            <marker date="1503353495000" expanded="true" signature="436:43772" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="443:635" ph="/// Visual scripting controller for the Flowchart programming language. ... " />
-            <marker date="1503353495000" expanded="true" signature="724:43770" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="4001:4190" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="4130:4179" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="4378:4552" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="4604:4656" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="4666:4817" ph="/* There must be an Event System in the scene for Say and Menu input to work. ... */" />
-            <marker date="1503353495000" expanded="true" signature="4867:5524" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="4913:4965" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="5097:5462" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="5296:5448" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="5567:5857" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="5627:5699" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="5901:6023" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="6071:6779" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="6140:6229" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="6434:6714" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="6584:6700" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="6826:7832" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="6849:7002" ph="/* Make sure item ids are unique and monotonically increasing. ... */" />
-            <marker date="1503353495000" expanded="true" signature="7152:7421" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="7279:7364" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="7541:7822" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="7676:7763" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="7884:10050" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="7907:8284" ph="/* Delete any unreferenced components which shouldn't exist any more ... */" />
-            <marker date="1503353495000" expanded="true" signature="8456:8667" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="8569:8653" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="8836:9363" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="8985:9238" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="9107:9220" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="9266:9349" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="9498:10040" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="9657:9910" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="9779:9892" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="9938:10026" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="10123:10225" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="10235:42096" ph="Public members" />
-            <marker date="1503353495000" expanded="true" signature="10267:10378" ph="/// Cached list of flowchart objects in the scene for fast lookup. ... " />
-            <marker date="1503353495000" expanded="true" signature="10480:10681" ph="/// Sends a message to all Flowchart objects in the current scene. ... " />
-            <marker date="1503353495000" expanded="true" signature="10751:11063" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="10909:11053" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="11073:11165" ph="/// Scroll position of Flowchart editor window. ... " />
-            <marker date="1503353495000" expanded="true" signature="11273:11368" ph="/// Scroll position of Flowchart variables window. ... " />
-            <marker date="1503353495000" expanded="true" signature="11503:11576" ph="/// Show the variables pane. ... " />
-            <marker date="1503353495000" expanded="true" signature="11705:11796" ph="/// Height of command block view in inspector. ... " />
-            <marker date="1503353495000" expanded="true" signature="11920:12007" ph="/// Zoom level of Flowchart editor window. ... " />
-            <marker date="1503353495000" expanded="true" signature="12098:12191" ph="/// Scrollable area for Flowchart editor window. ... " />
-            <marker date="1503353495000" expanded="true" signature="12311:12416" ph="/// Current actively selected block in the Flowchart editor. ... " />
-            <marker date="1503353495000" expanded="true" signature="12459:12709" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="12486:12570" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="12587:12698" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="12837:12937" ph="/// Currently selected command in the Flowchart editor. ... " />
-            <marker date="1503353495000" expanded="true" signature="13038:13147" ph="/// The list of variables that can be accessed by the Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="13235:13341" ph="/// Description text displayed in the Flowchart editor window ... " />
-            <marker date="1503353495000" expanded="true" signature="13425:13552" ph="/// Slow down execution in the editor to make it easier to visualise program flow. ... " />
-            <marker date="1503353495000" expanded="true" signature="13631:13748" ph="/// Use command color when displaying the command list in the inspector. ... " />
-            <marker date="1503353495000" expanded="true" signature="13834:14026" ph="/// Saves the selected block and commands when saving the scene. Helps avoid version control conflicts if you've  ... " />
-            <marker date="1503353495000" expanded="true" signature="14112:14235" ph="/// Unique identifier for identifying this flowchart in localized string keys. ... " />
-            <marker date="1503353495000" expanded="true" signature="14325:14438" ph="/// Display line numbers in the command list in the Block inspector. ... " />
-            <marker date="1503353495000" expanded="true" signature="14528:14662" ph="/// Lua Environment to be used by default for all Execute Lua commands in this Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="14752:14908" ph="/// The ExecuteLua command adds a global Lua variable with this name bound to the flowchart prior to executing. ... " />
-            <marker date="1503353495000" expanded="true" signature="14998:15101" ph="/// Position in the center of all blocks in the flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="15171:15299" ph="/// Variable to track flowchart's version so components can update to new versions. ... " />
-            <marker date="1503353495000" expanded="true" signature="15365:15465" ph="/// Returns true if the Flowchart gameobject is active. ... " />
-            <marker date="1503353495000" expanded="true" signature="15496:15565" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="15575:15662" ph="/// Returns the Flowchart gameobject name. ... " />
-            <marker date="1503353495000" expanded="true" signature="15694:15750" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="15760:15973" ph="/// Returns the next id to assign to a new flowchart item. ... " />
-            <marker date="1503353495000" expanded="true" signature="16005:16542" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="16144:16266" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="16374:16502" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="16552:16660" ph="/// Create a new block node which you can then add commands to. ... " />
-            <marker date="1503353495000" expanded="true" signature="16719:16982" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="16992:17104" ph="/// Returns the named Block in the flowchart, or null if not found. ... " />
-            <marker date="1503353495000" expanded="true" signature="17161:17495" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="17272:17459" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="17375:17445" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="17505:17652" ph="/// &lt;summary&gt; ... " />
-            <marker date="1503353495000" expanded="true" signature="17711:18081" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="17799:17925" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="17964:18071" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="18103:18194" ph="/// Stops an executing Block in the Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="18250:18570" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="18338:18464" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="18502:18560" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="18580:18886" ph="/// Execute a child block in the flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="18988:19714" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="19029:19145" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="19203:19371" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="19490:19548" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="19724:19817" ph="/// Stop all executing Blocks in this Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="19861:20160" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="19972:20150" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="20066:20136" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="20170:20348" ph="/// Sends a message to this Flowchart only. ... " />
-            <marker date="1503353495000" expanded="true" signature="20414:20703" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="20549:20693" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="20713:20860" ph="/// Returns a new variable key that is guaranteed not to clash with any existing variable in the list. ... " />
-            <marker date="1503353495000" expanded="true" signature="20963:22302" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="21424:21485" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="21545:22292" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="21657:22177" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="21820:21898" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="21991:22159" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="22210:22278" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="22312:22458" ph="/// Returns a new Block key that is guaranteed not to clash with any existing Block in the Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="22552:23641" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="22714:22802" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="22912:23631" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="23022:23516" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="23156:23234" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="23330:23498" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="23549:23617" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="23651:23793" ph="/// Returns a new Label key that is guaranteed not to clash with any existing Label in the Block. ... " />
-            <marker date="1503353495000" expanded="true" signature="23880:25048" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="24042:24109" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="24219:25038" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="24386:24923" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="24569:24647" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="24737:24905" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="24956:25024" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="25058:25474" ph="/// Returns the variable with the specified key, or null if the key is not found. ... " />
-            <marker date="1503353495000" expanded="true" signature="25522:25829" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="25586:25793" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="25706:25779" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="25839:26172" ph="/// Returns the variable with the specified key, or null if the key is not found. ... " />
-            <marker date="1503353495000" expanded="true" signature="26235:26612" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="26299:26511" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="26419:26497" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="26622:26812" ph="/// Register a new variable with the Flowchart at runtime.  ... " />
-            <marker date="1503353495000" expanded="true" signature="26893:27389" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="26957:27313" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="27056:27299" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="27157:27281" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="27399:27499" ph="/// Checks if a given variable exists in the flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="27551:27833" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="27615:27797" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="27714:27783" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="27843:27944" ph="/// Returns the list of variable names in the Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="27995:28320" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="28113:28284" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="28196:28270" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="28330:28444" ph="/// Gets a list of all variables with public scope in this Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="28503:28882" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="28623:28835" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="28741:28821" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="28892:29040" ph="/// Gets the value of a boolean variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="29099:29381" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="29204:29296" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="29313:29371" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="29391:29569" ph="/// Sets the value of a boolean variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="29640:29823" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="29745:29813" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="29833:29978" ph="/// Gets the value of an integer variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="30036:30315" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="30142:30234" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="30251:30305" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="30325:30504" ph="/// Sets the value of an integer variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="30574:30758" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="30680:30748" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="30768:30910" ph="/// Gets the value of a float variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="30968:31244" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="31072:31162" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="31179:31234" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="31254:31430" ph="/// Sets the value of a float variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="31500:31682" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="31604:31672" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="31692:31850" ph="/// Gets the value of a string variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="31910:32188" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="32015:32106" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="32123:32178" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="32198:32375" ph="/// Sets the value of a string variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="32447:32630" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="32552:32620" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="32640:32790" ph="/// Gets the value of a GameObject variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="32858:33147" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="32968:33063" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="33080:33137" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="33157:33338" ph="/// Sets the value of a GameObject variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="33418:33605" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="33527:33595" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="33615:33764" ph="/// Gets the value of a Transform variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="33830:34117" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="33939:34033" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="34050:34107" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="34127:34307" ph="/// Sets the value of a Transform variable. ... " />
-            <marker date="1503353495000" expanded="true" signature="34385:34571" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="34493:34561" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="34581:34717" ph="/// Set the block objects to be hidden or visible depending on the hideComponents property. ... " />
-            <marker date="1503353495000" expanded="true" signature="34763:36360" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="34805:35817" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="34928:35241" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="35110:35223" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="35357:35507" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="35638:35803" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="35834:36350" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="35981:36336" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="36105:36183" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="36370:36456" ph="/// Clears the list of selected commands. ... " />
-            <marker date="1503353495000" expanded="true" signature="36508:36566" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="36576:36673" ph="/// Adds a command to the list of selected commands. ... " />
-            <marker date="1503353495000" expanded="true" signature="36737:36885" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="36800:36875" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="36895:36979" ph="/// Clears the list of selected blocks. ... " />
-            <marker date="1503353495000" expanded="true" signature="37029:37085" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37095:37188" ph="/// Adds a block to the list of selected blocks. ... " />
-            <marker date="1503353495000" expanded="true" signature="37246:37386" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37305:37376" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37396:37495" ph="/// Reset the commands and variables in the Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="37570:38130" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37611:37876" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37740:37862" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37909:38120" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="37981:38106" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="38140:38286" ph="/// Override this in a Flowchart subclass to filter which commands are shown in the Add Command list. ... " />
-            <marker date="1503353495000" expanded="true" signature="38367:38876" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="38434:38840" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="38756:38826" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="38886:39000" ph="/// Returns true if there are any executing blocks in this Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="39049:39373" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="39160:39337" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="39254:39323" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="39383:39489" ph="/// Returns a list of all executing blocks in this Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="39545:39948" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="39709:39901" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="39803:39887" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="39958:40323" ph="/// Substitute variables in the input text with the format {$VarName} ... " />
-            <marker date="1503353495000" expanded="true" signature="40387:42076" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="40439:40527" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="41037:41776" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="41313:41762" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="41544:41744" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="41925:41991" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="42008:42066" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="42106:43764" ph="IStringSubstituter implementation" />
-            <marker date="1503353495000" expanded="true" signature="42157:42478" ph="/// Implementation of StringSubstituter.ISubstitutionHandler which matches any public variable in the Flowchart. ... " />
-            <marker date="1503353495000" expanded="true" signature="42593:43744" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="42925:43704" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="43194:43690" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="43303:43381" ph="{...}" />
-            <marker date="1503353495000" expanded="true" signature="43468:43672" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1480,49 +962,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2215">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503353360000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
-            <marker date="1503353360000" expanded="false" signature="251:295" ph="..." />
-            <marker date="1503353360000" expanded="true" signature="313:6115" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="320:411" ph="/// Supported modes for clicking through a Say Dialog. ... " />
-            <marker date="1503353360000" expanded="true" signature="437:801" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="807:878" ph="/// Input handler for say dialogs. ... " />
-            <marker date="1503353360000" expanded="true" signature="923:6113" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="1739:1837" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="1847:1998" ph="/* There must be an Event System in the scene for Say and Menu input to work. ... */" />
-            <marker date="1503353360000" expanded="true" signature="2048:2552" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="2177:2542" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="2376:2528" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="2605:4874" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="2660:2712" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="2767:2901" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="2954:3242" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="3153:3228" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="3274:3777" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="3439:3514" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="3618:3740" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="3817:3931" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="3966:4389" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="4245:4375" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="4484:4864" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="4659:4807" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="4884:6107" ph="Public members" />
-            <marker date="1503353360000" expanded="true" signature="4916:5007" ph="/// Trigger next line input event from script. ... " />
-            <marker date="1503353360000" expanded="true" signature="5053:5111" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="5121:5257" ph="/// Set the dialog clicked flag (usually from an Event Trigger component in the dialog UI). ... " />
-            <marker date="1503353360000" expanded="true" signature="5308:5760" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="5474:5526" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="5680:5750" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="5770:5848" ph="/// Sets the button clicked flag. ... " />
-            <marker date="1503353360000" expanded="true" signature="5899:6087" ph="{...}" />
-            <marker date="1503353360000" expanded="true" signature="6014:6077" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="2649">
           <caret line="249" column="5" lean-forward="false" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
           <folding>
             <marker date="1510585811000" expanded="false" signature="6:190" ph="..." />
