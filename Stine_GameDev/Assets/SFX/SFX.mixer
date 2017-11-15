@@ -27,6 +27,7 @@ AudioMixerController:
     - 2c9c0c9ab44fa444ca100f001d393c1b
     - ad2974ba6f5c3495c8798969f454ff2d
     - 97c602a21ad00496ea16fff64b83e5bc
+    - aa09913d5da2041e2959a4b4960ea8bb
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -45,6 +46,7 @@ AudioMixerGroupController:
   - {fileID: 243403100682995292}
   - {fileID: 243346039271738248}
   - {fileID: 243548480891786386}
+  - {fileID: 243958272691346410}
   m_Volume: bde0beea6d76845d3aa2becf2f42be80
   m_Pitch: 353e699220a5e4709865b8b06957862a
   m_Effects:
@@ -181,6 +183,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &243958272691346410
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Pickup
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: aa09913d5da2041e2959a4b4960ea8bb
+  m_Children: []
+  m_Volume: a3cafee990cbb48de829a18511ee3175
+  m_Pitch: c44102a3d4c1341239303e01d6d30f48
+  m_Effects:
+  - {fileID: 244922847456473288}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &244023971061316760
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -246,6 +265,19 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &244922847456473288
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 4268015dac68c456885d1379adc42207
+  m_EffectName: Attenuation
+  m_MixLevel: 2aadeae9b88244f34931a30a846ca1ed
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244929986402210600
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -284,4 +316,5 @@ AudioMixerSnapshotController:
   m_FloatValues:
     405ef4f65a45f407f8b40e3ae32b2576: -15.421314
     3aaed2d736eeb4bb79f34338a775bd07: -2.3589041
+    a3cafee990cbb48de829a18511ee3175: -20.610773
   m_TransitionOverrides: {}
