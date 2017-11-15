@@ -87,7 +87,7 @@ public class GM : MonoBehaviour
 	void Awake()
 	{
 		Me = this;
-		Line_1.PlayDelayed(2);
+		Line_1.PlayDelayed(8);
 //		Line_2.Play();
 	}
 
