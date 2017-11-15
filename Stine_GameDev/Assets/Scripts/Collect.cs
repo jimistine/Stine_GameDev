@@ -15,6 +15,7 @@ public class Collect : MonoBehaviour {
 		if (gameObject.name == "key")
 		{
 			gameObject.SetActive(false);
+			GM.Me.Pickup.Play();
 			GM.Me.exitLocked = false;
 		}
 		

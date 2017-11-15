@@ -50,6 +50,7 @@ public class GM : MonoBehaviour
 	public AudioSource OpenBook;
 	public AudioSource CloseBook;
 	public AudioSource ExitOpenSFX;
+	public AudioSource Pickup;
 	public AudioMixerSnapshot Room1;
 	public AudioMixerSnapshot Room2;
 	public AudioMixerSnapshot Room3;
