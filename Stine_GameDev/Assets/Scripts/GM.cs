@@ -12,7 +12,7 @@ public class GM : MonoBehaviour
 	public static GM Me;
 	
 	public int Count = 0;
-	public float uTime;
+	public float Line1Delay;
 	public Vector2 Transfer_1_2;
 	public Vector2 Transfer_2_3;
 	public Vector2 Transfer_3_2;
@@ -87,7 +87,7 @@ public class GM : MonoBehaviour
 	void Awake()
 	{
 		Me = this;
-		Line_1.PlayDelayed(8);
+		Line_1.PlayDelayed(Line1Delay);
 //		Line_2.Play();
 	}
 
