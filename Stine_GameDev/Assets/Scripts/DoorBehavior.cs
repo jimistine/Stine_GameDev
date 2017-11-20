@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using System.Xml;
 using UnityEngine;
 
 public class DoorBehavior : MonoBehaviour
@@ -10,12 +11,22 @@ public class DoorBehavior : MonoBehaviour
 	public GameObject doorOpen;
 	public bool IsLocked = true;
 	public float Delay;
+	Color startColor  = Color.white;
+	Color fade = Color.gray;
+
+
+	
 
 	void Start()
 	{
 		StartCoroutine(ExecuteAfterTime(Delay));
 	}
 
+	
+	private void Update()
+	{
+	}
+	
 	IEnumerator ExecuteAfterTime(float Delay)
 	{
 		yield return new WaitForSeconds(Delay);
@@ -25,6 +36,9 @@ public class DoorBehavior : MonoBehaviour
 	
 	public void OnTriggerStay2D(Collider2D other)
 	{
+
+		gameObject.GetComponent<SpriteRenderer>().color = fade;
+			
 		if (IsLocked)
 		{
 			if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
@@ -78,5 +92,8 @@ public class DoorBehavior : MonoBehaviour
 		}
 	}
 
-	
+	private void OnTriggerExit2D(Collider2D other)
+	{
+		gameObject.GetComponent<SpriteRenderer>().color = startColor;
+	}
 }

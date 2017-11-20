@@ -2550,6 +2550,7 @@ MonoBehaviour:
   Line_1: {fileID: 1293185894}
   Line_2: {fileID: 216970237}
   Line_3: {fileID: 168479479}
+  Story1: {fileID: 1743757531}
   LockedDoor: {fileID: 292636573}
   Footsteps: {fileID: 1213874048}
   OpenBook: {fileID: 1188748071}
@@ -2771,7 +2772,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 124161739}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a750fd438fb84ce8b2177d8a22a7161, type: 3}
   m_Name: 
@@ -5499,6 +5500,8 @@ GameObject:
   - component: {fileID: 380281827}
   - component: {fileID: 380281828}
   - component: {fileID: 380281801}
+  - component: {fileID: 380281829}
+  - component: {fileID: 380281830}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5519,11 +5522,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -374.64017, y: 218.23985}
+  scrollPos: {x: 57.396175, y: -72.497696}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.91535175
+  zoom: 0.39000002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5531,9 +5534,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281827}
+  - {fileID: 380281799}
   selectedCommands:
-  - {fileID: 380281801}
+  - {fileID: 380281830}
   variables: []
   description: 
   stepPause: 0
@@ -6161,7 +6164,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 173.99605
+    width: 174.35898
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6794,7 +6797,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 120
+    width: 120.51282
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6827,9 +6830,10 @@ MonoBehaviour:
   itemId: 36
   blockName: Story Start
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 380281829}
   commandList:
   - {fileID: 380281800}
+  - {fileID: 380281830}
   - {fileID: 380281820}
   - {fileID: 380281815}
   - {fileID: 380281816}
@@ -6859,7 +6863,7 @@ MonoBehaviour:
   itemId: 58
   indentLevel: 0
   storyText: "Ok.  Well, on earth there's a practice we call astral-projection. Most
-    of us thought it was all some made-up practice only the na\xEFve and gullible
+    of us thought it was all some made-up phenomena only the na\xEFve and gullible
     ever tried.  I never even thought about it until I developed insomnia and started
     having trouble falling asleep. I was desperate to sleep, but was also just so
     bored. I heard some people talking about it at the place I used to work one day,"
@@ -7487,7 +7491,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 769.76495
     y: 582.78217
-    width: 122.649666
+    width: 128.20512
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7553,6 +7557,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 380281827}
   waitForFrames: 1
+--- !u!114 &380281829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 380281799}
+  waitForFrames: 1
+--- !u!114 &380281830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: 
+  targetMethodText: 
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: 
+  showInherited: 0
+  callMode: 0
 --- !u!1 &468101378
 GameObject:
   m_ObjectHideFlags: 0
@@ -15867,6 +15911,7 @@ Transform:
   - {fileID: 1293185893}
   - {fileID: 216970236}
   - {fileID: 168479478}
+  - {fileID: 1743757530}
   m_Father: {fileID: 762458796}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16031,7 +16076,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160552989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.4, y: -4.351, z: 0}
+  m_LocalPosition: {x: 2.3, y: -4.351, z: 0}
   m_LocalScale: {x: 3.0011456, y: 3.0011456, z: 3.0011456}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23440,6 +23485,116 @@ Transform:
   m_Father: {fileID: 1126045446}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1743757529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1743757530}
+  - component: {fileID: 1743757531}
+  m_Layer: 0
+  m_Name: Story1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743757530
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743757529}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1152891360}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1743757531
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743757529}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243863559334619112, guid: 1ab3707a24d5b4d5db4510c6b03257a8,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: e8143e4e4aacc4d3c9186d8cccc0c54d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 4.791447
+  MaxDistance: 10.14447
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.19166666
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1754091900
 GameObject:
   m_ObjectHideFlags: 0

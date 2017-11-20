@@ -45,6 +45,8 @@ public class GM : MonoBehaviour
 	public AudioSource Line_1;
 	public AudioSource Line_2;
 	public AudioSource Line_3;
+	public AudioSource Story1;
+
 	public AudioSource LockedDoor;
 	public AudioSource Footsteps;
 	public AudioSource OpenBook;
@@ -283,6 +285,11 @@ public class GM : MonoBehaviour
 	public void SetCountTo_4()
 	{
 		Count = 4;
+	}
+	
+	public void playStory_1()
+	{
+		Story1.Play();
 	}
 	public void play5()
     {
