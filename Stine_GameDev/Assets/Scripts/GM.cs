@@ -40,6 +40,7 @@ public class GM : MonoBehaviour
 	public AudioClip line1;
 	public AudioClip line2;
 	public AudioClip line3;
+	public AudioClip StoryClip1;
 	public AudioSource SFX;
 	public AudioSource Dialogue;
 	public AudioSource Line_1;
@@ -90,7 +91,6 @@ public class GM : MonoBehaviour
 	{
 		Me = this;
 		Line_1.PlayDelayed(Line1Delay);
-//		Line_2.Play();
 	}
 
 
@@ -289,7 +289,8 @@ public class GM : MonoBehaviour
 	
 	public void playStory_1()
 	{
-		Story1.Play();
+		Debug.Log("Story Time!");
+		Dialogue.PlayOneShot(StoryClip1);
 	}
 	public void play5()
     {

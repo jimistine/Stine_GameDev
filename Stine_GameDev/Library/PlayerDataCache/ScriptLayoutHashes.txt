@@ -24,6 +24,7 @@ c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.T
 507638d4a41cb9131848b0d6b4fcb60b Assembly-CSharp.dll:Fungus.PunchScale
 67a085132ec2c865fdc9fc0613db613a Assembly-CSharp.dll:Fungus.LoadScene
 b497cd6cb84c2199c071bc81e08e7906 Assembly-CSharp.dll:Fungus.Else
+5dc745b451180bc7fbf3ca6d5d074cf6 Assembly-CSharp.dll:.StartScreenController
 826755378fe639384e13690344ada0d6 Assembly-CSharp.dll:Fungus.Clickable2D
 3a993d586c45d913e216cbaaf874d05e Assembly-CSharp.dll:.AudioTrigger
 fae445a7a3d2d0d634ed75030dcbad77 Assembly-CSharp.dll:Fungus.SetActive
@@ -190,6 +191,7 @@ d672cee35261f9935d5ce974c746730f TextMeshPro-1.0.55.2017.1.0b12.dll:TMPro.TMP_Te
 1928d671d0ffe9a2f71d39075e9861db Assembly-CSharp.dll:Fungus.Fullscreen
 abb921b4ef874b7b5b817e54014be6c9 Assembly-CSharp.dll:Fungus.ElseIf
 89a36b9f4bc9736fc891182f4fe3037d Assembly-CSharp.dll:Fungus.SetInteractable
+5a0920acb52055aa7ac0d9b1ec6a9fe5 Assembly-CSharp.dll:.IntroController
 b497cd6cb84c2199c071bc81e08e7906 Assembly-CSharp.dll:Fungus.StopTweens
 2b5cba2ac5d5fc8ee46a3c05dec14e3e Assembly-CSharp.dll:.CameraBehavior
 3053a1d3d09c04317f1d8f0299bb66a2 Assembly-CSharp.dll:Fungus.WriterAudio
@@ -278,7 +280,7 @@ abb921b4ef874b7b5b817e54014be6c9 Assembly-CSharp.dll:Fungus.While
 5093524ccdcfa505089337cf23998886 Assembly-CSharp.dll:Fungus.Parallax
 c1e5e4e5ad9eb07bed8851b99038c6fa Assembly-CSharp.dll:Fungus.KeyPressed
 76015de5fcb247eeb8df66c001d5a22d Assembly-CSharp.dll:TMPro.Examples.TMP_FrameRateCounter
-c81c1908272f2f9876166f2604e3eaee Assembly-CSharp.dll:.GM
+65c20325bfb66041e370ecf71a0b76dc Assembly-CSharp.dll:.GM
 301a30eeaee996dbf8f54342ee92cb21 Assembly-CSharp.dll:Fungus.SavePoint
 b8f04bdad423045528c67dfa4c3dca0d Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 6c4575229b336b04f4ced48805920544 Assembly-CSharp.dll:Fungus.ToggleChanged
