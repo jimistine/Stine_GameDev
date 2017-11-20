@@ -12,7 +12,9 @@ public class DoorBehavior : MonoBehaviour
 	public bool IsLocked = true;
 	public float Delay;
 	Color startColor  = Color.white;
-	Color fade = Color.gray;
+	public Color fade;
+	public Sprite Faded;
+	public Sprite StartSprite;
 
 
 	
@@ -37,7 +39,7 @@ public class DoorBehavior : MonoBehaviour
 	public void OnTriggerStay2D(Collider2D other)
 	{
 
-		gameObject.GetComponent<SpriteRenderer>().color = fade;
+		gameObject.GetComponent<SpriteRenderer>().sprite = Faded;
 			
 		if (IsLocked)
 		{
@@ -94,6 +96,6 @@ public class DoorBehavior : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		gameObject.GetComponent<SpriteRenderer>().color = startColor;
+		gameObject.GetComponent<SpriteRenderer>().sprite = StartSprite;
 	}
 }
