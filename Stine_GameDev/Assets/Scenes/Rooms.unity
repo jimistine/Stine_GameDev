@@ -2524,10 +2524,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Count: 0
   Line1Delay: 10
-  Transfer_1_2: {x: 6, y: 0}
-  Transfer_2_3: {x: 6.5, y: 0}
-  Transfer_3_2: {x: -7, y: 0}
-  Transfer_2_1: {x: -6.5, y: 0}
+  Transfer_1_2: {x: 10, y: 0}
+  Transfer_2_3: {x: 11, y: 0}
+  Transfer_3_2: {x: -11, y: 0}
+  Transfer_2_1: {x: -9, y: 0}
   playerTrans: {fileID: 1926704470}
   MorganTrans: {fileID: 1160552992}
   playerRigidbody2D: {fileID: 1926704467}
@@ -4631,7 +4631,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 318699653}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.745, y: -2.0799997, z: 8.235683}
+  m_LocalPosition: {x: -14.68, y: -2.0799997, z: 8.235683}
   m_LocalScale: {x: 0.01, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1344948045}
@@ -5184,7 +5184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 359138402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.905, y: -2.0799997, z: 8.235683}
+  m_LocalPosition: {x: -36.84, y: -2.0799997, z: 8.235683}
   m_LocalScale: {x: 0.01, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1344948045}
@@ -5528,11 +5528,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 95.37724, y: -9.991939}
+  scrollPos: {x: 485.56796, y: 80.6293}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7949219
+  zoom: 0.54490256
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5540,9 +5540,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281759}
+  - {fileID: 380281769}
   selectedCommands:
-  - {fileID: 380281764}
+  - {fileID: 380281766}
   variables: []
   description: 
   stepPause: 0
@@ -6055,11 +6055,10 @@ MonoBehaviour:
   itemId: 15
   indentLevel: 0
   storyText: "I\u2019d like to go with you, but, as it happens, my soul is tied to
-    this fire.  These rooms are my personal prison. You and a few others have stumbled
-    through here, but as much as I appreciate the company I just can\u2019t force
-    you to stay. If you stick around I\u2019ve got a few stories you might like. Stories
-    of my own, and some from the others that\u2019ve come through. It\u2019s up to
-    you."
+    this fire.  If it goes out, so do I.  You and a few others have stumbled through
+    here, but as much as I appreciate the company I just can\u2019t force you to stay.
+    If you stick around I\u2019ve got a few stories you might like. Stories of my
+    own, and some from the others that\u2019ve come through. It\u2019s up to you."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6086,7 +6085,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Great find! You know what? I bet it was on the bureau, wasn\u2019t it?
     That thing pops in and out all the time. Anyway, here\u2019s the key, it goes
-    to the exit in the foyer.  Before you go tough, I should make it clear that if
+    to the exit in the foyer.  Before you go though, I should make it clear that if
     you leave, there\u2019s no coming back.  The wormhole you were on before won\u2019t
     send you this way again if you go."
   description: 
@@ -6170,7 +6169,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 182.08846
+    width: 174.79295
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6803,7 +6802,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 122.96314
+    width: 123.407616
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7497,7 +7496,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 769.76495
     y: 582.78217
-    width: 130.51105
+    width: 127.078
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16152,7 +16151,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160552989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.58, y: -4.351, z: 0}
+  m_LocalPosition: {x: 18.92, y: -4.351, z: 0}
   m_LocalScale: {x: 3.0011456, y: 3.0011456, z: 3.0011456}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18016,7 +18015,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1304502737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.5, y: -2.0799997, z: 8.235683}
+  m_LocalPosition: {x: -28.71, y: -2.0799997, z: 8.235683}
   m_LocalScale: {x: 0.01, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1344948045}
@@ -23034,7 +23033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1668349742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25359,7 +25358,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855643686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.705, y: -2.0799997, z: 8.235683}
+  m_LocalPosition: {x: -4.82, y: -2.0799997, z: 8.235683}
   m_LocalScale: {x: 0.01, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1344948045}
