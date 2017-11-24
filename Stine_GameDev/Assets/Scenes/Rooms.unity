@@ -5528,11 +5528,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 33.212757, y: -199.82034}
+  scrollPos: {x: 95.37724, y: -9.991939}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.507168
+  zoom: 0.7949219
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5540,8 +5540,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281799}
-  selectedCommands: []
+  - {fileID: 380281759}
+  selectedCommands:
+  - {fileID: 380281764}
   variables: []
   description: 
   stepPause: 0
@@ -5973,7 +5974,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: fe4af1bc0d77943eeb27b57b5d3a4cdb, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 787751ddee1f349dda43c5e46c4f8990, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6019,7 +6020,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 0018d7586d17e41698ccf47d72bd320d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6169,7 +6170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 172.24747
+    width: 182.08846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6802,7 +6803,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 120
+    width: 122.96314
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7496,7 +7497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 769.76495
     y: 582.78217
-    width: 122.95413
+    width: 130.51105
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
