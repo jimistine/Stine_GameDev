@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 	public float MoveSpeed;
 	public float StepDelay;
 	public bool FacingLeft;
+	public GameObject LeftEye;
+	public GameObject RightEye;
 	
 	Vector2 move = new Vector2(1, 0);
 	
@@ -29,6 +31,9 @@ public class PlayerController : MonoBehaviour
 		{
 			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = -MoveSpeed * move;
+			LeftEye.SetActive(true);
+			RightEye.SetActive(false);
+			
 		}
 		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) 
 		{
@@ -42,6 +47,8 @@ public class PlayerController : MonoBehaviour
 		{
 			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = MoveSpeed * move;
+			LeftEye.SetActive(false);
+			RightEye.SetActive(true);
 		}
 		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) 
 		{

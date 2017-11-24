@@ -5508,6 +5508,9 @@ GameObject:
   - component: {fileID: 380281828}
   - component: {fileID: 380281801}
   - component: {fileID: 380281830}
+  - component: {fileID: 380281832}
+  - component: {fileID: 380281831}
+  - component: {fileID: 380281829}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5540,9 +5543,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281769}
+  - {fileID: 380281799}
   selectedCommands:
-  - {fileID: 380281766}
+  - {fileID: 380281800}
   variables: []
   description: 
   stepPause: 0
@@ -5785,6 +5788,7 @@ MonoBehaviour:
   eventHandler: {fileID: 380281758}
   commandList:
   - {fileID: 380281757}
+  - {fileID: 380281831}
   - {fileID: 380281756}
 --- !u!114 &380281755
 MonoBehaviour:
@@ -6030,7 +6034,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &380281765
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -6083,11 +6087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: "Great find! You know what? I bet it was on the bureau, wasn\u2019t it?
-    That thing pops in and out all the time. Anyway, here\u2019s the key, it goes
-    to the exit in the foyer.  Before you go though, I should make it clear that if
-    you leave, there\u2019s no coming back.  The wormhole you were on before won\u2019t
-    send you this way again if you go."
+  storyText: Great find!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6137,6 +6137,7 @@ MonoBehaviour:
   eventHandler: {fileID: 380281768}
   commandList:
   - {fileID: 380281767}
+  - {fileID: 380281832}
   - {fileID: 380281766}
 --- !u!114 &380281770
 MonoBehaviour:
@@ -6839,6 +6840,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 380281830}
   - {fileID: 380281800}
+  - {fileID: 380281829}
   - {fileID: 380281820}
   - {fileID: 380281815}
   - {fileID: 380281816}
@@ -6867,11 +6869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  storyText: "Ok.  Well, on earth there's a practice we call astral-projection. Most
-    of us thought it was all some made-up phenomena only the na\xEFve and gullible
-    ever tried.  I never even thought about it until I developed insomnia and started
-    having trouble falling asleep. I was desperate to sleep, but was also just so
-    bored. I heard some people talking about it at the place I used to work one day,"
+  storyText: Ok...where to start.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6885,7 +6883,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &380281801
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -7526,7 +7524,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &380281827
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -7551,7 +7549,7 @@ MonoBehaviour:
   - {fileID: 380281801}
 --- !u!114 &380281828
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -7562,9 +7560,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 380281827}
   waitForFrames: 1
---- !u!114 &380281830
+--- !u!114 &380281829
 MonoBehaviour:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 89
+  indentLevel: 0
+  storyText: "Well, on earth there's a practice we call astral-projection. Most of
+    us thought it was all some made-up phenomena only the na\xEFve and gullible ever
+    tried.  I never even thought about it until I developed insomnia and started having
+    trouble falling asleep. I was desperate to sleep, but was also just so bored.
+    I heard some people talking about it at the place I used to work one day,"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &380281830
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -7589,6 +7616,64 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &380281831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 0
+  storyText: "My name is Morton, and I\u2019m living here for eternity. Yeah\u2026
+    Uh, anyway, before we get ahead of ourselves you\u2019ll probably want to know
+    how to leave.  The key to the exit is in this lock box but the code's slipped
+    my mind, it's something like 2498 or 2984? It's been a while. If you'd be so kind
+    as to find where I "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &380281832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 87
+  indentLevel: 0
+  storyText: "You know what? I bet it was on the bureau, wasn\u2019t it? That thing
+    pops in and out all the time. Anyway, here\u2019s the key, it goes to the exit
+    in the foyer.  Before you go though, I should make it clear that if you leave,
+    there\u2019s no coming back.  The wormhole you were on before won\u2019t send
+    you this way again if you go."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &468101378
 GameObject:
   m_ObjectHideFlags: 0
@@ -13018,7 +13103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 812248783}
   punchObject: {fileID: 553283925}
-  writingSpeed: 60
+  writingSpeed: 25
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0
