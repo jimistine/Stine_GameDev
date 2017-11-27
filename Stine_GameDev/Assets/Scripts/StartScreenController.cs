@@ -12,6 +12,7 @@ public class StartScreenController : MonoBehaviour
 	private TextMeshPro Text1_2;
 	public GameObject Choice1_1;
 	public GameObject Choice1_2;
+	public GameObject Controls;
 	public Color StartColor;
 	public Color SelectedColor;
 
@@ -57,7 +58,8 @@ public class StartScreenController : MonoBehaviour
 		if (IsSelected == 2 && Input.GetKeyUp(KeyCode.Return)||
 		    IsSelected == 2 && Input.GetKeyUp(KeyCode.LeftShift))
 		{
-			Debug.Log("quitting!");
+			Controls.SetActive(true);
+			Debug.Log("controls");
 			IsSelected = 0;
 		}	
 	}
