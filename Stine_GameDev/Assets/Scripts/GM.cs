@@ -11,7 +11,7 @@ public class GM : MonoBehaviour
 {
 	public static GM Me;
 	
-	public int Count = 0;
+	public float Count = 0;
 	public float Line1Delay;
 	public Vector2 Transfer_1_2;
 	public Vector2 Transfer_2_3;
@@ -33,21 +33,23 @@ public class GM : MonoBehaviour
 	public float Audio_2_3;
 	public float Audio_3_2;
 	public float Audio_2_1;
-
-	public AudioClip openDoor;
-	public AudioClip closeDoor;
-	public AudioClip lockedDoor;
+//Dialogue
 	public AudioClip line1;
 	public AudioClip line2;
 	public AudioClip line3;
 	public AudioClip StoryClip1;
-	public AudioSource SFX;
+	public AudioClip BountyHunter;
+	public AudioClip Troga;
 	public AudioSource Dialogue;
 	public AudioSource Line_1;
 	public AudioSource Line_2;
 	public AudioSource Line_3;
 	public AudioSource Story1;
-
+//SFX
+	public AudioSource SFX;
+	public AudioClip openDoor;
+	public AudioClip closeDoor;
+	public AudioClip lockedDoor;
 	public AudioSource LockedDoor;
 	public AudioSource Footsteps;
 	public AudioSource OpenBook;
@@ -289,7 +291,7 @@ public class GM : MonoBehaviour
 	
 	public void playStory_1()
 	{
-		Debug.Log("Story Time!");
+//		Debug.Log("Story Time!");
 		Dialogue.PlayOneShot(StoryClip1);
 	}
 	public void play5()
@@ -297,8 +299,37 @@ public class GM : MonoBehaviour
     	Flowchart.BroadcastFungusMessage ("Story 2 Start 2");	
    	}
 	
+	public void SetCountTo_51()
+	{
+		Count = 5.1f;
+	}
+	public void SetCountTo_52()
+	{
+		Count = 5.2f;
+	}
 	
+	public void playBounty()
+	{
+		Debug.Log("Playing bounty");
+		Dialogue.PlayOneShot(BountyHunter);
+	}
+	
+	public void playTroga()
+	{
+		Debug.Log("playing troga");
+		Dialogue.PlayOneShot(Troga);
+	}
 
+	public void playStory_3_Start_1()
+	{
+		Flowchart.BroadcastFungusMessage ("Stort 3 Start 1");	
+	}
+	
+	public void playStory_3_Start_2()
+	{
+		Flowchart.BroadcastFungusMessage ("Stort 3 Start 2");	
+	}
+	
 	//Objects
 	public void SetKeyActive()
 	{

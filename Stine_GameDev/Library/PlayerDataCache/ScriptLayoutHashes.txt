@@ -32,6 +32,7 @@ b2315532eb28f551712d7f4fde13346e Assembly-CSharp.dll:Fungus.SetAudioPitch
 e60e821c4ad60cfe53a2f2267c8e2649 Assembly-CSharp.dll:Fungus.SetCollider
 d5ca41dbd1fe75a7719857047b7ae969 Assembly-CSharp.dll:Fungus.ScaleFrom
 797b66f3a9857b3e9846213e26ccb1b0 Assembly-CSharp.dll:Fungus.InvokeMethod
+4bf734f59bef48600dd77eb7edcbab41 Assembly-CSharp.dll:.LightFlipper
 de610b33a88f3d9408ee0ba8c13db782 Assembly-CSharp.dll:Fungus.SetSliderValue
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -272,7 +273,7 @@ ee3ca0bea58db2a968790b1481a94b2c Assembly-CSharp.dll:Fungus.SaveData
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Fungus.FungusManager
 b0e44a4640c05bc7dffcf824950f569e Assembly-CSharp.dll:Fungus.ExecuteLua
 8a50d3d11bf0cc541f5c35347dd25633 Assembly-CSharp.dll:TMPro.Examples.ShaderPropAnimator
-5d8eb17d4fa549ee498bf177a0f94ba2 Assembly-CSharp.dll:.DoorBehavior
+625b6814389a72b3f8051955010260b8 Assembly-CSharp.dll:.DoorBehavior
 5f692182acc4e73fadde07d2de7cc644 Assembly-CSharp.dll:Fungus.Label
 9fcb8ba9ef84c15ee213c3fa147e52ef Assembly-CSharp.dll:Fungus.SpriteVariable
 abb921b4ef874b7b5b817e54014be6c9 Assembly-CSharp.dll:Fungus.While
@@ -280,7 +281,7 @@ abb921b4ef874b7b5b817e54014be6c9 Assembly-CSharp.dll:Fungus.While
 5093524ccdcfa505089337cf23998886 Assembly-CSharp.dll:Fungus.Parallax
 c1e5e4e5ad9eb07bed8851b99038c6fa Assembly-CSharp.dll:Fungus.KeyPressed
 76015de5fcb247eeb8df66c001d5a22d Assembly-CSharp.dll:TMPro.Examples.TMP_FrameRateCounter
-65c20325bfb66041e370ecf71a0b76dc Assembly-CSharp.dll:.GM
+4fd74d796393f6daffaacffe01722442 Assembly-CSharp.dll:.GM
 301a30eeaee996dbf8f54342ee92cb21 Assembly-CSharp.dll:Fungus.SavePoint
 b8f04bdad423045528c67dfa4c3dca0d Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 6c4575229b336b04f4ced48805920544 Assembly-CSharp.dll:Fungus.ToggleChanged
@@ -390,7 +391,7 @@ a9b584424c1bd58fc35cf0db73a8a42e Assembly-CSharp.dll:Fungus.DragCancelled
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.WoodCutterController
 69bba96e3802fac375bfb367ad29b6d8 Assembly-CSharp.dll:Fungus.SetVariable
 af7666733efcc974926d7d470e1732a6 Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
-94e8fe5bb5904ecbcafdb7f0d44cda05 Assembly-CSharp.dll:.PlayerController
+a9ec9b844c153a6d91a366ad617da480 Assembly-CSharp.dll:.PlayerController
 e2edf8be30edf1b53356e4ac2139b562 Assembly-CSharp.dll:Fungus.Writer
 144f1a11d3a0586c587d4b4ca0edd8da Assembly-CSharp.dll:Fungus.ControlAudio
 cd7c8a47f1b5872b6622d92fc7ee6533 Assembly-CSharp.dll:Fungus.DebugLog
