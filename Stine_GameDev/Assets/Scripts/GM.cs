@@ -91,7 +91,8 @@ public class GM : MonoBehaviour
 	public GameObject Line4_Sub;
 	public GameObject MorganDialogue;
 	public GameObject Choice1;
-	public GameObject Fungo;
+	public GameObject FungoDialogue;
+	public GameObject FungoMenu;
 	public GameObject WoodCutter;
 	private Collider2D WoodCutterTrigger;
 
@@ -261,7 +262,8 @@ public class GM : MonoBehaviour
 		MorganTrans.Translate(Transfer_2_3);
 		Room3.TransitionTo(Audio_3_2);
 		NoFilter.TransitionTo(0);
-		Fungo.SetActive(true);
+		FungoDialogue.SetActive(true);
+		FungoMenu.SetActive(true);
 	}
 
 	public void player3To2()
@@ -270,7 +272,8 @@ public class GM : MonoBehaviour
 		MorganTrans.Translate(Transfer_3_2);
 		Room2.TransitionTo(Audio_3_2);
 		SpeakerFilter.TransitionTo(0);
-		Fungo.SetActive(false);
+		FungoDialogue.SetActive(false);
+		FungoMenu.SetActive(false);
 	}
 	
 	public void play2()

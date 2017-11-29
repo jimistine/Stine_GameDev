@@ -1099,7 +1099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.7, y: 40.09}
+  m_AnchoredPosition: {x: -145.3, y: 40.09}
   m_SizeDelta: {x: 3.06, y: 3.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52779593
@@ -2684,7 +2684,8 @@ MonoBehaviour:
   Line4_Sub: {fileID: 1316352227}
   MorganDialogue: {fileID: 795166655}
   Choice1: {fileID: 292985200}
-  Fungo: {fileID: 553283925}
+  FungoDialogue: {fileID: 553283925}
+  FungoMenu: {fileID: 1762423062}
   WoodCutter: {fileID: 2083366551}
 --- !u!4 &124161741
 Transform:
@@ -4494,7 +4495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189.6, y: 21.44}
+  m_AnchoredPosition: {x: -294.7, y: 21.82}
   m_SizeDelta: {x: 2.12, y: 3.262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301212008
@@ -5592,10 +5593,7 @@ GameObject:
   - component: {fileID: 380281823}
   - component: {fileID: 380281822}
   - component: {fileID: 380281821}
-  - component: {fileID: 380281765}
   - component: {fileID: 380281827}
-  - component: {fileID: 380281828}
-  - component: {fileID: 380281801}
   - component: {fileID: 380281830}
   - component: {fileID: 380281832}
   - component: {fileID: 380281831}
@@ -5729,7 +5727,6 @@ GameObject:
   - component: {fileID: 380281944}
   - component: {fileID: 380281959}
   - component: {fileID: 380281958}
-  - component: {fileID: 380281960}
   - component: {fileID: 380281966}
   - component: {fileID: 380281965}
   - component: {fileID: 380281964}
@@ -5744,6 +5741,13 @@ GameObject:
   - component: {fileID: 380281970}
   - component: {fileID: 380281969}
   - component: {fileID: 380281971}
+  - component: {fileID: 380281960}
+  - component: {fileID: 380281974}
+  - component: {fileID: 380281801}
+  - component: {fileID: 380281973}
+  - component: {fileID: 380281972}
+  - component: {fileID: 380281828}
+  - component: {fileID: 380281765}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5764,11 +5768,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -13.997004, y: -443.00372}
+  scrollPos: {x: 202.57817, y: 319.4744}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.5809572
+  blockViewHeight: 338
+  zoom: 0.4893849
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5776,7 +5780,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281805}
+  - {fileID: 380281827}
   selectedCommands: []
   variables: []
   description: 
@@ -6155,7 +6159,7 @@ MonoBehaviour:
   itemId: 24
   blockName: Line_4
   description: 
-  eventHandler: {fileID: 380281765}
+  eventHandler: {fileID: 380281828}
   commandList:
   - {fileID: 380281764}
   - {fileID: 380281763}
@@ -6280,17 +6284,17 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &380281765
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 380281759}
-  message: Line_4
+  parentBlock: {fileID: 380281799}
+  waitForFrames: 1
 --- !u!114 &380281766
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6427,7 +6431,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 178.23665
+    width: 180.77641
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7060,7 +7064,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 122.29449
+    width: 124.58342
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7093,7 +7097,7 @@ MonoBehaviour:
   itemId: 36
   blockName: Story Start
   description: 
-  eventHandler: {fileID: 380281960}
+  eventHandler: {fileID: 380281765}
   commandList:
   - {fileID: 380281830}
   - {fileID: 380281967}
@@ -7148,18 +7152,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 85
+  itemId: 271
   indentLevel: 0
-  duration: 0.5
-  fadeOut: 0
-  targetView: {fileID: 0}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 624307505}
+  storyText: Come to the room across the foyer and I can introduce myself to you.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!114 &380281802
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7753,7 +7762,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 771.48627
     y: 586.0051
-    width: 130.90097
+    width: 130.71356
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7813,24 +7822,27 @@ MonoBehaviour:
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 84
-  blockName: Fader
+  blockName: Line 0
   description: 
-  eventHandler: {fileID: 380281828}
+  eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 380281972}
+  - {fileID: 380281974}
+  - {fileID: 380281973}
   - {fileID: 380281801}
 --- !u!114 &380281828
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 380281827}
-  waitForFrames: 1
+  parentBlock: {fileID: 380281759}
+  message: Line_4
 --- !u!114 &380281829
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7960,7 +7972,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 602.76184
     y: 719.02563
-    width: 128.31903
+    width: 129.69188
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8085,7 +8097,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 448.63306
     y: 808.2335
-    width: 129.17967
+    width: 130.71356
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9455,7 +9467,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 706.70044
     y: 980.72894
-    width: 169.63016
+    width: 171.58119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10057,9 +10069,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 728.2216
+    x: 730.265
     y: 896.4474
-    width: 130.90097
+    width: 130.71356
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10068,6 +10080,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 380281958}
   commandList:
+  - {fileID: 380281960}
   - {fileID: 380281956}
   - {fileID: 380281945}
   - {fileID: 380281886}
@@ -10086,7 +10099,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 900.5538
     y: 894.64526
-    width: 152.41719
+    width: 154.21246
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10915,7 +10928,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.88165
     y: 973.0318
-    width: 122.29449
+    width: 123.56173
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10966,7 +10979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 251
   indentLevel: 0
-  storyText: Hey no worries, take your time.  Just come say hi when you're ready.
+  storyText: Hey no worries, take your time.  Just come say "hi" when you're ready.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11206,7 +11219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 235
   indentLevel: 0
-  storyText: If you're game, I've gogt another to tell.
+  storyText: If you're game, I've got another to tell.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11233,7 +11246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.86676
     y: 894.64557
-    width: 130.90097
+    width: 130.71356
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11324,11 +11337,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 380281799}
-  waitForFrames: 1
+  itemId: 269
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &380281961
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11509,7 +11536,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &380281968
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11536,7 +11563,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &380281969
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11563,7 +11590,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &380281970
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11590,7 +11617,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &380281971
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11615,6 +11642,75 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &380281972
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 273
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 13
+  durationOLD: 0
+--- !u!114 &380281973
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 272
+  indentLevel: 0
+  storyText: I gather you've come here by accident probably, um... but, you seem safe
+    enough though, so I'll go ahead and unlock that door to your right.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &380281974
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 270
+  indentLevel: 0
+  storyText: Hi there, traveler!  Uh, sorry for the hickup; you've got nothing to
+    worry about.  This place hangs a bit into the hole you were surfing on.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &434690706
 GameObject:
   m_ObjectHideFlags: 0
@@ -12135,7 +12231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184.6, y: 41.59}
+  m_AnchoredPosition: {x: -294.4, y: 42.1}
   m_SizeDelta: {x: 16.17, y: 2.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &518029550
@@ -17044,7 +17140,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0
+  Pan2D: 0.75
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -17155,7 +17251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 812248783}
   punchObject: {fileID: 553283925}
-  writingSpeed: 25
+  writingSpeed: 30
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0
@@ -17621,7 +17717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &958549005
 Transform:
   m_ObjectHideFlags: 0
@@ -33091,7 +33187,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2074195392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.33, y: -9.49, z: -8.218751}
+  m_LocalPosition: {x: -12.33, y: -14.28, z: -8.218751}
   m_LocalScale: {x: 10.91955, y: 0.46637, z: 1}
   m_Children: []
   m_Father: {fileID: 1737019215}
