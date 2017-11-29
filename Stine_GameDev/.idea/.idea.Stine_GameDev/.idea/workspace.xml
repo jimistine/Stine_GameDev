@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GM.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GM.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
@@ -79,6 +79,27 @@
                 <marker date="1511970864000" expanded="true" signature="7289:7332" ph="{...}" />
                 <marker date="1511970864000" expanded="true" signature="7373:7415" ph="{...}" />
                 <marker date="1511970864000" expanded="true" signature="7418:7500" ph="/* COUNT ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="57" column="106" lean-forward="false" selection-start-line="57" selection-start-column="106" selection-end-line="57" selection-end-column="106" />
+              <folding>
+                <marker date="1511972466000" expanded="false" signature="6:142" ph="..." />
+                <marker date="1511972466000" expanded="true" signature="189:2000" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="490:547" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="563:1998" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="740:930" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="1033:1144" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="1324:1513" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="1615:1724" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="1817:1867" ph="{...}" />
+                <marker date="1511972466000" expanded="true" signature="1944:1995" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -220,11 +241,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IntroController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoorBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/LightFlipper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartScreenController.cs" />
         <option value="$PROJECT_DIR$/Assets/ControlsPageController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WoodCutterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -430,12 +451,12 @@
       <workItem from="1511790692121" duration="2503000" />
       <workItem from="1511801537599" duration="1046000" />
       <workItem from="1511839088586" duration="4219000" />
-      <workItem from="1511967464666" duration="762000" />
+      <workItem from="1511967464666" duration="2190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164792000" />
+    <option name="totallyTimeSpent" value="166220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -719,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/StartScreenController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -849,6 +863,25 @@
             <marker date="1511970864000" expanded="true" signature="7289:7332" ph="{...}" />
             <marker date="1511970864000" expanded="true" signature="7373:7415" ph="{...}" />
             <marker date="1511970864000" expanded="true" signature="7418:7500" ph="/* COUNT ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="57" column="106" lean-forward="false" selection-start-line="57" selection-start-column="106" selection-end-line="57" selection-end-column="106" />
+          <folding>
+            <marker date="1511972466000" expanded="false" signature="6:142" ph="..." />
+            <marker date="1511972466000" expanded="true" signature="189:2000" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="490:547" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="563:1998" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="740:930" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="1033:1144" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="1324:1513" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="1615:1724" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="1817:1867" ph="{...}" />
+            <marker date="1511972466000" expanded="true" signature="1944:1995" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 	public bool FacingLeft;
 	public GameObject LeftEye;
 	public GameObject RightEye;
+	public bool movingLeft;
+	public bool movingRight;
 	
 	Vector2 move = new Vector2(1, 0);
 	
@@ -29,32 +31,35 @@ public class PlayerController : MonoBehaviour
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.LeftArrow) || 
 			ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.A))
 		{
+			movingLeft = true;
+			movingRight = false;
 			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = -MoveSpeed * move;
 			LeftEye.SetActive(true);
 			RightEye.SetActive(false);
-			
 		}
-		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) 
+		if (Input.GetKeyUp (KeyCode.A) && !movingRight || Input.GetKeyUp(KeyCode.LeftArrow) && !movingRight)
 		{
+			movingRight = false;	
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 			GM.Me.Footsteps.Stop();
-
 		}	
 		// RIGHT
 		if (ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.D) || 
 		    ani_this.GetBool("ifInteract") == false && Input.GetKeyDown(KeyCode.RightArrow))
 		{
+			movingRight = true;
+			movingLeft = false;
 			GM.Me.Footsteps.Play();
 			PlayerRigidbody2D.velocity = MoveSpeed * move;
 			LeftEye.SetActive(false);
 			RightEye.SetActive(true);
 		}
-		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) 
+		if (Input.GetKeyUp (KeyCode.D) && !movingLeft || Input.GetKeyUp(KeyCode.RightArrow) && !movingLeft)
 		{
+			movingLeft = false;
 			PlayerRigidbody2D.velocity = new Vector2(0, 0);
 			GM.Me.Footsteps.Stop();
-			
 		}
 		// INTERACT
 		if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.LeftShift))
