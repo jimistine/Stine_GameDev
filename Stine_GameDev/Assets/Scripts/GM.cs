@@ -21,6 +21,7 @@ public class GM : MonoBehaviour
 	public Transform MorganTrans;
 	public Rigidbody2D playerRigidbody2D;
 	public Rigidbody2D MorganRigidbody2D;
+//	public Collider2D WoodCutterTrigger;
 
 	public bool exitLocked = true;
 	public bool ExitOpen;
@@ -38,13 +39,16 @@ public class GM : MonoBehaviour
 	public AudioClip line2;
 	public AudioClip line3;
 	public AudioClip StoryClip1;
-	public AudioClip BountyHunter;
-	public AudioClip Troga;
+//	public AudioClip BountyHunter;
+//	public AudioClip Troga;
 	public AudioSource Dialogue;
 	public AudioSource Line_1;
 	public AudioSource Line_2;
 	public AudioSource Line_3;
 	public AudioSource Story1;
+	public AudioSource BountyHunter;
+	public AudioSource Trøga;
+
 //SFX
 	public AudioSource SFX;
 	public AudioClip openDoor;
@@ -88,6 +92,8 @@ public class GM : MonoBehaviour
 	public GameObject MorganDialogue;
 	public GameObject Choice1;
 	public GameObject Fungo;
+	public GameObject WoodCutter;
+	private Collider2D WoodCutterTrigger;
 
 	void Awake()
 	{
@@ -95,7 +101,11 @@ public class GM : MonoBehaviour
 		Line_1.PlayDelayed(Line1Delay);
 	}
 
-
+	void Start()
+	{
+		WoodCutterTrigger = WoodCutter.GetComponent<Collider2D>();
+	}
+	
 	public void Update()
 	{
 //		Debug.Log(Count);		
@@ -292,7 +302,11 @@ public class GM : MonoBehaviour
 	public void playStory_1()
 	{
 //		Debug.Log("Story Time!");
-		Dialogue.PlayOneShot(StoryClip1);
+		Story1.Play();
+	}
+	public void stopStory_1()
+	{
+		Story1.Stop();
 	}
 	public void play5()
     {
@@ -311,23 +325,35 @@ public class GM : MonoBehaviour
 	public void playBounty()
 	{
 		Debug.Log("Playing bounty");
-		Dialogue.PlayOneShot(BountyHunter);
+		Story1.Stop();
+		Trøga.Stop();
+		BountyHunter.Play();
+	}
+	public void stopBounty()
+	{
+		BountyHunter.Stop();
 	}
 	
 	public void playTroga()
 	{
 		Debug.Log("playing troga");
-		Dialogue.PlayOneShot(Troga);
+		Story1.Stop();
+		BountyHunter.Stop();
+		Trøga.Play();
+	}
+	public void stopTrøga()
+	{
+		Trøga.Stop();
 	}
 
 	public void playStory_3_Start_1()
 	{
-		Flowchart.BroadcastFungusMessage ("Stort 3 Start 1");	
+		Flowchart.BroadcastFungusMessage ("Story 3 Start 1");	
 	}
 	
 	public void playStory_3_Start_2()
 	{
-		Flowchart.BroadcastFungusMessage ("Stort 3 Start 2");	
+		Flowchart.BroadcastFungusMessage ("Story 3 Start 2");	
 	}
 	
 	//Objects
@@ -347,6 +373,16 @@ public class GM : MonoBehaviour
 			Paint2Cam.SetActive(false);
 			Enlarged = false;
 		}
+	}
+
+	public void DisableWoodCutterTrigger()
+	{
+		WoodCutterTrigger.enabled = false;
+	}
+	
+	public void EnableWoodCutterTrigger()
+	{
+		WoodCutterTrigger.enabled = true;
 	}
 }
 /*   COUNT

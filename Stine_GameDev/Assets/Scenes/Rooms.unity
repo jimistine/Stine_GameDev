@@ -2612,7 +2612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f90419d4af345c4bdfbd59944ac85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Count: 0
+  Count: 4
   Line1Delay: 10
   Transfer_1_2: {x: 10, y: 0}
   Transfer_2_3: {x: 11, y: 0}
@@ -2636,13 +2636,13 @@ MonoBehaviour:
   line2: {fileID: 8300000, guid: fb305bceb01b24831aebef6441dc76a5, type: 3}
   line3: {fileID: 8300000, guid: 48ac69667619b40f283d3fff611937dc, type: 3}
   StoryClip1: {fileID: 8300000, guid: ac39391b285ee42aca17ad4a8ebaf38e, type: 3}
-  BountyHunter: {fileID: 8300000, guid: 81710d8cca2c442929f9a2acc18277b1, type: 3}
-  Troga: {fileID: 8300000, guid: 70f93242a5c6546a99822dca137d97a8, type: 3}
   Dialogue: {fileID: 124161743}
   Line_1: {fileID: 1293185894}
   Line_2: {fileID: 216970237}
   Line_3: {fileID: 168479479}
   Story1: {fileID: 1743757531}
+  BountyHunter: {fileID: 1461775003}
+  "Tr\xF8ga": {fileID: 434690708}
   SFX: {fileID: 124161742}
   openDoor: {fileID: 8300000, guid: 3a9506a95808742f48fb2638cca70d7e, type: 3}
   closeDoor: {fileID: 8300000, guid: 3119cced98b974cf385ee81ce095dd79, type: 3}
@@ -2685,6 +2685,7 @@ MonoBehaviour:
   MorganDialogue: {fileID: 795166655}
   Choice1: {fileID: 292985200}
   Fungo: {fileID: 553283925}
+  WoodCutter: {fileID: 2083366551}
 --- !u!4 &124161741
 Transform:
   m_ObjectHideFlags: 0
@@ -5539,8 +5540,6 @@ GameObject:
   - component: {fileID: 380281761}
   - component: {fileID: 380281760}
   - component: {fileID: 380281762}
-  - component: {fileID: 380281770}
-  - component: {fileID: 380281749}
   - component: {fileID: 380281779}
   - component: {fileID: 380281778}
   - component: {fileID: 380281771}
@@ -5588,7 +5587,6 @@ GameObject:
   - component: {fileID: 380281806}
   - component: {fileID: 380281805}
   - component: {fileID: 380281804}
-  - component: {fileID: 380281826}
   - component: {fileID: 380281825}
   - component: {fileID: 380281824}
   - component: {fileID: 380281823}
@@ -5731,6 +5729,21 @@ GameObject:
   - component: {fileID: 380281944}
   - component: {fileID: 380281959}
   - component: {fileID: 380281958}
+  - component: {fileID: 380281960}
+  - component: {fileID: 380281966}
+  - component: {fileID: 380281965}
+  - component: {fileID: 380281964}
+  - component: {fileID: 380281749}
+  - component: {fileID: 380281963}
+  - component: {fileID: 380281770}
+  - component: {fileID: 380281961}
+  - component: {fileID: 380281962}
+  - component: {fileID: 380281826}
+  - component: {fileID: 380281967}
+  - component: {fileID: 380281968}
+  - component: {fileID: 380281970}
+  - component: {fileID: 380281969}
+  - component: {fileID: 380281971}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5751,11 +5764,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -90.23779, y: -471.72223}
+  scrollPos: {x: -13.997004, y: -443.00372}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.55800784
+  zoom: 0.5809572
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5763,7 +5776,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281910}
+  - {fileID: 380281805}
   selectedCommands: []
   variables: []
   description: 
@@ -5801,6 +5814,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 380281966}
+  - {fileID: 380281965}
   - {fileID: 380281753}
   - {fileID: 380281751}
   - {fileID: 380281746}
@@ -5862,7 +5877,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 380281770}
   - {fileID: 380281750}
   - {fileID: 380281779}
   - {fileID: 380281778}
@@ -5874,11 +5888,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 26
+  itemId: 258
   indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: EnableWoodCutterTrigger
+  targetMethodText: 'EnableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &380281750
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5952,7 +5980,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 380281826}
   - {fileID: 380281755}
   - {fileID: 380281785}
   - {fileID: 380281784}
@@ -5995,7 +6022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 608.20825
+    x: 606.7066
     y: 10.31469
     width: 120
     height: 40
@@ -6179,7 +6206,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281762}
-  - {fileID: 380281749}
+  - {fileID: 380281964}
 --- !u!114 &380281762
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6197,7 +6224,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 787751ddee1f349dda43c5e46c4f8990, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 204d9a3f7c6a045b7a48c17df16aa948, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6366,14 +6393,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 25
+  itemId: 260
   indentLevel: 0
+  description: 
   targetObject: {fileID: 124161739}
-  methodName: SetCountTo_4
-  delay: 0
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: EnableWoodCutterTrigger
+  targetMethodText: 'EnableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &380281771
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6389,7 +6427,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 174.55023
+    width: 178.23665
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7022,7 +7060,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 120
+    width: 122.29449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7055,9 +7093,10 @@ MonoBehaviour:
   itemId: 36
   blockName: Story Start
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 380281960}
   commandList:
   - {fileID: 380281830}
+  - {fileID: 380281967}
   - {fileID: 380281800}
   - {fileID: 380281829}
   - {fileID: 380281820}
@@ -7075,6 +7114,7 @@ MonoBehaviour:
   - {fileID: 380281808}
   - {fileID: 380281807}
   - {fileID: 380281806}
+  - {fileID: 380281968}
 --- !u!114 &380281800
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7209,7 +7249,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 772.72144
-    y: 640.7258
+    y: 658.74506
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7220,6 +7260,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281804}
+  - {fileID: 380281749}
 --- !u!114 &380281806
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7710,9 +7751,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 769.76495
-    y: 582.78217
-    width: 122.57963
+    x: 771.48627
+    y: 586.0051
+    width: 130.90097
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7721,6 +7762,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 380281821}
   commandList:
+  - {fileID: 380281971}
   - {fileID: 380281824}
   - {fileID: 380281823}
   - {fileID: 380281822}
@@ -7732,14 +7774,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 79
+  itemId: 263
   indentLevel: 0
+  description: 
   targetObject: {fileID: 124161739}
-  methodName: SetCountTo_4
-  delay: 0
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &380281827
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7753,14 +7806,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 607.5919
+    x: 606.0903
     y: -97.82218
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 84
-  blockName: New Block
+  blockName: Fader
   description: 
   eventHandler: {fileID: 380281828}
   commandList:
@@ -7907,7 +7960,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 602.76184
     y: 719.02563
-    width: 125.26776
+    width: 128.31903
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7916,6 +7969,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 380281963}
   - {fileID: 380281838}
   - {fileID: 380281885}
   - {fileID: 380281836}
@@ -7966,6 +8020,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281946}
+  - {fileID: 380281913}
   - {fileID: 380281863}
   - {fileID: 380281862}
   - {fileID: 380281861}
@@ -7992,7 +8047,7 @@ MonoBehaviour:
   - {fileID: 380281840}
   - {fileID: 380281839}
   - {fileID: 380281802}
-  - {fileID: 380281913}
+  - {fileID: 380281969}
   - {fileID: 380281957}
 --- !u!114 &380281836
 MonoBehaviour:
@@ -8030,7 +8085,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 448.63306
     y: 808.2335
-    width: 127.955894
+    width: 129.17967
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8063,6 +8118,7 @@ MonoBehaviour:
   - {fileID: 380281866}
   - {fileID: 380281912}
   - {fileID: 380281914}
+  - {fileID: 380281970}
   - {fileID: 380281951}
 --- !u!114 &380281838
 MonoBehaviour:
@@ -9399,7 +9455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 706.70044
     y: 980.72894
-    width: 165.58978
+    width: 169.63016
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9409,6 +9465,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281915}
+  - {fileID: 380281826}
   - {fileID: 380281909}
   - {fileID: 380281908}
   - {fileID: 380281907}
@@ -10002,7 +10059,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 728.2216
     y: 896.4474
-    width: 122.57963
+    width: 130.90097
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10016,7 +10073,7 @@ MonoBehaviour:
   - {fileID: 380281886}
 --- !u!114 &380281911
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -10029,7 +10086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 900.5538
     y: 894.64526
-    width: 147.66888
+    width: 152.41719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10039,6 +10096,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281944}
+  - {fileID: 380281770}
 --- !u!114 &380281912
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10857,7 +10915,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.88165
     y: 973.0318
-    width: 120
+    width: 122.29449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10867,6 +10925,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281947}
+  - {fileID: 380281962}
   - {fileID: 380281942}
   - {fileID: 380281941}
   - {fileID: 380281940}
@@ -10896,7 +10955,7 @@ MonoBehaviour:
   - {fileID: 380281916}
 --- !u!114 &380281944
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11071,6 +11130,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281949}
+  - {fileID: 380281961}
 --- !u!114 &380281951
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11173,7 +11233,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.86676
     y: 894.64557
-    width: 122.57963
+    width: 130.90097
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11232,7 +11292,7 @@ MonoBehaviour:
   callMode: 1
 --- !u!114 &380281958
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11245,7 +11305,7 @@ MonoBehaviour:
   message: Story 3 Start 2
 --- !u!114 &380281959
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -11256,6 +11316,415 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 380281955}
   message: Story 3 Start 1
+--- !u!114 &380281960
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 380281799}
+  waitForFrames: 1
+--- !u!114 &380281961
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 261
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: EnableWoodCutterTrigger
+  targetMethodText: 'EnableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281962
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 262
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281963
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 259
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281964
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 257
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: EnableWoodCutterTrigger
+  targetMethodText: 'EnableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281965
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 256
+  indentLevel: 0
+  targetObject: {fileID: 124161739}
+  methodName: SetCountTo_4
+  delay: 0
+--- !u!114 &380281966
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 255
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281967
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 264
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 265
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: stopStory_1
+  targetMethodText: 'stopStory_1 (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 267
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: "stopTr\xF8ga"
+  targetMethodText: "stopTr\xF8ga (): Void"
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 266
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: stopBounty
+  targetMethodText: 'stopBounty (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 268
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 124161739}
+  targetComponentAssemblyName: GM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GM
+  targetMethod: DisableWoodCutterTrigger
+  targetMethodText: 'DisableWoodCutterTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!1 &434690706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 434690707}
+  - component: {fileID: 434690708}
+  m_Layer: 0
+  m_Name: Troga
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434690707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434690706}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1152891360}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &434690708
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434690706}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243755832507837190, guid: 1ab3707a24d5b4d5db4510c6b03257a8,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 70f93242a5c6546a99822dca137d97a8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 4.791447
+  MaxDistance: 10.14447
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.19166666
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &468101378
 GameObject:
   m_ObjectHideFlags: 0
@@ -16646,7 +17115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b85556abd314f3f870c18c013fdcef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMode: 1
+  clickMode: 0
   nextClickDelay: 0
   cancelEnabled: 1
   ignoreMenuClicks: 1
@@ -19655,6 +20124,8 @@ Transform:
   - {fileID: 216970236}
   - {fileID: 168479478}
   - {fileID: 1743757530}
+  - {fileID: 1461775002}
+  - {fileID: 434690707}
   m_Father: {fileID: 762458796}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19819,7 +20290,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160552989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.4, y: -4.351, z: 0}
+  m_LocalPosition: {x: 21.88, y: -4.351, z: 0}
   m_LocalScale: {x: 3.0011456, y: 3.0011456, z: 3.0011456}
   m_Children:
   - {fileID: 1389304213}
@@ -22526,7 +22997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1389304213}
   - component: {fileID: 1389304214}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Point light R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23646,6 +24117,116 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1461775001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1461775002}
+  - component: {fileID: 1461775003}
+  m_Layer: 0
+  m_Name: BountyHunter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461775002
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461775001}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1152891360}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1461775003
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461775001}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243222754696179752, guid: 1ab3707a24d5b4d5db4510c6b03257a8,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 81710d8cca2c442929f9a2acc18277b1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 4.791447
+  MaxDistance: 10.14447
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.19166666
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1469026839
 GameObject:
   m_ObjectHideFlags: 0
@@ -30183,6 +30764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909525541}
   - component: {fileID: 1909525540}
+  - component: {fileID: 1909525542}
   m_Layer: 0
   m_Name: ArmChair
   m_TagString: Untagged
@@ -30245,6 +30827,31 @@ Transform:
   m_Father: {fileID: 1863250823}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1909525542
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909525539}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.022969693, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.61, y: 0.88}
+    newSize: {x: 0.61, y: 0.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5640606, y: 0.88}
+  m_EdgeRadius: 0
 --- !u!1 &1912723069
 GameObject:
   m_ObjectHideFlags: 0
@@ -32606,7 +33213,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2083366553}
   - component: {fileID: 2083366552}
-  - component: {fileID: 2083366554}
   - component: {fileID: 2083366557}
   - component: {fileID: 2083366556}
   - component: {fileID: 2083366555}
@@ -32672,31 +33278,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2083366554
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2083366551}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.007822245, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.61, y: 0.88}
-    newSize: {x: 0.61, y: 0.88}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5943555, y: 0.88}
-  m_EdgeRadius: 0
 --- !u!114 &2083366555
 MonoBehaviour:
   m_ObjectHideFlags: 0

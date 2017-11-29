@@ -7206,8 +7206,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "A/D  or  <\u2013/\u2013> to move.\n\n\"enter\" or \"left shift\" to interact.\n\n\"r\"
-    to restart."
+  m_text: "\"A\"/\"D \" or  <\u2013/\u2013> to move.\n\n\"enter\" or \"left shift\"
+    to interact.\n\n\"r\" to restart."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 91e7bd7d9276b466b8236e9dc4721b85, type: 2}
   m_sharedMaterial: {fileID: 21806481041716694, guid: 91e7bd7d9276b466b8236e9dc4721b85,
