@@ -5605,7 +5605,6 @@ GameObject:
   - component: {fileID: 380281837}
   - component: {fileID: 380281835}
   - component: {fileID: 380281803}
-  - component: {fileID: 380281885}
   - component: {fileID: 380281884}
   - component: {fileID: 380281883}
   - component: {fileID: 380281882}
@@ -5768,7 +5767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 202.57817, y: 319.4744}
+  scrollPos: {x: 443.6972, y: -330.3209}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 338
@@ -5779,8 +5778,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 380281827}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -6151,7 +6149,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 612.8565
-    y: 161.77202
+    y: 163.8154
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6284,7 +6282,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &380281765
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -6431,7 +6429,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 180.77641
+    width: 162.38599
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6661,7 +6659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 813.35236
+    x: 815.39575
     y: 463.5697
     width: 120
     height: 40
@@ -7064,7 +7062,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 124.58342
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7208,8 +7206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 811.76184
-    y: 726.2335
+    x: 932.32153
+    y: 730.3203
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7739,7 +7737,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: c77461410bfd841db99a2296a7fb1dda, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7762,7 +7760,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 771.48627
     y: 586.0051
-    width: 130.71356
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7832,7 +7830,7 @@ MonoBehaviour:
   - {fileID: 380281801}
 --- !u!114 &380281828
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
@@ -7972,7 +7970,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 602.76184
     y: 719.02563
-    width: 129.69188
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7983,7 +7981,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 380281963}
   - {fileID: 380281838}
-  - {fileID: 380281885}
   - {fileID: 380281836}
   - {fileID: 380281834}
 --- !u!114 &380281834
@@ -8097,7 +8094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 448.63306
     y: 808.2335
-    width: 130.71356
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8145,11 +8142,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: Great! I've got a couple, so it's up to you.
+  storyText: "Great! I've got a couple, so it's up to you. One's about a bounty hunter,
+    and another is about the time I met a Tr\xF8ga. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 4edac7c84f8e642e2a4a9fb143d3ce52, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -9380,31 +9378,6 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
---- !u!114 &380281885
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 380281743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 98
-  indentLevel: 0
-  storyText: "One's about a bounty hunter, another is about the time I met a Tr\xF8ga. "
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &380281886
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9466,8 +9439,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 706.70044
-    y: 980.72894
-    width: 171.58119
+    y: 982.77234
+    width: 148.0823
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10070,8 +10043,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 730.265
-    y: 896.4474
-    width: 130.71356
+    y: 898.4908
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10099,7 +10072,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 900.5538
     y: 894.64526
-    width: 154.21246
+    width: 131.73526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10928,7 +10901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.88165
     y: 973.0318
-    width: 123.56173
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10983,7 +10956,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 491857ddb86a742418aa73d5cc4e82a3, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11106,11 +11079,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 240
   indentLevel: 0
-  storyText: Hey no worries, take your time.  Just come say hi when you're ready.
+  storyText: Hey no worries, take your time.  Just come say "hi" when you're ready.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 491857ddb86a742418aa73d5cc4e82a3, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11219,11 +11192,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 235
   indentLevel: 0
-  storyText: If you're game, I've got another to tell.
+  storyText: If you're game, I've got one more story.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: eca101e2166454ec7a8ffbee1f07cb58, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11246,7 +11219,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.86676
     y: 894.64557
-    width: 130.71356
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11271,7 +11244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 246
   indentLevel: 0
-  storyText: So! Hope you liked that one, if you're ready for more, I'm game.
+  storyText: If you're game, I've got one more story.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20425,6 +20398,8 @@ MonoBehaviour:
   FacingLeft: 0
   LeftEye: {fileID: 1437183424}
   RightEye: {fileID: 1389304212}
+  movingLeft: 0
+  movingRight: 0
 --- !u!50 &1160552995
 Rigidbody2D:
   serializedVersion: 4
@@ -31299,6 +31274,8 @@ MonoBehaviour:
   FacingLeft: 0
   LeftEye: {fileID: 0}
   RightEye: {fileID: 0}
+  movingLeft: 0
+  movingRight: 0
 --- !u!114 &1926704472
 MonoBehaviour:
   m_ObjectHideFlags: 0
