@@ -5818,6 +5818,8 @@ GameObject:
   - component: {fileID: 380281972}
   - component: {fileID: 380281828}
   - component: {fileID: 380281765}
+  - component: {fileID: 380281975}
+  - component: {fileID: 380281885}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5838,18 +5840,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 443.6972, y: -330.3209}
+  scrollPos: {x: -124.13547, y: -461.22238}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 338
-  zoom: 0.4893849
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 380281799}
   selectedCommands: []
   variables: []
   description: 
@@ -6500,7 +6503,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 162.38599
+    width: 174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7133,7 +7136,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 120
+    width: 121
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7172,8 +7175,10 @@ MonoBehaviour:
   - {fileID: 380281967}
   - {fileID: 380281800}
   - {fileID: 380281829}
+  - {fileID: 380281975}
   - {fileID: 380281820}
   - {fileID: 380281815}
+  - {fileID: 380281885}
   - {fileID: 380281816}
   - {fileID: 380281817}
   - {fileID: 380281818}
@@ -7831,7 +7836,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 771.48627
     y: 586.0051
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8041,7 +8046,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 602.76184
     y: 719.02563
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8165,7 +8170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 448.63306
     y: 808.2335
-    width: 120
+    width: 129
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9449,6 +9454,33 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &380281885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 275
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Stand
+  targetMethodText: 'Stand (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &380281886
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9511,7 +9543,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 706.70044
     y: 982.77234
-    width: 148.0823
+    width: 168
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10115,7 +10147,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 730.265
     y: 898.4908
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10143,7 +10175,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 900.5538
     y: 894.64526
-    width: 131.73526
+    width: 149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10972,7 +11004,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.88165
     y: 973.0318
-    width: 120
+    width: 121
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11290,7 +11322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.86676
     y: 894.64557
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11755,6 +11787,33 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &380281975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 274
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Sit
+  targetMethodText: 'Sit (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &434690706
 GameObject:
   m_ObjectHideFlags: 0
@@ -13630,7 +13689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (space)
+  m_Text: (enter)
 --- !u!222 &604555898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20501,7 +20560,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160552989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.149, y: -4.351, z: 0}
+  m_LocalPosition: {x: 21.772, y: -4.351, z: 0}
   m_LocalScale: {x: 3.0011456, y: 3.0011456, z: 3.0011456}
   m_Children:
   - {fileID: 1389304213}
@@ -20542,6 +20601,9 @@ MonoBehaviour:
   RightEye: {fileID: 1389304212}
   movingLeft: 0
   movingRight: 0
+  Start_x: 0
+  Start_y: 0
+  shift: 0.3
 --- !u!50 &1160552995
 Rigidbody2D:
   serializedVersion: 4
@@ -23216,7 +23278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1389304213
 Transform:
   m_ObjectHideFlags: 0
@@ -28740,8 +28802,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1590865453
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e775383e2e84d432c94d8f5d4f376cc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31489,6 +31551,9 @@ MonoBehaviour:
   RightEye: {fileID: 0}
   movingLeft: 0
   movingRight: 0
+  Start_x: 0
+  Start_y: 0
+  shift: 0.3
 --- !u!114 &1926704472
 MonoBehaviour:
   m_ObjectHideFlags: 0
