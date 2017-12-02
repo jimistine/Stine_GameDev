@@ -20,7 +20,6 @@ public class LeaveRooms : MonoBehaviour
 	{
 		yield return new WaitForSeconds(Delay);
 		// Code to execute after the delay
-//		Debug.Log("Leaving Rooms");
 		LeaveScreen.SetActive(true);
 		GM.Me.FreezePlayer = true;
 	}	

@@ -14,7 +14,7 @@ public class LeaveChoice : MonoBehaviour
 	public Color StartColor = Color.white;
 	public Color SelectedColor = Color.red;
 	public GameObject LeaveScreen;
-
+	
 	void Start()
 	{
 		Text1_1 = Choice1_1.GetComponent<TextMeshPro>();
@@ -23,6 +23,7 @@ public class LeaveChoice : MonoBehaviour
 	}
 	void Update()
 	{
+		
 		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			IsSelected = 1;
@@ -63,5 +64,6 @@ public class LeaveChoice : MonoBehaviour
 			LeaveScreen.SetActive(false);
 		}	
 	}
+	
 }
 

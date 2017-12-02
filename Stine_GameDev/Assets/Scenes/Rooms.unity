@@ -2693,7 +2693,7 @@ MonoBehaviour:
   MorganTrans: {fileID: 1160552992}
   playerRigidbody2D: {fileID: 1926704467}
   MorganRigidbody2D: {fileID: 1160552995}
-  exitLocked: 1
+  exitLocked: 0
   ExitOpen: 0
   Inspecting: 0
   Enlarged: 0
@@ -5817,9 +5817,16 @@ GameObject:
   - component: {fileID: 380281973}
   - component: {fileID: 380281972}
   - component: {fileID: 380281828}
-  - component: {fileID: 380281765}
   - component: {fileID: 380281975}
   - component: {fileID: 380281885}
+  - component: {fileID: 380281982}
+  - component: {fileID: 380281981}
+  - component: {fileID: 380281980}
+  - component: {fileID: 380281979}
+  - component: {fileID: 380281978}
+  - component: {fileID: 380281977}
+  - component: {fileID: 380281976}
+  - component: {fileID: 380281765}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5840,11 +5847,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -124.13547, y: -461.22238}
+  scrollPos: {x: 246.07657, y: -515.7336}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 338
-  zoom: 1
+  zoom: 0.60971665
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5852,7 +5859,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 380281799}
+  - {fileID: 380281888}
   selectedCommands: []
   variables: []
   description: 
@@ -6356,17 +6363,31 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &380281765
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380281743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 380281799}
-  waitForFrames: 1
+  itemId: 283
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Stand
+  targetMethodText: 'Stand (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &380281766
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6503,7 +6524,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 297.1698
     y: 357.90192
-    width: 174
+    width: 173.00797
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7136,7 +7157,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.04617
     y: 431.39728
-    width: 121
+    width: 120.52456
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7169,16 +7190,15 @@ MonoBehaviour:
   itemId: 36
   blockName: Story Start
   description: 
-  eventHandler: {fileID: 380281765}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281830}
   - {fileID: 380281967}
+  - {fileID: 380281975}
   - {fileID: 380281800}
   - {fileID: 380281829}
-  - {fileID: 380281975}
   - {fileID: 380281820}
   - {fileID: 380281815}
-  - {fileID: 380281885}
   - {fileID: 380281816}
   - {fileID: 380281817}
   - {fileID: 380281818}
@@ -7192,6 +7212,7 @@ MonoBehaviour:
   - {fileID: 380281808}
   - {fileID: 380281807}
   - {fileID: 380281806}
+  - {fileID: 380281885}
   - {fileID: 380281968}
 --- !u!114 &380281800
 MonoBehaviour:
@@ -7836,7 +7857,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 771.48627
     y: 586.0051
-    width: 126
+    width: 125.44488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8046,7 +8067,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 602.76184
     y: 719.02563
-    width: 126
+    width: 127.084984
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8106,6 +8127,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 380281946}
   - {fileID: 380281913}
+  - {fileID: 380281980}
   - {fileID: 380281863}
   - {fileID: 380281862}
   - {fileID: 380281861}
@@ -8132,6 +8154,7 @@ MonoBehaviour:
   - {fileID: 380281840}
   - {fileID: 380281839}
   - {fileID: 380281802}
+  - {fileID: 380281979}
   - {fileID: 380281969}
   - {fileID: 380281957}
 --- !u!114 &380281836
@@ -8168,9 +8191,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 448.63306
+    x: 451.91327
     y: 808.2335
-    width: 129
+    width: 127.084984
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8180,6 +8203,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 380281948}
+  - {fileID: 380281982}
   - {fileID: 380281884}
   - {fileID: 380281875}
   - {fileID: 380281876}
@@ -8202,6 +8226,7 @@ MonoBehaviour:
   - {fileID: 380281865}
   - {fileID: 380281866}
   - {fileID: 380281912}
+  - {fileID: 380281981}
   - {fileID: 380281914}
   - {fileID: 380281970}
   - {fileID: 380281951}
@@ -9543,7 +9568,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 706.70044
     y: 982.77234
-    width: 168
+    width: 164.80743
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9554,6 +9579,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 380281915}
   - {fileID: 380281826}
+  - {fileID: 380281976}
   - {fileID: 380281909}
   - {fileID: 380281908}
   - {fileID: 380281907}
@@ -9576,6 +9602,7 @@ MonoBehaviour:
   - {fileID: 380281890}
   - {fileID: 380281889}
   - {fileID: 380281887}
+  - {fileID: 380281765}
 --- !u!114 &380281889
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10147,7 +10174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 730.265
     y: 898.4908
-    width: 126
+    width: 125.44488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10175,7 +10202,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 900.5538
     y: 894.64526
-    width: 149
+    width: 146.76627
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11004,7 +11031,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.88165
     y: 973.0318
-    width: 121
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11015,6 +11042,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 380281947}
   - {fileID: 380281962}
+  - {fileID: 380281978}
   - {fileID: 380281942}
   - {fileID: 380281941}
   - {fileID: 380281940}
@@ -11041,6 +11069,7 @@ MonoBehaviour:
   - {fileID: 380281919}
   - {fileID: 380281918}
   - {fileID: 380281917}
+  - {fileID: 380281977}
   - {fileID: 380281916}
 --- !u!114 &380281944
 MonoBehaviour:
@@ -11322,7 +11351,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.86676
     y: 894.64557
-    width: 126
+    width: 125.44488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11799,6 +11828,195 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 274
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Sit
+  targetMethodText: 'Sit (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 282
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Sit
+  targetMethodText: 'Sit (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 281
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Stand
+  targetMethodText: 'Stand (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 280
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Sit
+  targetMethodText: 'Sit (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 279
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Stand
+  targetMethodText: 'Stand (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 278
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Sit
+  targetMethodText: 'Sit (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 277
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1160552989}
+  targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerController
+  targetMethod: Stand
+  targetMethodText: 'Stand (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &380281982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380281743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 276
   indentLevel: 0
   description: 
   targetObject: {fileID: 1160552989}
@@ -20560,7 +20778,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1160552989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.772, y: -4.351, z: 0}
+  m_LocalPosition: {x: -1.53, y: -4.351, z: 0}
   m_LocalScale: {x: 3.0011456, y: 3.0011456, z: 3.0011456}
   m_Children:
   - {fileID: 1389304213}
@@ -20601,9 +20819,6 @@ MonoBehaviour:
   RightEye: {fileID: 1389304212}
   movingLeft: 0
   movingRight: 0
-  Start_x: 0
-  Start_y: 0
-  shift: 0.3
 --- !u!50 &1160552995
 Rigidbody2D:
   serializedVersion: 4
@@ -21563,7 +21778,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243356894282216830, guid: 2e99073dd1db648f6ab9adbf4f19e50b,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 91c0cc81ebf974fd0bd9065aaf10f147, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 58357c079ee4744f48d4801caf79eafd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -31551,9 +31766,6 @@ MonoBehaviour:
   RightEye: {fileID: 0}
   movingLeft: 0
   movingRight: 0
-  Start_x: 0
-  Start_y: 0
-  shift: 0.3
 --- !u!114 &1926704472
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class Reset : MonoBehaviour {
 		// Restart
 		if (Input.GetKeyDown(KeyCode.R))
 		{
-			SceneManager.LoadScene("Rooms");
+			SceneManager.LoadScene("Start");
 		}
 	}
 }
